@@ -27,3 +27,6 @@
 * [https://petermopar.blogspot.com/2013/09/shinth-history-high-zero-2013.html](https://petermopar.blogspot.com/2013/09/shinth-history-high-zero-2013.html): blog by peter blasser, Shinth History High Zero 2013.
 * [https://petermopar.blogspot.com/2012/12/shnth-set-in-montreal.html](https://petermopar.blogspot.com/2012/12/shnth-set-in-montreal.html): blog by peter blasser, SHNTH set in Montreal.
 * [https://petermopar.blogspot.com/2013/08/tunings.html](https://petermopar.blogspot.com/2013/08/tunings.html): blog by peter basser, tunings.
+* [https://www.youtube.com/watch?v=-JK4xn_sNOY&t=119s](https://www.youtube.com/watch?v=-JK4xn_sNOY): shtar warning (hi guys).
+* [https://www.youtube.com/watch?v=bvwlOiUu9wA](https://www.youtube.com/watch?v=bvwlOiUu9wA): Shtar Warning II.
+* [https://www.youtube.com/watch?v=Aux9XGPHprg](https://www.youtube.com/watch?v=Aux9XGPHprg): Peter B: Dowel (Shtar Warning)
