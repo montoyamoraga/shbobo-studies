@@ -1,9 +1,0 @@
-;SMOKE [a-h] is noise.
- {(left 
- (bar (smoke)) 
-)} 
- ;equivalent to:
- {(left 
- (smoke (bar)) 
-)}
-doubleclick

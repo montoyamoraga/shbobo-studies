@@ -4,7 +4,6 @@
 
 This repository is a compilation of research notes and development of software for instruments by Shbobo.
 
-
 ## Structure of this repository
 
 * [notes/](notes/): notes taken about the shbobo ecosystem, including:
@@ -12,8 +11,8 @@ This repository is a compilation of research notes and development of software f
   * [notes/shbobo.md](notes/shbobo.md): 
   * [notes/shnth.md](notes/shnth.md): 
   * [notes/shtar.md](notes/shtar.md): 
-* [original/](original/): original files from [shbobo.net](http://shbobo.net/), both the .zip and the uncompressed folder.
-* [scripts/](scripts/): software written.
+* [backup/](backup/): original files from [shbobo.net](http://shbobo.net/).
+* [software/](software/): software written.
 
 ## Links
 * [https://shbobo.net/](https://shbobo.net/): main page of shbobo.

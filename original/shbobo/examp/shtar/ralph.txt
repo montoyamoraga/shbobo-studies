@@ -1,2 +1,0 @@
-;bb
-{(left (horn 30 43 (slew (modo (bridge )5 )126 1 )))(right (comb (smoke (brass ))1 (finger )))}

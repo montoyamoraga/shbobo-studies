@@ -1,5 +1,0 @@
-;LIGHTs!
- {(lights 
- (mount 64 64))} 
-
-doubleclick
