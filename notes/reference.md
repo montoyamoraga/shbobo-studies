@@ -31,3 +31,17 @@
 * [https://www.youtube.com/watch?v=bvwlOiUu9wA](https://www.youtube.com/watch?v=bvwlOiUu9wA): Shtar Warning II.
 * [https://www.youtube.com/watch?v=Aux9XGPHprg](https://www.youtube.com/watch?v=Aux9XGPHprg): Peter B: Dowel (Shtar Warning)
 * [https://www.youtube.com/watch?v=_e7_rSWL_qk](https://www.youtube.com/watch?v=_e7_rSWL_qk): An Evening with Peter Blasser - Live from Control 11.07.2017
+* [https://www.youtube.com/watch?v=nGNyalz8t9c](https://www.youtube.com/watch?v=nGNyalz8t9c): Shnth Tutorial Wave.
+* [https://www.youtube.com/watch?v=2vO0YCkKPus](https://www.youtube.com/watch?v=2vO0YCkKPus): Ciat Lonbarde Shbobo Shnth - wind opcode.
+* [https://www.youtube.com/watch?v=kKj75HtyPpI&t=235s](https://www.youtube.com/watch?v=kKj75HtyPpI): Shbobo Shnth.
+* [https://www.youtube.com/watch?v=DwW4Oz-p4AY](https://www.youtube.com/watch?v=DwW4Oz-p4AY): Ciat Lonbarde Shbobo Shnth - Kalimba patch
+* [https://www.youtube.com/watch?v=5yZUiH0xoIs](https://www.youtube.com/watch?v=5yZUiH0xoIs): Shnth rhythmic doodles
+* [https://www.youtube.com/watch?v=WVmMV_J4XGw](https://www.youtube.com/watch?v=WVmMV_J4XGw): Ciat Lonbarde Shbobo Shnth - improv.
+* [https://www.youtube.com/watch?v=DR2iS1Z8UfM](https://www.youtube.com/watch?v=DR2iS1Z8UfM): shnthploration 20140818. 
+* [https://www.youtube.com/watch?v=OqBkx-M4NNo](https://www.youtube.com/watch?v=OqBkx-M4NNo): Shbobo Shnth.
+* [https://www.youtube.com/watch?v=WCwFCZrxBjM](https://www.youtube.com/watch?v=WCwFCZrxBjM): Shbobo Shnth - Demonstrating an basic organ patch.
+* [https://www.youtube.com/watch?v=FDBXdMWUT8U](https://www.youtube.com/watch?v=FDBXdMWUT8U): Shbobo Shnth Tare explanation.
+* [https://www.youtube.com/watch?v=hzKitZueNNs](https://www.youtube.com/watch?v=hzKitZueNNs): ShnthTune Chromatic.
+* [https://www.youtube.com/watch?v=i6hw7OO-SVA](https://www.youtube.com/watch?v=i6hw7OO-SVA): shnth gernatron lute.
+* [](): 
+* [](): 
