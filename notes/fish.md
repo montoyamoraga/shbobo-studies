@@ -21,14 +21,10 @@ Patches can be composed visually, mostly through dragging and dropping, but also
 
 This is the patch that Fish thus composed (with random values for spacepress):
 
- Doubleclick
+Doubleclick
 Doubleclick shall become an important tool in this new version. As mentioned, a doubleclick on any recipe will upload it to the device. However, if you double click on the head of an expression, the symbol that denotes its opcode, the program will open up a representative help file from the local "tutor" directory. Thus doubleclicking "horn" will open up "horn.txt" to explain it.
 Fish Soup Tank Boat
 Let's review what expressions are. In lisp, there is only one kind of expression, besides symbols, the parentheses, (). In Shlisp, as it stands, there are Fish, and Soup, respectively denoted as () and {}. Fish is a DSP core expression, and Soup is a preset. The new version of Fish paves the way for two new types, known as Tank and Boat, denoted as [] and <>. They are not implemented yet, but Tank will be for listing things and Boat will be for scripting things in classical Lisp, thus the possibility for generative patches. Note that the previous version of Fish had randuplicate, and this has been eliminated because Tank and Boat will be bearing the burden of generating permutations of patches.
-
-The new version of Fish is available at shbobo.net, as shbobo.zip 
-
-
 
 
 The rules of fishiness:
@@ -136,8 +132,3 @@ The Shnth, by Shbobo, is a computer music device that features the ARM Cortex M3
 
   As I spoke of earlier, the Shnth is an attempt to do classic computer music in an embedded setting.  Granular synthesis was a big goal, but we could only fit a limited number in.  Thus it is the sound, the hallmark of granular synthesis, but unlimited clouds are not possible.  I like it better, with limitations, and I think you will too!  It was an adventure, quite frustrating at times, especially programming the USB stack.  But everything folds over, and the USB code may have even informed the more creative, sonic codes.  Here's two pdfs for the benefit of the audience:
 
- Shbobo was founded around 2010 by Peter Blasser and Steve Korn. An alternative name for the company was KORNBLASSER. We decided Shbobo was better because it sound-symbolizes "sh" for data and bobo is the bouncing and alive sound of human gestures. As you can see by the picture, I leaned on Steve a lot and he facilitated a bunch. It was his original idea of taking the analog inventions of Ciat-Lonbarde and making them USB. 
-
-SHTAR: The neck is marked, with neutral intervals in brass and power chords in steel. 33 frets control computer music, with heart transducer (sensing pressure) and bridge pickup. Two knobs aux Eurorack inputs. Three modes of production: acoustic; add computer music; multiply by computer music (stereo ring mod). USB interfaces to host as does the SHNTH. There is a red light. 
-
- The SHNTH, a computer music device by SHBOBO, features the ARM Cortex 32 bit processor. It connects via USB to host computer (windows, linux, or macintosh) which may read its squish data, or program the standalone synthesizer in the computer music language, SHLISP. A switch enables internal batteries; electronic sounds out a stereo-mini jack. It is handtop: four bars on top feel your fingers and two woven antennae below sense palm flesh, complimented by a battery of buttons. There are red lights. 
