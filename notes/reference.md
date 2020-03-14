@@ -43,5 +43,6 @@
 * [https://www.youtube.com/watch?v=FDBXdMWUT8U](https://www.youtube.com/watch?v=FDBXdMWUT8U): Shbobo Shnth Tare explanation.
 * [https://www.youtube.com/watch?v=hzKitZueNNs](https://www.youtube.com/watch?v=hzKitZueNNs): ShnthTune Chromatic.
 * [https://www.youtube.com/watch?v=i6hw7OO-SVA](https://www.youtube.com/watch?v=i6hw7OO-SVA): shnth gernatron lute.
-* [](): 
-* [](): 
+* [https://www.youtube.com/watch?v=n_iBEWA5DkQ](https://www.youtube.com/watch?v=n_iBEWA5DkQ): shnth playing Aalto. 
+* [https://www.youtube.com/watch?v=A8LdBUWpIb8](https://www.youtube.com/watch?v=A8LdBUWpIb8): Illucia (PCO app) + shbobo shnth 2.
+* [https://www.youtube.com/watch?v=abkeqcQCpnQ](https://www.youtube.com/watch?v=abkeqcQCpnQ): Peter Blasser demonstrates some amazing instruments.
