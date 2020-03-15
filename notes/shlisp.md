@@ -983,13 +983,14 @@ smal: finer adjustment of value (lsb)
 
 example:
 
-dirac                [dirac] liszt
-
-Description:         invokes ‘dirac’ mode in which values are unsigned (range of -128 to 127)
-
-liszt: takes an unlimited list
-
-        example: ([arab] ….
+* dirac
+  * [dirac] liszt
+  * Description: invokes ‘dirac’ mode in which values are unsigned (range of -128 to 127)
+  * liszt: takes an unlimited list
+  * example:
+    ```
+    ([arab] ….
+    ```
 
 * lights
   * [lights] inn
