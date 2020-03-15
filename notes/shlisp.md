@@ -253,219 +253,157 @@ Fog and swamp both output a superposition of the four grains.  Now, what is the 
 
 Part 5. Glossary of m-expressions
 
-wind                [wind] mul add
-
-                Description: transmits the value received by the onboard microphone
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-                example:
-
-                ;use mic to control volume and pitch of triangle oscillator
-
-                ([left]
-
-([arab]
-
-([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
-
-)
-
-corp                [corp] mul add
-
-Description: transmits the value of the specified antenna, range is -128 to 127
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-                example:
-
-                ;use corp to widely bend horn pitch. slew smooths out steppiness
-
-                ([horn a] ([slew a] ([corp a] 70 30) 8 8) ([slew b] ([corp b] 30 70) 8 8))
-
-bar                 [bar] mul add
-
-Description: transmits the value of the specified barre. typical response is an s-curve (press and release) between -128 to 127
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-                ;simple 4note saw organ
-
-                ([saw a] 24 94 ([bar a])) ([saw b] 28 85 ([bar b]))
-
-                ([saw c] 39 73 ([bar c])) ([saw d] 43 61 ([bar d]))
-
-                ;simple sidrassi emulation with panning
-
-                ([horn a] 24 94 ([bar a])) ([horn b] 28 85 ([bar b]))
-
-                ([horn c] 39 73 ([bar c])) ([horn d] 43 61 ([bar d]))                
-
-                (pan ([horn a]) ([bar a])) (pan ([horn b]) ([bar b]))
-
-                (pan ([horn c]) ([bar c])) (pan ([horn d]) ([bar d]))        
-
-minor                 [minor] mul add
-
-Description: transmits the value of the bottom buttons (0 or 1)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-                ;use minor buttons to play synth
-
-                ([horn b] 24 126 ([slew b] ([minor b]) 80 5))
-
-                ([horn c] 36 127 ([slew c] ([minor c]) 80 5))
-
-                ([horn d] 48 128 ([slew d] ([minor d]) 80 5))
-
-major                 [major] mul add
-
-Description: transmits the value of the top buttons  (0 or 1)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-                ;use major buttons and bars to play synth with filtering
-
-                ([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
-
-                ([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))        
-
-                ([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
-
-horn                 [horn] nume deno mul add
-
-Description: a triangle oscillator
-
-nume: sets the rate at which the oscillator rises and falls
-
-deno: sets the oscillator’s boundaries (height/depth).
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:         
-
-;use barres to amplitude modulate
-
-([left]
-
-([horn a]  84 ([corp a] -12 48) ([bar a]))
-
-([horn b]  96 ([corp b] -16 48) ([bar d])))
-
-;frequency modulate the nume with another horn
-
-([right]
-
-([arab]
-
-([horn c]  ([horn b]) ([corp a] 40 96) ([swoop c] ([square] ([bar c]) 50) 4 252))
-
-([horn d]  ([horn a]) ([corp b] 30 126) ([swoop d] ([square] ([bar b]) 50) 6 242)))
-
-saw                 [saw] nume deno mul add
-
-Description: a sawtooth oscillator  (instantaneous rise)
-
-nume: sets the rate at which the oscillator falls
-
-deno: sets the oscillator’s boundaries (height/depth)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:  ; turn saws on and off with toggle
-
-([right] ([right]
-
-([toggle a] ([major d])
-
-        ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55)))
-
-)))
-
-([left]
-
-([toggle b] ([major b])
-
-        ([saw b] 38 111 ([swoop b] ([swoop b] 1) 15 55)))
-
-([toggle c] ([major c])
-
-        ([saw b] 52 111 ([swoop c] ([swoop c] 1) 3 118)))
-
-toggle                [toggle] square
-
-                Description:  turns things on and off
-
-                square: switches the toggle from on to off
-
-                example:
-
-; use minor b button to toggle on/off a granular synth you control with corps
-
-                ([fog a] ([dust a] ([corp a] 100) ([toggle a] ([minor b])))
-
-([corp b] 40 20) ([corp a] 20 105) ([corp a] 68 24) ([corp b] 60 64))
-
-togo                 [togo a] signotrig liszt  
-
-Description: steps through a sequence of values, advancing one step each time it receives a trigger. takes an unlimited list
-
-signotrig: a signed trigger - positive moves one step forward in the sequence, negative moves one step back. in dirac mode it may be necessary to use [square] before some trigger sources.
-
-liszt: the sequence of values or S-expressions to be stepped through
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:
-
-([horn a]
-
-([togo a] ([major d]) 53 13 94 11 52 110 35 26 35 43 36 8)
-
-([togo b] ([major d]) 65 14 32 85 57 43 14 28 50 11 35)
-
-([slew a] ([major d]) 8 8)))
-
-swoop                [swoop] trig nume deno mul add
-
-Description: a slow triangle wave, can be used as envelope or LFO
-
-trig/square: begins a swoop cycle
-
-nume: sets the rate of rise and fall of the swoop
-
-deno: sets the swoop’s boundaries (height or depth)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:
-
-; use minor b button to trigger a note with separate envelopes for amplitude,  filter q and filter freq
-
-([wave a] ([horn a] 60 84 ([swoop a] ([minor b]) 3 120))
-
-([swoop b] ([minor b]) 10 30 40 5)
-
-([swoop c] ([minor b]) 2 72))
+* wind
+  * [wind] mul add
+  * Description: transmits the value received by the onboard microphone
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;use mic to control volume and pitch of triangle oscillator
+    ([left]
+        ([arab]
+        ([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
+      )
+    ```
+
+* corp
+  * [corp] mul add
+  * Description: transmits the value of the specified antenna, range is -128 to 127
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;use corp to widely bend horn pitch. slew smooths out steppiness
+    ([horn a] ([slew a] ([corp a] 70 30) 8 8) ([slew b] ([corp b] 30 70) 8 8))
+    ```
+
+* bar
+  * [bar] mul add
+  * Description: transmits the value of the specified barre. typical response is an s-curve (press and release) between -128 to 127
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;simple 4note saw organ
+    ([saw a] 24 94 ([bar a])) ([saw b] 28 85 ([bar b]))
+    ([saw c] 39 73 ([bar c])) ([saw d] 43 61 ([bar d]))
+
+    ;simple sidrassi emulation with panning
+    ([horn a] 24 94 ([bar a])) ([horn b] 28 85 ([bar b]))
+    ([horn c] 39 73 ([bar c])) ([horn d] 43 61 ([bar d]))
+    (pan ([horn a]) ([bar a])) (pan ([horn b]) ([bar b]))
+    (pan ([horn c]) ([bar c])) (pan ([horn d]) ([bar d]))
+    ```
+
+* minor
+  * [minor] mul add
+  * Description: transmits the value of the bottom buttons (0 or 1)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;use minor buttons to play synth
+    ([horn b] 24 126 ([slew b] ([minor b]) 80 5))
+    ([horn c] 36 127 ([slew c] ([minor c]) 80 5))
+    ([horn d] 48 128 ([slew d] ([minor d]) 80 5))
+    ```
+
+* major
+  * [major] mul add
+  * Description: transmits the value of the top buttons  (0 or 1)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;use major buttons and bars to play synth with filtering
+    ([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
+    ([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))
+    ([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
+    ```
+
+* horn
+  * [horn] nume deno mul add
+  * Description: a triangle oscillator
+  * nume: sets the rate at which the oscillator rises and falls
+  * deno: sets the oscillator’s boundaries (height/depth).
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;use barres to amplitude modulate
+    ([left]
+    ([horn a]  84 ([corp a] -12 48) ([bar a]))
+    ([horn b]  96 ([corp b] -16 48) ([bar d])))
+
+    ;frequency modulate the nume with another horn
+    ([right]
+    ([arab]
+    ([horn c]  ([horn b]) ([corp a] 40 96) ([swoop c] ([square] ([bar c]) 50) 4 252))
+    ([horn d]  ([horn a]) ([corp b] 30 126) ([swoop d] ([square] ([bar b]) 50) 6 242)))
+    ```
+
+* saw
+  * [saw] nume deno mul add
+  * Description: a sawtooth oscillator  (instantaneous rise)
+  * nume: sets the rate at which the oscillator falls
+  * deno: sets the oscillator’s boundaries (height/depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:  ; turn saws on and off with toggle
+    ```
+    ([right] ([right]
+    ([toggle a] ([major d])
+      ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55)))
+    )))
+    ([left]
+    ([toggle b] ([major b])
+      ([saw b] 38 111 ([swoop b] ([swoop b] 1) 15 55)))
+    ([toggle c] ([major c])
+      ([saw b] 52 111 ([swoop c] ([swoop c] 1) 3 118)))
+    ```
+
+* toggle
+  * [toggle] square
+  * Description:  turns things on and off
+  * square: switches the toggle from on to off
+  * Example:
+  ```
+    ; use minor b button to toggle on/off a granular synth you control with corps
+  ([fog a] ([dust a] ([corp a] 100) ([toggle a] ([minor b])))
+    ([corp b] 40 20) ([corp a] 20 105) ([corp a] 68 24) ([corp b] 60 64))
+  ```
+
+* togo
+  * [togo a] signotrig liszt
+  * Description: steps through a sequence of values, advancing one step each time it receives a trigger. takes an unlimited list
+  * signotrig: a signed trigger - positive moves one step forward in the sequence, negative moves one step back. in dirac mode it may be necessary to use [square] before some trigger sources.
+  * liszt: the sequence of values or S-expressions to be stepped through
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ([horn a]
+    ([togo a] ([major d]) 53 13 94 11 52 110 35 26 35 43 36 8)
+    ([togo b] ([major d]) 65 14 32 85 57 43 14 28 50 11 35)
+    ([slew a] ([major d]) 8 8)))
+    ```
+
+* swoop
+  * [swoop] trig nume deno mul add
+  * Description: a slow triangle wave, can be used as envelope or LFO
+  * trig/square: begins a swoop cycle
+  * nume: sets the rate of rise and fall of the swoop
+  * deno: sets the swoop’s boundaries (height or depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; use minor b button to trigger a note with separate envelopes for amplitude,  filter q and filter freq
+    ([wave a] ([horn a] 60 84 ([swoop a] ([minor b]) 3 120))
+    ([swoop b] ([minor b]) 10 30 40 5)
+    ([swoop c] ([minor b]) 2 72))
+    ```
 
 * mount
   * [mount] nume deno mul add
