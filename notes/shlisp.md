@@ -113,53 +113,35 @@ BUTTS
 
 Without further ado, let's list the butts that you can call, to give you a feel.  When there are parameters, they are listed following the opcode.  For butts, the only parameters are mul and add, which are optional.
 
-[wind] mul add ;the microphone
-
-[corp a/b] mul add ;the woven antennae
-
-[bar a/b/c/d] mul add ;one of the bars
-
-[minor a/b/c/d] mul add ;the lower buttons
-
-[major a/b/c/d] mul add ;the upper buttons
-
-minor are the lower tier of four buttons, and major are the upper.
+* [wind] mul add ;the microphone
+* [corp a/b] mul add ;the woven antennae
+* [bar a/b/c/d] mul add ;one of the bars
+* [minor a/b/c/d] mul add ;the lower buttons
+* [major a/b/c/d] mul add ;the upper buttons
+* minor are the lower tier of four buttons, and major are the upper.
 
 NUTS
-
-[left] liszt; means it takes a superposition
-
-[right] liszt;  an indefinite amount of parameters
-
-[srate] value ;  change sample rate to this value
-
-[jump] value ;  if zero stay here, otherwise jump value situations, which may be negative.
-
-[mul] inn mul add; do a multiplication
-
-[add] inn add ; do an add
-
-[reflect] inn oth  mul add ; a type of waveshaper (reflects down at threshold)
-
-[return] inn oth mul add ; another type of waveshaper (returns to 0 at threshold)
-
-[and] inn oth ; another waveshaper, also can be logic
-
-[xor] inn oth ; another waveshaper,  also can be logic
-
-[modo] inn oth; a circuit-bending effect, multiples two inputs w/o scaling and wraps the result
-
-[short] big little ;make a 16 bit constant
+* [left] liszt; means it takes a superposition
+* [right] liszt;  an indefinite amount of parameters
+* [srate] value ;  change sample rate to this value
+* [jump] value ;  if zero stay here, otherwise jump value situations, which may be negative.
+* [mul] inn mul add; do a multiplication
+* [add] inn add ; do an add
+* [reflect] inn oth  mul add ; a type of waveshaper (reflects down at threshold)
+* [return] inn oth mul add ; another type of waveshaper (returns to 0 at threshold)
+* [and] inn oth ; another waveshaper, also can be logic
+* [xor] inn oth ; another waveshaper,  also can be logic
+* [modo] inn oth; a circuit-bending effect, multiples two inputs w/o scaling and wraps the result
+* [short] big little ;make a 16 bit constant
 
 ShLISP runs on the arm cortex which is a 32-bit processor.  The DSP uses all 32 bits, while signal patching is done with 16 bits.  The byte code you are programming uses 8 bits per byte, so the [short] mexp is telling that you can have finer precision if you need it. [short] is especially useful in generating difference tones, as in the example below. By playing around with both the big and little values of the short as well as the deno value of the horn, a huge range of sonic artifacts can be explored:
 
+```
 ([right]
-
-([horn a] ([short] 110 20) 50)
-
-([horn b] ([short] 111 20) 50)
-
+  ([horn a] ([short] 110 20) 50)
+  ([horn b] ([short] 111 20) 50)
 )
+```
 
 OPCODES
 * [horn a..h] nume deno mul add ; triangle oscillator
