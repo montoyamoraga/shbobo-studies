@@ -991,16 +991,14 @@ liszt: takes an unlimited list
 
         example: ([arab] ….
 
-lights        [lights] inn
+* lights: [lights] inn
 
 Description:  used to address the 8 burgundy LEDs                
 
-                inn:  determines which LEDs are on/off
+inn:  determines which LEDs are on/off
 
                 example:
 
                 ; use LEDs to represent value of [corp a]
 
                 ([lights] ([corp a]))
-
-Published by Google Drive–Report Abuse–Updated automatically every 5 minutes
