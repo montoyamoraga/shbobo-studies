@@ -677,101 +677,69 @@ example:
 
 ([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
 
-wave                [wave ] inn q rate mul add
+* wave
+  * [wave ] inn q rate mul add
+* salt
+  * [salt ] inn q rate mul add
+  * Description: variable resonance filters - wave is lopass; salt is highpass;
+  * inn: the source to be filtered
+  * q: sets the filter resonance
+  * rate: sets the filter base frequency
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; waveering a saw wave with freq being swept by mount, vary Q with corp
+      ([pan] ([mount a])
+    ([wave a]
+        ([saw a] 36 87 )
+      ([corp a] 14 2)  ([mount a] 11 97))
+    ```
 
-salt                [salt ] inn q rate mul add
+* water
+  * [water ] trig q rate mul add
+  * Description: a wash of resonant filter pings
+  * trig: the trigger source
+  * q: sets the filter resonance
+  * rate: sets the filter base frequency
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
 
-Description: variable resonance filters - wave is lopass; salt is highpass;
+* horse
+  * [horse] nume nume deno deno mul add
+  * Description: an oscillator with independently settable rise and fall and upper/lower boundaries
+  * nume: sets the rate at which the oscillator rises
+  * deno: sets the rate at which the oscillator falls
+  * nume: sets the oscillator’s upper boundary (height)
+  * deno: sets the oscillator’s lower boundary (depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Examples:
+    ```
+    ; set waveshape with barres and corps, waveer output with [corp a] also modulating cutoff)
+      ([wave a]
+        ([horse a]
+          ([bar a] 26 ([corp a] 35 50))
+          ([bar b] 14 91)
+          ([bar c] 53 61)
+          ([bar d] 42 ([corp b] 22 63))
+        ([corp b]))
+      11  ([corp a] 33 60)
+    ```
 
-inn:         the source to be filtered
-
-q:          sets the filter resonance
-
-rate:         sets the filter base frequency
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-example:         
-
-; waveering a saw wave with freq being swept by mount, vary Q with corp
-
-        ([pan] ([mount a])
-
-([wave a]
-
-                ([saw a] 36 87 )
-
-        ([corp a] 14 2)  ([mount a] 11 97))
-
-water                [water ] trig q rate mul add
-
-Description: a wash of resonant filter pings
-
-trig:         the trigger source
-
-q:          sets the filter resonance
-
-rate:         sets the filter base frequency
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-example:         
-
-horse                 [horse] nume nume deno deno mul add
-
-Description: an oscillator with independently settable rise and fall and upper/lower boundaries
-
-nume:  sets the rate at which the oscillator rises
-
-deno:        sets the rate at which the oscillator falls
-
-nume:         sets the oscillator’s upper boundary (height)
-
-deno:        sets the oscillator’s lower boundary (depth)
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-Examples:         
-
-; set waveshape with barres and corps, waveer output with [corp a] also modulating cutoff)
-
-        ([wave a]
-
-                ([horse a]
-
-                        ([bar a] 26 ([corp a] 35 50))
-
-                        ([bar b] 14 91)
-
-                        ([bar c] 53 61)
-
-                        ([bar d] 42 ([corp b] 22 63))
-
-                ([corp b]))
-
-        11  ([corp a] 33 60)
-
-slew                [slew] inn upp donn mul add
-
-Description: slows the movement from one value to the next; works bi-directionally
-
-inn:        input the expression to be slewed
-
-upp:         the slew rate for increasing values (lower number is slower)
-
-donn:         the slew rate for decreasing values (lower number is slower)
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-example:         ([slew a]) ….
+* slew
+  * [slew] inn upp donn mul add
+  * Description: slows the movement from one value to the next; works bi-directionally
+  * inn: input the expression to be slewed
+  * upp: the slew rate for increasing values (lower number is slower)
+  * donn: the slew rate for decreasing values (lower number is slower)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ([slew a]) ….
+    ```
 
 * wheel
   * [wheel] up down mul add
