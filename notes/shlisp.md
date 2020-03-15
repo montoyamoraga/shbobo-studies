@@ -773,197 +773,156 @@ add:         this value will be added to output
 
 example:         ([slew a]) ….
 
-wheel                [wheel] up down mul add
-
-Description:         accumulates values, often used to make bars, buttons and corps increment upwards and/or downwards.
-
-up:        value to be positively incremented
-
-down:  value to be negatively incremented
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-        example:         ([wheel a] ….
-
-sauce                 [sauce] period inn mul add
-
-Description: slows things down by only evaluating expressions after waiting a specified delay period.         
-
-        period:        sets the period to wait before evaluating each expression
-
-        inn:         the expression to be slowed down
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-example:         ([sauce c] ….
-
-salsa                [salsa] trig inn mul add
-
-        Description: a sample and hold
-
-        trig:         triggers a sample
-
-        inn:         the source to be sampled
-
-        mul:         output will be multiplied by this value
-
-        add:         this value will be added to output
-
-press                [press] inn att dec mul add
-
-        Description: a compressor
-
-        inn:         the source to be compressed
-
-        att:         the attack of the compressor
-
-        dec:        the decay of the compressor
-
-        thresh:        the threshold above which the compressor kicks in
-
-        mul:         output will be multiplied by this value
-
-        add:         this value will be added to output
-
-        example:
-
-leak                [leak] inn nume mul add
-
-                Description: a noise gate
-
-                inn: the source to be gated
-
-                nume: the amount of noise gating to apply
-
-        mul: output will be multiplied by this value
-
-        add: this value will be added to output
-
-reflect                [reflect] inn oth mul add
-
-return                [return] inn oth mul add
-
-and                [and] inn oth mul add
-
-xor                [xor] inn oth mul add
-
-Description:  a family of waveshapers; reflect - reflects input down at threshold; return-  returns input to 0 at threshold; and, xor - apply logic functions to inputs
-
-inn: input to be waveshaped
-
-oth: threshold / other value for logic function
-
-mul: output will be multiplied by this value
-
-        add: this value will be added to output
-
-negwon        (negwon)
-
-                Description: use this expression for the value ‘-1’
-
-left                [left] liszt
-
-Description: sends the output to the left DAC
-
-liszt: takes an unlimited list
-
-right                [right] liszt
-
-Description: sends the output to the right DAC
-
-liszt: takes an unlimited list
-
-square        [square] inn oth mul add
-
-Description:  a comparator which generates a squarewave if the input is greater than the other.
-
-        inn: the input
-
-        oth: the other input (reference)
-
-mul: output will be multiplied by this value
-
-        add: this value will be added to output
-
-modo                [modo] inn oth mul add
-
-Description:  a circuit-bending type effect whereby one input is mulitplied by another without scaling to keep it in range
-
-inn: the input
-
-oth: the other input
-
-mul: output will be multiplied by this value
-
-        add: this value will be added to output
-
-example:
-
-srate                 [srate] inn
-
-Description: sets the sampling rate. this is a global variable        
-
-inn:        sets the sampling rate
-
-example:   ([srate] ….
-
-mul                [mul] inn mul add
-
-Description: multiplies values in the list.
-
-inn: input to be mul’d
-
-mul: inn will be multiplied by this value
-
-        add: this value will be added to output
-
-        example:  [mul] ….
-
-add                [add] liszt
-
-Description:         adds values in the list. can be used to combine several s-expressions into one m-expression. it is infinitely reusable
-
-liszt: takes an unlimited list
-
-        example: ([addl] ….
-
-tar                [tar] mul add
-
-Description:         transmits the value of the tare button (0 or 1)
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-                example:  ([tar] ….
-
-orange        [orange] inn
-
-Description:          WARNING: this is an experimental nut, which makes the orange LED addressable in the same manner as [lights]. however since doing so also initiates fast-charging of the batteries, continual use of this nut could possibly lead to shortened battery life. therefore it is NOT recommended to use [orange] until further testing can be completed.
-
-                
-
-                inn:  determines if LED is on or off
-
-jump                [jump] value
-
-Description:   if 0, stays put; otherwise  jumps value situations, as demarcated by curly brackets {... }. value may be negative
-
-value: moves this number of situations within a txt file.
-
- 
-
-pan                [pan] inn place
-
-Description: pans the output through the stereo field. In Dirac mode, -128 is full left and 127 is full right. In Arab mode 0 is full left and 255 is full right
-
-inn: value to be panned
-
-place: position in the stereo field
+* wheel
+  * [wheel] up down mul add
+  * Description: accumulates values, often used to make bars, buttons and corps increment upwards and/or downwards.
+  * up: value to be positively incremented
+  * down: value to be negatively incremented
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+  ```
+  ([wheel a] ….
+  ```
+
+* sauce
+  * [sauce] period inn mul add
+  * Description: slows things down by only evaluating expressions after waiting a specified delay period.
+  * period: sets the period to wait before evaluating each expression
+  * inn: the expression to be slowed down
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ([sauce c] ….
+    ```
+
+* salsa
+  * [salsa] trig inn mul add
+  * Description: a sample and hold
+  * trig: triggers a sample
+  * inn: the source to be sampled
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+
+* press
+  * [press] inn att dec mul add
+  * Description: a compressor
+  * inn: the source to be compressed
+  * att: the attack of the compressor
+  * dec: the decay of the compressor
+  * thresh: the threshold above which the compressor kicks in
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+
+* leak
+  * [leak] inn nume mul add
+  * Description: a noise gate
+  * inn: the source to be gated
+  * nume: the amount of noise gating to apply
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+
+* reflect
+  * [reflect] inn oth mul add
+* return
+  * [return] inn oth mul add
+* and
+  * [and] inn oth mul add
+* xor
+  * [xor] inn oth mul add
+  * Description:  a family of waveshapers; reflect - reflects input down at threshold; return-  returns input to 0 at threshold; and, xor - apply logic functions to inputs
+  * inn: input to be waveshaped
+  * oth: threshold / other value for logic function
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+
+* negwon
+  * (negwon)
+  * Description: use this expression for the value ‘-1’
+
+* left
+  * [left] liszt
+  * Description: sends the output to the left DAC
+  * liszt: takes an unlimited list
+
+* right
+  * [right] liszt
+  * Description: sends the output to the right DAC
+  * liszt: takes an unlimited list
+
+* square
+  * [square] inn oth mul add
+  * Description:  a comparator which generates a squarewave if the input is greater than the other.
+  * inn: the input
+  * oth: the other input (reference)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+
+* modo
+  * [modo] inn oth mul add
+  * Description: a circuit-bending type effect whereby one input is mulitplied by another without scaling to keep it in range
+  * inn: the input
+  * oth: the other input
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+
+* srate
+  * [srate] inn
+  * Description: sets the sampling rate. this is a global variable
+  * inn: sets the sampling rate
+  * Example:
+    ```
+    ([srate] ….
+    ```
+
+* mul
+  * [mul] inn mul add
+  * Description: multiplies values in the list.
+  * inn: input to be mul’d
+  * mul: inn will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    [mul] ….
+    ```
+
+* add
+  * [add] liszt
+  * Description: adds values in the list. can be used to combine several s-expressions into one m-expression. it is infinitely reusable
+  * liszt: takes an unlimited list
+  * Example:
+    ```
+    ([addl] ….
+    ```
+
+* tar
+  * [tar] mul add
+  * Description: transmits the value of the tare button (0 or 1)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * example:
+    ```
+    ([tar] ….
+    ```
+
+* orange
+  * [orange] inn
+  * Description:  WARNING: this is an experimental nut, which makes the orange LED addressable in the same manner as [lights]. however since doing so also initiates fast-charging of the batteries, continual use of this nut could possibly lead to shortened battery life. therefore it is NOT recommended to use [orange] until further testing can be completed.
+  * inn:  determines if LED is on or off
+
+* jump
+  * [jump] value
+  * Description: if 0, stays put; otherwise  jumps value situations, as demarcated by curly brackets {... }. value may be negative
+  * value: moves this number of situations within a txt file.
+
+* pan
+  *[pan] inn place
+  * Description: pans the output through the stereo field. In Dirac mode, -128 is full left and 127 is full right. In Arab mode 0 is full left and 255 is full right
+  * inn: value to be panned
+  * place: position in the stereo field
 
 * arab
   * [arab] liszt
