@@ -162,58 +162,34 @@ ShLISP runs on the arm cortex which is a 32-bit processor.  The DSP uses all 32 
 )
 
 OPCODES
+* [horn a..h] nume deno mul add ; triangle oscillator
+* [saw a..h] nume deno mul add ; saw oscillator
+* [toggle a..h] square mul add 
+* [togo a..h] signotrig liszt
+* [swoop a..h] trig nume deno mul add ;a triggered triangular envelope
+* [mount a..h] nume deno mul add ; slow LFO
+* [smoke a..d] mul add; white smoke
+* [dust a..d] amount mul add ;random pulses
+* [fog a..d] trig nume deno nume deno mul add ; granular oscillator
+* [haze a..d] trig nume deno nume deno mul add ; granular oscillator
+* [swamp a..d] trig nume deno nume deno mul add ; granular oscillator
+* [string a..d] trig nume deno feedback mul add ; stringlus-strong
+* [comb a..d] inn nume deno feedback mul add ; comb filter
+* [zither a..d] trig deno feedback mul add; a quartet of strings
+* [wave a..d] inn q freq mul add ; resonant lopass filter
+* [water a..d] trig q freq mul add ; triggered filter pings
+* [salt a..d] inn q freq mul add ; hipass filter
+* [horse a..d] upp don upp don mul add ; fourses oscillator
+* [slew a..d] inn upp don mul add ; resonant filter
+* [wheel a..d] upp don mul add ; triggered filter pings
+* [sauce a..d] period mul add; slows things down
+* [salsa a..d] trig inn mul add ; sample and hold
+* [square] inn ref mul add ;a comparator
 
-[horn a..h] nume deno mul add ; triangle oscillator
-
-[saw a..h] nume deno mul add ; saw oscillator
-
-[toggle a..h] square mul add 
-
-[togo a..h] signotrig liszt
-
-[swoop a..h] trig nume deno mul add ;a triggered triangular envelope
-
-[mount a..h] nume deno mul add ; slow LFO
-
-[smoke a..d] mul add; white smoke
-
-[dust a..d] amount mul add ;random pulses
-
-[fog a..d] trig nume deno nume deno mul add ; granular oscillator
-
-[haze a..d] trig nume deno nume deno mul add ; granular oscillator
-
-[swamp a..d] trig nume deno nume deno mul add ; granular oscillator
-
-[string a..d] trig nume deno feedback mul add ; stringlus-strong
-
-[comb a..d] inn nume deno feedback mul add ; comb filter
-
-[zither a..d] trig deno feedback mul add; a quartet of strings
-
-[wave a..d] inn q freq mul add ; resonant lopass filter
-
-[water a..d] trig q freq mul add ; triggered filter pings
-
-[salt a..d] inn q freq mul add ; hipass filter
-
-[horse a..d] upp don upp don mul add ; fourses oscillator
-
-[slew a..d] inn upp don mul add ; resonant filter
-
-[wheel a..d] upp don mul add ; triggered filter pings
-
-[sauce a..d] period mul add; slows things down
-
-[salsa a..d] trig inn mul add ; sample and hold
-
-[square] inn ref mul add ;a comparator
-
- ShLlisp is running on a 32-bit processor but it is not float computation;  rather, it is computing sounds using "Just Intonation".  Thus it is using "just integers".  In floats, when you multiply signals, they are usually between -1 and 1, so the result doesn't go out of range, but stays neatly between unary values.  The same thing can be done with integers, but how to specify it?  
+ShLlisp is running on a 32-bit processor but it is not float computation;  rather, it is computing sounds using "Just Intonation".  Thus it is using "just integers".  In floats, when you multiply signals, they are usually between -1 and 1, so the result doesn't go out of range, but stays neatly between unary values.  The same thing can be done with integers, but how to specify it?  
 
 The mul parameter is actually better thought of as a "scaling" value.  In signed numbers, 127 is full steam, -128 is full anti-steam.  So we can write out what mul really represents as:
 
- 
 
 "signal * mul / 128".
 
