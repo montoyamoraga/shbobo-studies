@@ -467,215 +467,142 @@ example:
 
 ([swoop c] ([minor b]) 2 72))
 
-mount                [mount] nume deno mul add
-
-Description: a slow-cycling LFO
-
-nume: sets the rate of rise and fall        
-
-deno: sets the boundaries
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:
-
-; slow moving LFOs modulating pitch (nume and deno) and volume of two saws
-
-([saw a] ([mount a] 73 21) ([mount b] 32 41) ([mount c] 80 100))
-
-([saw b] ([mount d] 13 52) ([mount e] 99 98) ([mount f] 23 83))
-
-smoke         [smoke] mul add
-
-Description: generates white smoke (random values)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:
-
-; use major b and d buttons to trigger 808 kick and hihat
-
-([smoke a] ([slew a] ([major a]) 100 5 64))
-
-([horn a] 24 127([slew b] ([minor a]) 100 1))
-
-dust                 [dust] speed mul add
-
-Description: pulses spaced randomly over a wide range
-
-speed: sets the density of pulses
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:
-
-; use the bars to trigger a chaotic cascade of zither strings
-
-([zither a] ([sauce a] 30 ([dust a] ([bar a]))) ([corp a]) ([corp b] 80 40))
-
-([zither b] ([sauce b] 20 ([dust b] ([bar b]))) ([corp b] 70 50) ([corp a]))
-
-([zither c] ([sauce c] 10 ([dust c] ([bar c]))) ([corp a]) ([corp b] 60 60))
-
-([zither d] ([dust d] ([bar d] 60)) ([corp b] 50 70) ([corp a]))
-
-fog                [fog] trig nume deno nume deno mul add
-
-haze                [haze] trig nume deno nume deno mul add
-
-swamp        [swamp] trig nume deno nume deno mul add
-
-Description: these are granular synthesis-type effects, each utilizing an internal oscillator and envelope to articulate the grains. fog uses horn grains, haze uses saw grains and swamp features animated grains
-
-trig: trigger the playing of grains
-
-nume:sets the rate of rise/fall of the internal envelope
-
-deno: sets the boundaries (height/depth) of the internal envelope
-
-nume: sets the rise/fall of the internal oscillator
-
-deno: sets the boundaries (heigh/depth) of the internal oscillator
-
-mul:  output will be multiplied by this value
-
-add: this value will be added to output
-
-example:
-
-; use the bars to trigger a chaotic cascade of grains
-
-([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
-
-([salsa a] ([dust a]) ([smoke a])) 80)
-
-([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
-
-([salsa b] ([dust b]) ([smoke b])) 60 50))
-
-([right]
-
-([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
-
-([salsa c] ([dust c]) ([smoke c])) 40 50)
-
-([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
-
-([salsa d] ([dust d]) ([smoke d])) 20))
-
-string                 [string] trig nume deno feedback mul add
-
-Description: a stringlus-strong string synthesis algorithm
-
-trig:  the excitation source
-
-nume: numerator of delay period (set to 1 for lower pitch effects)
-
-deno: denominator of delay period (set higher for lower pitch effects)
-
-feedback: sets the feedback amount (set higher for more resonance)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:         
-
-; play strings with butts and corps
-
-([string a] ([minor a]) 1 ([corp b]  8 24) 126)
-
-([string b] ([minor b]) 1 ([corp b]  8 20) 125)
-
-([string c] ([minor c]) 1 ([corp a]  4 16) 127)
-
-([string d] ([minor d]) 1 ([corp a]   4 12) 126)
-
-comb                 [comb] inn nume deno feedback mul add
-
-Description: a comb filter with variable delay time and feedback
-
-inn:  the source to be delayed
-
-nume: numerator of delay period (set to 1 for lower pitch effects)
-
-deno: denominator of delay period (set higher for lower pitch effects)
-
-feedback: sets the feedback amount (set higher for more resonance)
-
-mul:         output will be multiplied by this value
-
-add:         this value will be added to output
-
-example:
-
-; comb filtered resonant pings - play with bars and corps
-
-([right]
-
-([comb a]
-
-          ([water b]
-
-                   ([dust b]  ([corp a] 8) -6)
-
-                   1 ([corp b] 33 38))
-
-   1  100 110))
-
-([left]
-
-([comb b]
-
-          ([sauce a] 3 ([water c]
-
-                   ([dust c]  ([bar a] 18) -8)
-
-                   1 ([bar d] 18 28)))
-
-   1  110 112))
-
-zither                 [string] trig nume deno feedback mul add
-
-Description: stringlus-strong synthesis consisting of 4 plucks per instance
-
-trig:  the excitation source
-
-nume: numerator of delay period (set to 1 for lower pitch effects)
-
-deno: denominator of delay period (set higher for lower pitch effects)
-
-feedback: sets the feedback amount (set higher for more resonance)
-
-mul: output will be multiplied by this value
-
-add: this value will be added to output
-
-example:         
-
-([srate] 12)
-
-([togo a] ([major b]) 10 15 30)
-
-([togo b] ([major c]) 48 60 72)
-
-([togo c] ([major d]) 40 46 54)
-
-([togo d] ([minor d]) () -36)
-
-([left]
-
-([zither b] ([square] ([swoop b] ([swoop b] 1) ([slew a] ([togo a]) 4 4) 100) 1) ([togo b]) 30 118))
-
-([right]
-
-([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
+* mount
+  * [mount] nume deno mul add
+  * Description: a slow-cycling LFO
+  * nume: sets the rate of rise and fall
+  * deno: sets the boundaries
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; slow moving LFOs modulating pitch (nume and deno) and volume of two saws
+    ([saw a] ([mount a] 73 21) ([mount b] 32 41) ([mount c] 80 100))
+    ([saw b] ([mount d] 13 52) ([mount e] 99 98) ([mount f] 23 83))
+    ```
+
+* smoke
+  * [smoke] mul add
+  * Description: generates white smoke (random values)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; use major b and d buttons to trigger 808 kick and hihat
+    ([smoke a] ([slew a] ([major a]) 100 5 64))
+    ([horn a] 24 127([slew b] ([minor a]) 100 1))
+    ```
+
+* dust
+  * [dust] speed mul add
+  * Description: pulses spaced randomly over a wide range
+  * speed: sets the density of pulses
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; use the bars to trigger a chaotic cascade of zither strings
+    ([zither a] ([sauce a] 30 ([dust a] ([bar a]))) ([corp a]) ([corp b] 80 40))
+    ([zither b] ([sauce b] 20 ([dust b] ([bar b]))) ([corp b] 70 50) ([corp a]))
+    ([zither c] ([sauce c] 10 ([dust c] ([bar c]))) ([corp a]) ([corp b] 60 60))
+    ([zither d] ([dust d] ([bar d] 60)) ([corp b] 50 70) ([corp a]))
+    ```
+
+* fog
+  * [fog] trig nume deno nume deno mul add
+* haze
+  * [haze] trig nume deno nume deno mul add
+* swamp
+  * [swamp] trig nume deno nume deno mul add
+  * Description: these are granular synthesis-type effects, each utilizing an internal oscillator and envelope to articulate the grains. fog uses horn grains, haze uses saw grains and swamp features animated grains
+  * trig: trigger the playing of grains
+  * nume: sets the rate of rise/fall of the internal envelope
+  * deno: sets the boundaries (height/depth) of the internal envelope
+  * nume: sets the rise/fall of the internal oscillator
+  * deno: sets the boundaries (heigh/depth) of the internal oscillator
+  * mul:  output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; use the bars to trigger a chaotic cascade of grains
+    ([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
+    ([salsa a] ([dust a]) ([smoke a])) 80)
+    ([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
+    ([salsa b] ([dust b]) ([smoke b])) 60 50))
+    ([right]
+    ([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
+    ([salsa c] ([dust c]) ([smoke c])) 40 50)
+    ([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
+    ([salsa d] ([dust d]) ([smoke d])) 20))
+    ```
+
+* string
+  * [string] trig nume deno feedback mul add
+  * Description: a stringlus-strong string synthesis algorithm
+  * trig:  the excitation source
+  * nume: numerator of delay period (set to 1 for lower pitch effects)
+  * deno: denominator of delay period (set higher for lower pitch effects)
+  * feedback: sets the feedback amount (set higher for more resonance)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; play strings with butts and corps
+    ([string a] ([minor a]) 1 ([corp b]  8 24) 126)
+    ([string b] ([minor b]) 1 ([corp b]  8 20) 125)
+    ([string c] ([minor c]) 1 ([corp a]  4 16) 127)
+    ([string d] ([minor d]) 1 ([corp a]   4 12) 126)
+    ```
+
+* comb
+  * [comb] inn nume deno feedback mul add
+  * Description: a comb filter with variable delay time and feedback
+  * inn: the source to be delayed
+  * nume: numerator of delay period (set to 1 for lower pitch effects)
+  * deno: denominator of delay period (set higher for lower pitch effects)
+  * feedback: sets the feedback amount (set higher for more resonance)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ; comb filtered resonant pings - play with bars and corps
+    ([right]
+    ([comb a]
+      ([water b]
+        ([dust b]  ([corp a] 8) -6)
+        1 ([corp b] 33 38))
+      1  100 110))
+    ([left]
+    ([comb b]
+      ([sauce a] 3 ([water c]
+        ([dust c]  ([bar a] 18) -8)
+        1 ([bar d] 18 28)))
+      1  110 112))
+
+* zither
+  * [string] trig nume deno feedback mul add
+  * Description: stringlus-strong synthesis consisting of 4 plucks per instance
+  * trig: the excitation source
+  * nume: numerator of delay period (set to 1 for lower pitch effects)
+  * deno: denominator of delay period (set higher for lower pitch effects)
+  * feedback: sets the feedback amount (set higher for more resonance)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ([srate] 12)
+    ([togo a] ([major b]) 10 15 30)
+    ([togo b] ([major c]) 48 60 72)
+    ([togo c] ([major d]) 40 46 54)
+    ([togo d] ([minor d]) () -36)
+
+    ([left]
+
+    ([zither b] ([square] ([swoop b] ([swoop b] 1) ([slew a] ([togo a]) 4 4) 100) 1) ([togo b]) 30 118))
+
+    ([right]
+    ([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
+    ```
 
 * wave
   * [wave ] inn q rate mul add
