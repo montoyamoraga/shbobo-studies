@@ -965,23 +965,21 @@ inn: value to be panned
 
 place: position in the stereo field
 
-arab                [arab] liszt
+* arab
+  * [arab] liszt
+  * Description: invokes ‘arabic’ mode in which values are unsigned,  i.e., no negative numbers. value range is thus 0 to 254.
+  * liszt: takes an unlimited list
+  * example:
+    ```
+    ([arab] ….
+    ```
 
-Description:         invokes ‘arabic’ mode in which values are unsigned,  i.e., no negative numbers. value range is thus 0 to 254.
-
-liszt: takes an unlimited list
-
-        Examples:         ([arab] ….
-
-short                [short] bigg smal
-
-Description: describes a value with 16-bit precision. use bigg for coarser adjustments and  smal for finer
-
-bigg: coarser adjustment of value (msb)
-
-smal: finer adjustment of value (lsb)
-
-example:
+* short
+  *[short] bigg smal
+  * Description: describes a value with 16-bit precision. use bigg for coarser adjustments and  smal for finer
+  * bigg: coarser adjustment of value (msb)
+  * smal: finer adjustment of value (lsb)
+  * example:
 
 * dirac
   * [dirac] liszt
