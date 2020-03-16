@@ -1,8 +1,0 @@
-MEXPTOKE("a","","",0x00,1)
-MEXPTOKE("b","","",0x01,1)
-MEXPTOKE("c","","",0x02,1)
-MEXPTOKE("d","","",0x03,1)
-MEXPTOKE("e","","",0x04,1)
-MEXPTOKE("f","","",0x05,1)
-MEXPTOKE("g","","",0x06,1)
-MEXPTOKE("h","","",0x07,1)
