@@ -1,0 +1,9 @@
+{(left 
+ (fog (duste (corp 102)) (corp -72) 119 (corpb -49 -65) (smoked 11 29))) 
+} 
+ {(left 
+ (combd (haze (duste (square (corp 102) 10)) (corp -72) 119 (smoked 11 29) (corpb -49 -65)) 2 110 110)) 
+} 
+ {(left 
+ (swamp (duste (corp 102)) (corp -44) 88 (corpb -49 90) (smoked 11 29))) 
+}
