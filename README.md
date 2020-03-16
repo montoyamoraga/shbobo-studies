@@ -1,4 +1,4 @@
-# shbobo
+# shbobo-studies
 
 ## About
 
