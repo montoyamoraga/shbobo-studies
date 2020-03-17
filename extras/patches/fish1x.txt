@@ -1,0 +1,70 @@
+;C 
+{;C 
+(srate (short 8 51 ))
+(left 
+(right 
+(horn 33 76 (sauce 104 (slew (bar )2 3 )))
+(hornb 29 119 (sauceb 64 (slewb (barb )2 3 )))
+(hornc 44 108 (saucec 24 (slewc (barc )2 3 )))
+(hornd 47 65 (sauced 14 (slewd (bard )2 3 )))
+))
+};D 
+{(srate (short 14 16 ))
+(left 
+(right 
+(horn 48 48 (swoop (square (bar )15 )48 (bar )))
+(hornb 60 48 (swoopb (square (barb )35 )48 (barb )))
+(hornc 72 48 (swoopc (square (barc )78 )48 (barc )))
+))
+};D with pan
+{(srate (short 14 16 ))
+
+(right 
+
+(pan (hornb 60 48 (swoopb (square (barb )35 )48 (barb )))(swoopb ))
+(pan (hornc 72 48 (swoopc (square (barc )78 )48 (barc )))(swoopc ))
+)
+(left 
+(pan (horn 48 48 (swoop (square (bar )15 )48 (bar )))(swoop ))
+)
+};E 
+{(srate (short 13 42 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};F 
+{(srate (short 12 75 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};G 
+{(srate (short 11 27 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};A 
+{(srate (short 9 126 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};B 
+{(srate (short 8 115 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+}

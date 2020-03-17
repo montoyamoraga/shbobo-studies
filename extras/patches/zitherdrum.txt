@@ -1,0 +1,6 @@
+;zitherdrum
+{
+(left (combb (zitherc (duste (bar 80 (barb -30 -10 )))(bard )50 30 )-15 110 110 ))
+(right (combb (zitherc (duste (barc 50 (bard -54 -10 )))(bard )120 30 
+
+)5 60 100 ))}

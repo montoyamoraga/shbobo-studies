@@ -1,0 +1,17 @@
+(
+{
+;noiser
+([left] [right]
+([arab]
+([wave a] 
+([square]
+
+([saw a] ([add] 200 ([wheel a] ([minor a] 40 ([major a])))) ([add] 40 ([wheel b] ([minor b] 40 ([major b])))))
+
+([saw c] ([add] 240 ([wheel c] ([minor c] 20 ([major c])))) ([add] 20 ([wheel d] ([minor d] 40 ([major d]))))))
+
+([corp a] 80 10) ([corp b] 79 175))
+
+))))
+
+)

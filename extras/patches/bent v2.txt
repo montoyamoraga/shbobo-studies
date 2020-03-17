@@ -1,0 +1,21 @@
+;bb
+{(srate (barb )(33 ))(bend (salsa (dust -90 )(smokeb )))(lights -109 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))33 )(barc )(corpb ))))};bb
+{(srate (barb )(-26 ))(bend (salsa (dust 15 )(smokeb )))(lights 14 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-49 )(barc )(corpb ))))};bb
+{(srate (barb )(30 ))(bend (salsa (dust -90 )(smokeb )))(lights 47 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))69 )(barc )(corpb ))))};bb
+{(srate (barb )(-14 ))(bend (salsa (dust -60 )(smokeb )))(lights 30 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))60 )(barc )(corpb ))))};bb
+{(srate (barb )(61 ))(bend (salsa (dust -5 )(smokeb )))(lights -12 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))62 )(barc )(corpb ))))};bb
+{(srate (barb )(60 ))(bend (salsa (dust -19 )(smokeb )))(lights -8 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-48 )(barc )(corpb ))))};bb
+{(srate (barb )(-48 ))(bend (salsa (dust -26 )(smokeb )))(lights -90 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-81 )(barc )(corpb ))))};bb
+{(srate (barb )(14 ))(bend (salsa (dust -49 )(smokeb )))(lights 47 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))32 )(barc )(corpb ))))};bb
+{(srate (barb )(-4 ))(bend (salsa (dust -14 )(smokeb )))(lights 69 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-96 )(barc )(corpb ))))};bb
+{(srate (barb )(-125 ))(bend (salsa (dust -4 )(smokeb )))(lights -14 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-96 )(barc )(corpb ))))}

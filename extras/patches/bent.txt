@@ -1,0 +1,11 @@
+;bb
+{(srate (barb )(33 ))(bend (salsa (dust -90 )(smokeb )))(lights -109 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))33 )(barc )(corpb ))))};bb
+{(srate (barb )(-14 ))(bend (salsa (dust -60 )(smokeb )))(lights 30 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))60 )(barc )(corpb ))))};bb
+{(srate (barb )(-48 ))(bend (salsa (dust -26 )(smokeb )))(lights -90 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-81 )(barc )(corpb ))))};bb
+{(srate (barb )(14 ))(bend (salsa (dust -49 )(smokeb )))(lights 47 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))32 )(barc )(corpb ))))};bb
+{(srate (barb )(-4 ))(bend (salsa (dust -14 )(smokeb )))(lights 69 )
+(left (right (wave (modo (comb (xor (right (left ))(horn (bar )(saw )))(saw (bard )(horn ))(corp )(corp ))-96 )(barc )(corpb ))))}

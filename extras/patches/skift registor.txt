@@ -1,0 +1,7 @@
+;shing shing
+{(pan (comb (zither (dust 14 )(smokeb ))
+(swoop (sauce 23 (dustb -26 ))-26 -81 )-19 
+(salsab (duste 14 )(swoopb (dustd 23 )62 119 13 10 )))(salsac (sauceb (mount -19 -8 )(duste 2 ))(smokec ))(srate (salsa (dust 8 )(corpb -61 78 )))
+(waterb (dustf 32 )(mount -98 -30 )(corp ))
+)
+}

@@ -1,0 +1,25 @@
+;breather3
+{(jump (minor 1 (major -1 )))(lights 1 )
+(srate (togo (majord )(minord )8 128 256 ))
+(left (toggle (majorb )(combc (dust (corp -41 ))(swoopc (wheel 87 -67 )(sauce 21 (mountb -37 -21 ))35 )(mount -49 -6 )(smoke 113 )))
+(toggleb (minorb )(salt (stringb (sawc (bar 58 )5 )(mounte 95 -46 )(wheelb 79 -25 )(sauceb -3 (dustb 3 )))(corpb 112 )99 )
+)
+)
+(right (togglec (majorc )(comb (dustc (corp -89 ))(swoopb (wheelc 87 -70 )(saucec 19 (mountc -39 -73 ))37 )(mountd -51 -8 )(smokeb 133 )))
+(toggled (minorc )(saltb (stringc (sawd (bard 59 )7 )(mountf 91 -43 )(wheeld 78 -24 )(sauced -3 (dustd 2 )))(corpb 112 )99 )
+))};combyflubby2
+{(jump (minor 1 (major -1 )))(lights 2 )
+(right (combb (waterb (bard 12 )(corp 89 )(dust (corpb 112 )))
+(swamp (barc -23 )(slave (mountb 52 -84 )-61 )78 (smokeb -59 )64 )(wheel 91 -13 )-14 ))
+(left (comb (water (bar 12 )(corp 89 )(dust (corpb 112 )))
+(swampc (barb -21 )(slaveb (mount 66 -82 )97 )62 (smoke -58 )67 )(wheelb 85 -45 )-12 ))
+};silent buster
+{(jump (minor 1 (major -1 )))(lights 4 )
+(srate (togob (majord )(minord )24 64 256 ))
+(left (toggle (majorb )((horse (bar 23 )(smoke (dust -12 ))
+(reflect (corpb 107 )(wheel -45 84 )(horn (corp 67 )-38 )))
+)))
+(right (toggleb (majorc )((horseb (bard 24 )(smokec (dustb -3 ))
+(pulseb (barb -27 )(sauceb -6 13 ))(reflect (corpb 78 )(wheelb -53 56 )(hornb (corp 58 )65 )))
+)))
+}

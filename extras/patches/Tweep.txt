@@ -1,0 +1,11 @@
+;Tweep
+{(jump (tar 1 ))(srate (short 8 51 ))
+(right
+(left
+(saltb (waveb (wave (salt (wind )
+3 (mul (barb )62 65 ))
+4 (mul (barc )32 10 ))
+5 (mul (bar )64 8 ))
+7 (mul (bard )94 ))
+))
+}

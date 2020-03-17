@@ -1,0 +1,105 @@
+64
+
+{
+(jump ([minord] 1 ([majord] (negwon))))
+([slew] ([wind]) 120 1) 
+([srate] ([corpb] 20 20)) 
+([左] ([wind]) 
+)
+([右] ([wind])
+)
+
+}
+
+{
+(jump ([minord] 1 ([majord] (negwon))))
+([slew] ([wind]) 120 1) 
+([srate] ([corpb] 20 20)) 
+([左] 
+ ([wave] ([wind] (slew)) 20 ([corp]) )
+)
+([右]
+ ([wave] ([wind] (slew)) 20 ([corp]) )
+)
+
+}
+
+{
+(jump ([minord] 1 ([majord] (negwon))))
+([slew] ([wind]) 120 1) 
+([srate] ([corpb] 20 20)) 
+([左] 
+ ([salt] ([wind] (slew)) 20 ([corp]) )
+)
+([右]
+ ([salt] ([wind] (slew)) 20 ([corp]) )
+)
+
+}
+
+
+{
+(jump ([minord] 1 ([majord] (negwon))))
+([左] 
+ ([角甲] 124 123)
+)
+([右]
+ ([角丙] 123 14)
+)
+
+}
+
+{
+(jump ([minord] 1 ([majord] (negwon))))
+([山甲] 80 80)
+([山乙] 40 40)
+([律] ([身] 10 21))
+
+([左] 
+ ([角甲] ([萨甲] ([角 f] 8 80) ([角 g] 34 81) 60 60) 44)
+ 
+)
+([右]
+ ([角丙] ([酱甲] 80 ([角 e] 6 60) 80 80) 40)
+ ([角乙] ([山乙] 40 40) 11)
+)
+
+}
+
+{
+;this is to brake it
+(srate (corp 40 21))
+;(srate (corp 120 64))
+([left] ([left] 
+ ([swamp a] ([dust a] ([bar a] 30)) 
+  ([smoke a] 1 8)
+  40
+  ([smoke a] 10 100)
+  50
+ )
+ ([swamp c] ([dust c] ([bar c] 30)) 
+  ([smoke a] 1 8)
+  40
+  ([smoke a] 10 100)
+  50
+ )
+))
+
+([right] ([right]
+ ([swamp b] ([dust b] ([bar b] 30)) 
+  ([smoke a] 1 3)
+  10
+  ([smoke a] 10 60)
+  20
+ )
+ ([swamp d] ([dust d] ([bar d] 30)) 
+  ([smoke d] 1 3)
+  10
+  ([smoke d] 10 60)
+  20
+ )
+
+))
+
+(jump ([minord] 1 ([majord] (negwon))))
+}

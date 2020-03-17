@@ -1,0 +1,66 @@
+; Stuber 
+; Meng Qi
+; www.mengqimusic.com
+; inspired by CL stuber / thanks to Peter for help
+; 2013.5
+
+(
+{
+
+([toggle a] ([square] ([wind]) 15))
+([toggle b] ([toggle a]))
+([toggle c] ([toggle b]))
+([toggle d] ([toggle c]))
+([toggle e] ([toggle d]))
+([toggle f] ([toggle e]))
+([toggle g] ([toggle f]))
+([toggle h] ([toggle g]))
+
+([togo a] ([minor a]) ([toggle a]) ([toggle b]) ([toggle c]) ([toggle d]) ([toggle e]) ([toggle f]) ([toggle g]) ([toggle h]))
+([togo b] ([minor b]) ([toggle a]) ([toggle b]) ([toggle c]) ([toggle d]) ([toggle e]) ([toggle f]) ([toggle g]) ([toggle h]))
+([togo c] ([minor c]) ([toggle a]) ([toggle b]) ([toggle c]) ([toggle d]) ([toggle e]) ([toggle f]) ([toggle g]) ([toggle h]))
+([togo d] ([minor d]) ([toggle a]) ([toggle b]) ([toggle c]) ([toggle d]) ([toggle e]) ([toggle f]) ([toggle g]) ([toggle h]))
+([togo e] ([major a]) () 15 30 45 60 75 90 105 120)
+([togo f] ([major b]) () 11 23 42 51 67 79 86 105 127)
+([togo g] ([major c]) () 9 12 24 53 60 78 99 110 48)
+([togo h] ([major d]) () 19 26 68 43 67 91 25 33 13 6 77)
+
+([left]
+
+([wave a]
+   ([wind])
+   ([add] ([mul] ([togo a]) ([togo e])) ([mul] ([togo b]) ([togo f])) ([mul] ([togo c]) ([togo g])) ([mul] ([togo d]) ([togo h])) ([bar a]))
+   ([add] ([mul] ([togo a]) ([togo h])) ([mul] ([togo b]) ([togo g])) ([mul] ([togo c]) ([togo f])) ([mul] ([togo d]) ([togo e])) ([corp a]))
+   ([bar b] -127 127)
+)
+
+([salt a]
+   ([wind])
+   ([add] ([mul] ([togo a]) ([togo e])) ([mul] ([togo b]) ([togo f])) ([mul] ([togo c]) ([togo g])) ([mul] ([togo d]) ([togo h])) ([bar a]))
+   ([add] ([mul] ([togo a]) ([togo h])) ([mul] ([togo b]) ([togo g])) ([mul] ([togo c]) ([togo f])) ([mul] ([togo d]) ([togo e])) ([corp a]))
+   ([bar b] 127 ())
+)
+
+)
+
+
+
+([right]
+
+([wave b]
+   ([wind])
+   ([add] ([mul] ([togo a]) ([togo f])) ([mul] ([togo b]) ([togo g])) ([mul] ([togo c]) ([togo e])) ([mul] ([togo d]) ([togo h])) ([bar d]))
+   ([add] ([mul] ([togo a]) ([togo g])) ([mul] ([togo b]) ([togo f])) ([mul] ([togo c]) ([togo h])) ([mul] ([togo d]) ([togo e])) ([corp b]))
+   ([bar c] -127 127)
+)
+
+([salt b]
+   ([wind])
+   ([add] ([mul] ([togo a]) ([togo f])) ([mul] ([togo b]) ([togo g])) ([mul] ([togo c]) ([togo e])) ([mul] ([togo d]) ([togo h])) ([bar d]))
+   ([add] ([mul] ([togo a]) ([togo g])) ([mul] ([togo b]) ([togo f])) ([mul] ([togo c]) ([togo h])) ([mul] ([togo d]) ([togo e])) ([corp b]))
+   ([bar c] 127 ())
+)
+
+)
+
+}

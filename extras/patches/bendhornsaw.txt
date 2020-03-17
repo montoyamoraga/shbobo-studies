@@ -1,0 +1,53 @@
+{
+
+([togo a] 
+   ([tar]) 
+      ([short] 33 76)
+      ([short] 31 91)
+      ([short] 29 119)
+      ([short] 28 32)
+      ([short] 26 85)
+      ([short] 25 21)
+      ([short] 23 97)
+      ([short] 22 54)
+      ([short] 21 21)
+      ([short] 19 125)
+      ([short] 18 109)
+      ([short] 17 102)
+)
+
+([srate] ([togo a])
+
+([left]
+      ([horn a]
+         ([arab]
+            ([reflect]
+               ([add]
+                  ([minor a] 48)
+                  ([major a] 50)
+                  ([minor d] 60)
+                  ([major d] 64)
+                  ([minor b] 72)
+                  ([major b] 80)
+                  ([minor c] 90)
+                  ([major c] 96)
+               )
+               254
+            )
+         )
+         ([arab]
+            ([add]
+               48
+               ([bar a] 48)
+               ([bar b] 96)
+               ([bar c] -36)
+               ([bar d] -24)
+            )
+         )
+         ([corp b])
+   )
+)
+
+([right]
+   ([horn a])
+)

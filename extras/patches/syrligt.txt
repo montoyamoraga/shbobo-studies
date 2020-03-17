@@ -1,0 +1,7 @@
+;syrligt
+{(srate (short (wheel (majord 11 )(minord -11 ))55 ))
+(pan (salt (smokeb (square (sawc 2 128 )96 )-44 )1 3 )(mount 22 44 ))
+(left (water (pulse )(corp )(smoke )))
+(right (wave (square (saw (togo (pulse (sawb 1 64 )24 )(dustb -4 )32 28 48 24 )128 
+)(mount 29 -74 -60 40 )(slew (swoop )1 64 ))(corpb )(slew (swoop (pulse )128 64 66 8 ))))
+}

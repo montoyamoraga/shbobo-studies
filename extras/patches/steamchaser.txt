@@ -1,0 +1,26 @@
+;steamchaser
+{(jump (tar 1 ))(srate (short 9 51 ))
+(slavec (saw )(togoe )(togob ))(slaved (sawc )(togoc )(togof ))(slavee (sawd )(togo )(togoc ))(slavef (sawb )(togog )(togof ))
+(slew
+(slavee )(togoc )(togof )(slewd ))(slewc
+(slavef )(togog )(togoh )(slew ))(slewb
+(slavec )(togob )(togoe )(slewc ))(slewd
+(slaved )(togo )(togod )(slewb ))
+(togo (major )102 48 54 60 64 72 80 90 )(togob (minor )13 48 24 96 12 (arab 192 ))
+(togoe (majorc )-5 72 80 36 90 48 54 60 64 )(togof (minorc )13 48 24 96 12 (arab 192 ))
+(togoc (majorb )-75 60 64 72 30 80 90 48 54 )(togod (minorb )13 48 24 96 12 (arab 192 ))
+(togog (majord )-5 90 24 48 54 60 64 72 80 )(togoh (minord )13 48 24 96 12 (arab 192 ))
+(left (mul (pan
+(saw (togo )(togob )
+)
+(arab (add (slewb )(slewc ))))(slew ))(mul (pan
+(sawc (togoe )(togof )
+)
+(add (slewb )(arab (slewd ))))(slewc )))(right (mul (pan
+(sawb (togoc )(togod )
+)
+(arab (add (slewd )(slew ))))(slewb ))(mul (pan
+(sawd (togog )(togoh )
+)
+(add (slew )(arab (slewc ))))(slewd )))
+}

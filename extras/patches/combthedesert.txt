@@ -1,0 +1,4 @@
+;bb
+{(pan (combb (fog (dust (mountb (mountc (modo 6 (togo ))40 )60 ))(salsa (dust )(smoke ))120 (salsac (dustb )(smokeb 80 40 ))(modo 6 (togo )))
+(togo (slave (dust )4 )(dustb 4 )32 20 16 8 6 7 5 3 4 2 1 )(salsae (slaveb (dust )16 )(mountb ))100 )(salsa (dust )(smoke )))
+(pan (waveb (saw (togo )42 )10 (mul (salsac )30 )30 )(salsac (dustb )(smokeb )))}

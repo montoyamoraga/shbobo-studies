@@ -1,0 +1,4 @@
+;fog
+{([left] ([fog] ([dust] ([corp] 102 ))([corp] -72 )119 ([corpb] -49 -65 )([smoked] 11 29 )))};haze
+{([left] ([comb] ([haze] ([dust] ([square] ([corp] 102 )10 ))([corp] -72 )119 ([smoked] 11 29 )([corpb] -49 -65 ))2 110 110 ))};swamp
+{([left] ([swamp] ([dust] ([corp] 102 ))([corp] -44 )84 ([corpb] -49 -65 )([smoked] 11 29 )))}

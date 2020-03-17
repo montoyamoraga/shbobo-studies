@@ -1,0 +1,31 @@
+;tritussy
+{(srate (corp 10 15 ))(lights (togo (major )19 4 16 64 ))
+(hornb (add (corp 62 )(mul (salsah )(corpb )))(togof (majorb )41 122 67 7 ))(salsab (square (hornb ))(hornd ))(salsaf (square (hornc ))(salsab ))
+(hornc (add (corp 60 )(mul (salsaf )(corpb )))(togog (majorc )41 120 56 3 ))(salsac (square (hornc ))(hornb ))(salsag (square (hornd ))(salsac ))
+(hornd (add (corp 60 )(mul (salsag )(corpb )))(togoh (majord )41 125 61 9 ))(salsad (square (hornd ))(hornc ))(salsah (square (hornb ))(salsad ))
+(left (right (modo (togo (major )19 (hornb )(hornc )(hornd ))4 )))
+};wave delay
+{(srate (corp 10 15 ))(lights (add (togo (major )19 4 16 64 )(mul (toggle )128 )))
+(hornb (add (corp 62 )(mul (salsah )(corpb )))(togof (majorb )41 122 67 7 ))(salsab (square (hornb ))(hornd ))(salsaf (square (hornc ))(salsab ))
+(hornc (add (corp 60 )(mul (salsaf )(corpb )))(togog (majorc )41 120 56 3 ))(salsac (square (hornc ))(hornb ))(salsag (square (hornd ))(salsac ))
+(hornd (add (corp 60 )(mul (salsag )(corpb )))(togoh (majord )41 125 61 9 ))(salsad (square (hornd ))(hornc ))(salsah (square (hornb ))(salsad ))
+(left (right (combc (waveb (togo (major )19 (hornb )(hornc )(hornd ))(mul (salsag )49 )(add (salsad )30 ))1 105 (corpb 20 (sauceh 8 (slew (toggle (square (bard )70 )-102 )20 5 ))))))
+};water
+{(srate (corp 10 15 ))(lights (togo (major )19 4 16 64 ))
+(hornb (add (corp 62 )(mul (salsah )(corpb )))(togof (majorb )41 122 67 7 ))(salsab (square (hornb ))(hornd ))(salsaf (square (hornc ))(salsab ))
+(hornc (add (corp 60 )(mul (salsaf )(corpb )))(togog (majorc )41 120 56 3 ))(salsac (square (hornc ))(hornb ))(salsag (square (hornd ))(salsac ))
+(hornd (add (corp 60 )(mul (salsag )(corpb )))(togoh (majord )41 125 61 9 ))(salsad (square (hornd ))(hornc ))(salsah (square (hornb ))(salsad ))
+(left (right (water (togo (major )19 (hornb )(hornc )(hornd ))(mul (salsag )49 )(add (salsad )30 ))))
+};zither
+{(srate (corp 10 15 ))(lights (togo (major )19 4 16 64 ))
+(hornb (add (corp 62 )(mul (salsah )(corpb )))(togof (majorb )41 122 67 7 ))(salsab (square (hornb ))(hornd ))(salsaf (square (hornc ))(salsab ))
+(hornc (add (corp 60 )(mul (salsaf )(corpb )))(togog (majorc )41 120 56 3 ))(salsac (square (hornc ))(hornb ))(salsag (square (hornd ))(salsac ))
+(hornd (add (corp 60 )(mul (salsag )(corpb )))(togoh (majord )41 125 61 9 ))(salsad (square (hornd ))(hornc ))(salsah (square (hornb ))(salsad ))
+(left (right (zither (salsab )(togo (major )19 (salsaf )(salsag )(salsah )))))
+};tussy delay
+{(srate (corp 10 15 ))(lights (add (togo (major )19 4 16 64 )(mul (toggle )128 )))
+(hornb (add (corp 62 )(mul (salsah )(corpb )))(togof (majorb )41 122 67 7 ))(salsab (square (hornb ))(hornd ))(salsaf (square (hornc ))(salsab ))
+(hornc (add (corp 60 )(mul (salsaf )(corpb )))(togog (majorc )41 120 56 3 ))(salsac (square (hornc ))(hornb ))(salsag (square (hornd ))(salsac ))
+(hornd (add (corp 60 )(mul (salsag )(corpb )))(togoh (majord )41 125 61 9 ))(salsad (square (hornd ))(hornc ))(salsah (square (hornb ))(salsad ))
+(left (right (combc (togo (major )19 (hornb )(hornc )(hornd ))1 105 (corpb 20 (sauceh 8 (slew (toggle (square (bard )70 )-102 )20 5 ))))))
+}

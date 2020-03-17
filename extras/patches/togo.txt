@@ -1,0 +1,20 @@
+;I'll have that to go
+{(lights 1 )(srate (short 30 55 ))(jump (minor 1 ))
+(left (right (wave (add (zither (sawb 1 128 )(togo )48 127 )
+(left (right (saw (togo (square (sawb 1 128 )1 )-86 24 32 64 48 )64 (slew (swoop (square (sawb 1 120 )1 )120 188 )81 45 17 )))))(corp )(corpb ))))};you got a smoke?
+{(lights 2 )(srate (short 30 55 ))(jump (minor 1 ))
+(pan (wavef (comb (salt (xor (smokef (mul 2 ))4 )30 120 )55 7 133 )20 77 )(salsa (sawb )(smoke )))
+(left (right (wave (add (zither (sawb 1 128 )(togo )48 127 )
+(left (right (saw (togo (square (sawb 1 128 )1 )-86 24 32 64 48 )64 (slew (swoop (square (sawb 1 120 )1 )120 188 )81 45 17 )))))(corp )(corpb ))))};this is taking forever
+{(lights 4 )(srate (short 30 55 ))(jump (minor 1 ))
+(pan (slew (salsa (sawb )(smoke ))87 123 )(smokeh 25 ))
+(left (right (wave (add (zither (sawb 1 128 )(togo )48 127 )
+(left (right (saw (togo (square (sawb 1 128 )1 )-86 24 32 64 48 )64 (slew (swoop (square (sawb 1 120 )1 )120 188 )81 45 17 )))))(corp )(corpb ))))};yes or no?
+{(lights 8 )(srate (short 30 55 ))(jump (minor 1 ))
+(pan (square (smokec )-125 )(slew (salsa (sawb )(smoke ))123 119 ))
+(left (right (wave (add (zither (sawb 1 128 )(togo )48 127 )
+(left (right (saw (togo (square (sawb 1 128 )1 )-86 24 32 64 48 )64 (slew (swoop (square (sawb 1 120 )1 )120 188 )81 45 17 )))))(corp )(corpb ))))};just give me a water
+{(lights 16 )(srate (short 30 55 ))(jump (minor 1 ))
+(pan (waterb (sawb )(smokeg )(smokef ))(slew (salsa (sawb )(smoke ))123 119 ))
+(left (right (wave (add (zither (sawb 1 128 )(togo )48 127 )
+(left (right (saw (togo (square (sawb 1 128 )1 )-86 24 32 64 48 )64 (slew (swoop (square (sawb 1 120 )1 )120 188 )81 45 17 )))))(corp )(corpb 71 87 ))))}

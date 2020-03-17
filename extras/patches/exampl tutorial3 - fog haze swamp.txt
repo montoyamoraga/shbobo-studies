@@ -1,0 +1,8 @@
+;fog
+{(left (fogb (dustb (corp 102 ))(corp -72 )119 (corpb -49 -65 )(smokec 11 29 )))
+(right (fogb (dustb (corp 102 ))(corp -72 )119 (corpb -49 -65 )(smokec 11 29 )))};haze
+{(left (comb (haze (dustb (square (corp 102 )10 ))(corp -72 )119 (smokec 11 29 )(corpb -49 -65 ))2 110 110 ))(right (comb (haze (dustb (square (corp 102 )10 ))(corp -72 )119 (smokec 11 29 )(corpb -49 -65 ))2 110 110 ))
+
+};swamp
+{(left (swamp (dustb (corp 102 ))(corp -44 )88 (corpb -49 90 )(smokec 11 29 )))
+(right (swamp (dustb (corp 102 ))(corp -44 )88 (corpb -49 90 )(smokec 11 29 )))}

@@ -1,0 +1,26 @@
+;Finely tuned
+{(srate (short 16 2 ))
+(left
+(right
+(horn
+(togo
+(major )(minor )
+(short 48 120 ;C#3
+)(short 51 98 ;D3
+)(short 54 124 ;D#3
+)(short 58 2 ;E3
+)(short 61 30 ;F3
+)
+(short 64 127 ;F#3
+)(short 68 127 ;G3
+)(short 72 127 ;G#3
+)(short 77 2 ;A3
+)(short 81 127 ;A#3
+)
+(short 86 90 ;B3
+)(short 91 127 ;C4
+)(short 97 2 ;C#4
+)(short 102 127 ;D4
+)(short 109 2 ;D#4
+))(togob (majorb )(minorb )48 96 24 ))
+))}

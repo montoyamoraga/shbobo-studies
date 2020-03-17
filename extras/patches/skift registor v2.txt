@@ -1,0 +1,7 @@
+;inshhgis ng
+{(pan (comb (zither (dust -50 )(smokeb ))
+(swoop (sauce -18 (dustb -123 ))-81 -65 )-85 
+(salsab (duste -126 )(swoopb (dustd 125 )-38 106 -8 -31 )))(salsac (sauceb (mount 83 52 )(duste 73 ))(smokec ))(srate (salsa (dust -123 )(corpb -60 -50 )))
+(waterb (dustf 57 )(mount -18 -81 )(corp ))
+)
+}

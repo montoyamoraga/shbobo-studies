@@ -1,0 +1,82 @@
+(
+
+{
+([left]
+ ([press a] 
+  ([horn a] 32 22 ([leak a] ([bar a]) 1))
+  ([horn c] 21 20 ([leak c] ([corp a]) 1))
+ 80 10 80)
+)
+([right]
+ ([press b] 
+  ([horn b] 32 21 ([leak b] ([bar b]) 1))
+  ([horn d] 21 21 ([leak d] ([corp b]) 1))
+ 80 10 80)
+)
+([jump] ([minor b] 1))
+}
+
+{
+([srate] 20)
+([left]
+ ([arab] 
+  ([horn a] 132 212 ([leak a] 
+   ([bar a]) 1 ))
+  ([horn c] 121 220 ([leak c] 
+   ([corp a])  1 ))
+ )
+)
+([right]
+ ([arab]
+  ([horn b] 132 221 ([leak b] 
+   ([bar b]) 1 ))
+  ([horn d] 121 211 ([leak d] 
+   ([corp b]) 1 ))
+ )
+)
+([jump] ([minor b] 1))
+}
+ 
+{
+([srate] ([corp a] 12 16))
+([togo a] (square ([bar a] ) 20) 21 43 54 100 38 99)
+([togo b] (square ([bar b] ) 20) 21 43 54 100 38 99)
+([togo e] (square ([bar c]) 20 ) 21 43 54 100 38 99)
+([togo f] (square ([bar d]) 20 ) 21 43 54 100 38 99)
+
+([left]
+([horn a] ([togo a]) ([togo b]) ([toggle a] ([minor a])))
+([horn c] 80 36 ([major c]))
+([press] 
+([wave] ([wind]) 80 20) 
+10)
+
+) ([right]
+([horn b] ([togo f]) ([togo e]) ([toggle b] ([minor d])))
+([horn c] 80 36 ([toggle c] ([major d])))
+ ([smoke a] ([toggle f] ([major b])))
+)
+
+([lights] ([add] ([major a] 8) ([toggle c] ([major d]) 4)))
+([jump] ([minor b] 1))
+} {
+([srate] 20)
+
+
+([left]
+([press]  
+([add] 
+ ([bar a] ([horn c] 80 36)) 
+ ([bar c] ([horn d] 81 36))) 
+40 10 80)
+
+) ([right]
+([press b]  
+([add] 
+ ([bar b] ([horn e] 60 36))
+ ([bar d] ([horn f] 50 36))) 
+40 10 80)
+)
+
+([jump] ([minor b] 1))
+}

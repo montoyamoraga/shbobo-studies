@@ -1,0 +1,31 @@
+;bb
+{(left (string (sauceb 3 (dust (bar 63 ))(square (bar )-41 ))6 (add 45 (corp )-6 )134 )(combd (waveb (xor (saw 6 (add 45 (corp )-6 ))70 )(slewb (bar -66 )-19 97 )(sauced -48 (bard -33 )))80 122 81 )(water (sauceg 153 (sawb -77 -7 ))-3 16 ))
+(right (stringb (saucec 3 (dustb (bard 63 ))(square (bard )-41 ))6 (add 45 (corp )-6 )137 )(combc (wavec (xor (sawb 24 (add 45 (corp )-6 ))-54 )(slew (barb 73 )-120 27 )(saucee 88 (bar -40 )))-81 -68 -82 )(waterb (saucef 149 (sawc 74 -48 ))-64 12 ))(srate 77 (corpb -4 ))
+(jump (minor 1 ))(jump (major -1 ))};bb
+{(left (string (sauceb 30 (dust (bar -90 ))(square (bar )47 ))69 (add -14 (corp )-60 )60 )(combd (waveb (xor (saw -19 (add -8 (corp )-48 ))-26 )(slewb (bar -81 )-26 15 )(sauced 14 (bard -49 )))32 -76 -125 )(water (sauceg -4 (sawb -14 -96 ))-58 -110 ))
+(right (stringb (saucec 61 (dustb (bard -5 ))(square (bard )-12 ))62 (add 119 (corp )-72 )-111 )(combc (wavec (xor (sawb 29 (add 102 (corp )-125 ))11 )(slew (barb -49 )76 -62 )(saucee -106 (bar 39 )))80 13 27 )(waterb (saucef -3 (sawc 30 -112 ))-74 29 ))(srate -72 (corpb -75 ))
+(jump (minor -10 ))(jump (major -79 ))};bb
+{(left (string (sauceb -5 (dust (bar 99 ))(square (bar )-2 ))-89 (add -65 (corp )78 )88 )(combd (waveb (xor (saw 71 (add -99 (corp )62 ))-84 )(slewb (bar 37 )-49 -115 )(sauced -109 (bard -43 )))94 37 109 )(water (sauceg -128 (sawb 57 -87 ))-84 -41 ))
+(right (stringb (saucec -125 (dustb (bard -44 ))(square (bard )-63 ))-113 (add 113 (corp )39 )-49 )(combc (wavec (xor (sawb 49 (add 111 (corp )123 ))95 )(slew (barb 97 )-45 81 )(saucee 121 (bar 86 )))100 125 39 )(waterb (saucef 34 (sawc 60 69 ))37 13 ))(srate 120 (corpb -109 ))
+(jump (minor 1 ))(jump (major -1 ))};bb
+{(left (string (sauceb -44 (dust (bar -12 ))(square (bar )-98 ))65 (add -106 (corp )83 )-104 )(combd (waveb (xor (saw -39 (add 123 (corp )95 ))-86 )(slewb (bar -5 )100 -85 )(sauced -115 (bard 83 )))32 50 -113 )(water (sauceg 26 (sawb 105 -2 ))72 -114 ))
+(right (stringb (saucec -98 (dustb (bard -109 ))(square (bard )106 ))-22 (add -96 (corp )57 )-113 )(combc (wavec (xor (sawb -24 (add -122 (corp )100 ))55 )(slew (barb 45 )-3 74 )(saucee 49 (bar 3 )))-112 34 30 )(waterb (saucef 31 (sawc 88 -71 ))-57 15 ))(srate -6 (corpb 15 ))
+(jump (minor -16 ))(jump (major -41 ))};bb
+{(left (string (sauceb -84 (dust (bar -41 ))(square (bar )-125 ))-44 (add -63 (corp )-113 )113 )(combd (waveb (xor (saw 39 (add -49 (corp )49 ))111 )(slewb (bar 123 )95 97 )(sauced -45 (bard 81 )))121 86 100 )(water (sauceg 125 (sawb 39 34 ))60 69 ))
+(right (stringb (saucec 37 (dustb (bard 13 ))(square (bard )120 ))-109 (add -103 (corp )78 )-53 )(combc (wavec (xor (sawb -104 (add 12 (corp )-38 ))98 )(slew (barb 45 )67 10 )(saucee 99 (bar -57 )))120 -2 -51 )(waterb (saucef 68 (sawc -90 16 ))91 -116 ))(srate -60 (corpb -72 ))
+(jump (minor 92 ))(jump (major 29 ))};bb
+{(left (string (sauceb 98 (dust (bar 45 ))(square (bar )67 ))10 (add 99 (corp )-57 )120 )(combd (waveb (xor (saw -2 (add -51 (corp )68 ))-90 )(slewb (bar 16 )91 -116 )(sauced -60 (bard -72 )))92 29 65 )(water (sauceg 84 (sawb -62 30 ))-14 -65 ))
+(right (stringb (saucec 4 (dustb (bard 11 ))(square (bard )-80 ))-38 (add 41 (corp )117 )122 )(combc (wavec (xor (sawb 34 (add -63 (corp )-58 ))-8 )(slew (barb 28 )-16 -90 )(saucee 52 (bar 113 )))62 -11 30 )(waterb (saucef -54 (sawc 30 -3 ))46 80 ))(srate 49 (corpb -98 ))
+(jump (minor 1 ))(jump (major -1 ))};bb
+{(left (string (sauceb 97 (dust (bar 66 ))(square (bar )-82 ))-109 (add 78 (corp )61 )35 )(combd (waveb (xor (saw 85 (add -94 (corp )-58 ))57 )(slewb (bar -89 )110 -41 )(sauced -88 (bard 104 )))-6 -89 -81 )(water (sauceg -68 (sawb -82 62 ))80 122 ))
+(right (stringb (saucec 81 (dustb (bard 45 ))(square (bard )17 ))52 (add 52 (corp )-84 )-61 )(combc (wavec (xor (sawb 78 (add -59 (corp )64 ))91 )(slew (barb -13 )-60 -27 )(saucee -41 (bar 52 )))-52 90 -54 )(waterb (saucef 59 (sawc 70 -91 ))12 -33 ))(srate -6 (corpb -92 ))
+(jump (minor 85 ))(jump (major 44 ))};bb
+{(left (string (sauceb -56 (dust (bar -1 ))(square (bar )20 ))86 (add 49 (corp )-56 )-54 )(combd (waveb (xor (saw -53 (add -35 (corp )-20 ))-95 )(slewb (bar 10 )122 45 )(sauced -79 (bard -32 )))42 -114 109 )(water (sauceg 100 (sawb -100 -26 ))2 -98 ))
+(right (stringb (saucec -17 (dustb (bard 32 ))(square (bard )-25 ))87 (add 122 (corp )55 )75 )(combc (wavec (xor (sawb 75 (add 18 (corp )-118 ))-34 )(slew (barb 27 )56 84 )(saucee 56 (bar -124 )))89 21 -57 )(waterb (saucef -8 (sawc -19 -25 ))-103 -128 ))(srate -100 (corpb -78 ))
+(jump (sauce -3 ((smokeb (major )1 ))))(jump (sauceh -105 ((smoke (minorb )-1 ))))};bb
+{(left (string (sauceb 111 (dust (bar 108 ))(square (bar )-33 ))52 (add -98 (corp )-30 )104 )(combd (waveb (xor (saw 86 (add -75 (corp )69 ))7 )(slewb (bar -46 )-89 20 )(sauced 77 (bard 100 )))-45 107 53 )(water (sauceg 34 (sawb 89 -88 ))-31 -76 ))
+(right (stringb (saucec -61 (dustb (bard 43 ))(square (bard )-38 ))89 (add 73 (corp )-72 )-48 )(combc (wavec (xor (sawb 58 (add -75 (corp )-116 ))-52 )(slew (barb 12 )87 71 )(saucee 42 (bar -7 )))-81 -115 -128 )(waterb (saucef -89 (sawc 16 -120 ))-124 -48 ))(srate 62 (corpb 88 ))
+(jump (sauce -5 ((smokeb (major )18 ))))(jump (sauceh -120 ((smoke (minorb )27 ))))};bb
+{(left (string (sauceb -63 (dust (bar 7 ))(square (bar )-40 ))111 (add 126 (corp )-50 )-18 )(combd (waveb (xor (saw -123 (add -81 (corp )-65 ))-85 )(slewb (bar -126 )125 -38 )(sauced 106 (bard -8 )))-31 83 52 )(water (sauceg 73 (sawb -123 -60 ))-50 57 ))
+(right (stringb (saucec -18 (dustb (bard -81 ))(square (bard )75 ))-6 (add -6 (corp )73 )117 )(combc (wavec (xor (sawb 117 (add -9 (corp )-86 ))-102 )(slew (barb -41 )21 102 )(saucee -87 (bar -116 )))-15 -126 -98 )(waterb (saucef 11 (sawc -78 -75 ))-33 -52 ))(srate 51 (corpb -19 ))
+(jump (sauce 62 ((smokeb (major )86 ))))(jump (sauceh -40 ((smoke (minorb )-39 ))))}

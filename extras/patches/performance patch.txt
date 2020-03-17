@@ -1,0 +1,285 @@
+;Horn
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(left 
+(pan (horn 
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(bar ))(add (togo )(togoc )(bar )))
+(pan (hornb 
+(togoc (majorb )-75 60 64 72 80 90 48 54 )
+(togod (minorb )13 48 24 96 12 (arab 192 ))
+(barb ))(add (togob )(togo )(barb )))
+)(right 
+(pan 
+(hornc 
+(togoe (majorc )-5 72 80 90 48 54 60 64 )
+(togof (minorc )13 48 24 96 12 (arab 192 ))
+(barc ))
+(add (togod )(barc )))
+(pan 
+(hornd 
+(togog (majord )-5 90 48 54 60 64 72 80 )
+(togoh (minord )13 48 24 96 12 (arab 192 ))
+(bard ))
+(add (togo )(bard )))
+)
+};hornemize
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(left 
+(pan (horn 
+(togo (major )102 (barc )48 54 (bard )60 64 (bar )72 80 90 (barb ))
+(togob (minor )13 (barc )48 (barb )24 (bar )96 (bard )12 (hornd )(arab 192 ))
+(bar ))(horn )(add (togo )(togoc )(bar )))
+(pan (hornb 
+(togoc (majorb )-75 60 (bard )64 (barc )72 (hornc )80 (barb )90 (bar )48 (hornd )54 )
+(togod (minorb )13 48 (barc )24 (bar )96 (bard )12 (barb )(arab 192 ))
+(barb ))(add (togob )(togo )(barb )))
+)(right 
+(pan 
+(hornc 
+(togoe (majorc )-5 72 (bard )80 90 (bar )48 (hornb )54 (barb )60 (barc )64 )
+(togof (minorc )13 48 (barb )(bard )24 (bar )96 (barc )12 (hornc )(arab 192 ))
+(barc ))
+(add (togod )(barc )))
+(pan 
+(hornd 
+(togog (majord )-5 90 (barc )48 (horn )54 (bard )60 (barb )64 (bar )72 (hornb )80 )
+(togoh (minord )13 48 (barc )24 (bard )96 (bar )12 (barb )(arab 192 ))
+(bard ))
+(add (togo )(bard )))
+)
+};Tweep
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(left 
+
+(comb (saltb (waveb (wave (salt (wind )
+3 (mul (barb )62 65 ))
+4 (mul (barc )32 10 ))
+5 (mul (bar )64 8 ))
+7 (mul (bard )94 ))
+(arab (mul (bard )6 ))(arab (mul (barc )75 180 ))(mul (barb )68 54 ))
+)
+};Waterbar
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+
+(salsad (majorc )(smokeb ))(salsac (majorb )(smoke ))
+(salsab (major )(smokeb ))(salsa (majord )(smoke ))
+(right 
+
+(waterb (square (bar )29 )21 (salsab ))
+(water (square (barb )-13 )9 (salsac ))
+(waterc (square (barc )45 )13 (salsad ))
+(waterd (square (bard )55 )4 (salsa ))
+)
+};Waterbarrandomize
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+
+(salsad (square (bard )-69 )(smokeb ))(salsac (square (barc )45 )(smoke ))
+(salsab (square (barb )-13 )(smokeb ))(salsa (square (bar )29 )(smoke ))
+(right 
+
+(waterb (square (bar )29 )(mul (salsa )8 )(salsab ))
+(water (square (barb )-13 )(mul (salsab )24 )(salsac ))
+(waterc (square (barc )45 )(mul (salsac )15 )(salsad ))
+(waterd (square (bard )-69 )(mul (salsad )12 )(salsa ))
+)
+};waterbarwith combFM
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+
+(salsad (square (bard )-69 )(smokeb ))(salsac (square (barc )45 )(smoke ))
+(salsab (square (barb )-13 )(smokeb ))(salsa (square (bar )29 )(smoke ))
+(right 
+
+(combb (waterb (square (bar )29 )(mul (salsa )8 )(salsab ))(salsad )(salsac )128 )
+(combc (water (square (barb )-13 )(mul (salsab )24 )(salsac ))(salsa )(salsad )127 )
+(combd (waterc (square (barc )45 )(mul (salsac )15 )(salsad ))(salsab )(salsa )127 
+)
+(comb (waterd (square (bard )-69 )(mul (salsad )12 )(salsa ))(salsac )(salsab )127 )
+)(left 
+
+(hornb (combb )12 (bar ))
+(mul (saw (combc )48 (barb ))74 )
+(horn 24 (combd )(barc ))
+(mul (sawb (comb )24 (bard ))74 ))
+};Horse
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+
+
+(left 
+
+(comb (horse 
+(salsa (square (bar )29 )(smoke ))
+(salsab (square (barb )-13 )(smokeb ))
+(salsac (square (barc )45 )(smoke ))
+(salsad (square (bard )-69 )(smokeb )))(mul (salsad )13 )(arab (mul (salsa )75 180 ))125 )
+
+
+
+)(right 
+(modo (water (slavec )4 (salsad ))5 )
+
+
+
+(mul (smokeb (slew (slaved )(salsab )(salsac )))(mul (salsa )23 )))
+(slavec (comb )32 )(slaved (horse )84 )};SAw
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(left 
+(pan (saw 
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(bar ))(add (togo )(togoc )(bar )))
+(pan (sawb 
+(togoc (majorb )-75 60 64 72 80 90 48 54 )
+(togod (minorb )13 48 24 96 12 (arab 192 ))
+(barb ))(add (togob )(togo )(barb )))
+)(right 
+(pan 
+(sawc 
+(togoe (majorc )-5 72 80 90 48 54 60 64 )
+(togof (minorc )13 48 24 96 12 (arab 192 ))
+(barc ))
+(add (togod )(barc )))
+(pan 
+(sawd 
+(togog (majord )-5 90 48 54 60 64 72 80 )
+(togoh (minord )13 48 24 96 12 (arab 192 ))
+(bard ))
+(add (togo )(bard )))
+)
+};SAwdomize
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(left 
+(pan (saw 
+(togo (major )102 (barc )48 54 (bard )60 (sawc )64 (bar )72 80 (sawb )90 (barb ))
+(togob (minor )13 (barc )48 (barb )24 (bar )96 (bard )12 (sawd )(arab 192 ))
+(bar ))(add (togo )(togoc )(bar )))
+(pan (sawb 
+(togoc (majorb )-75 60 (bard )64 (barc )72 80 (barb )90 (bar )48 (sawd )54 )
+(togod (minorb )13 48 (barc )24 (bar )96 (bard )12 (barb )(saw )(arab 192 ))
+(barb ))(add (togob )(togo )(barb )))
+)(right 
+(pan 
+(sawc 
+(togoe (majorc )-5 72 (bard )80 90 (bar )48 54 (barb )60 (barc )64 (sawb ))
+(togof (minorc )13 48 (barb )(bard )24 (bar )96 (barc )12 (arab 192 ))
+(barc ))
+(add (togod )(barc )))
+(pan 
+(sawd 
+(togog (majord )-5 90 (barc )48 54 (bard )60 (barb )64 (bar )72 (sawc )80 )
+(togoh (minord )13 48 (barc )24 (bard )96 (bar )12 (barb )(saw )(arab 192 ))
+(bard ))
+(add (togo )(bard )))
+)
+};drumscumone
+{;C 
+(jump (tar 1 ))(srate (short 16 51 ))
+(mountc 2 (mul (salsac )21 89 )(salsae ))(mountb (mul (salsad )21 89 )25 (salsab ))
+(toggled (pulse (toggleg (slave (horn )48 ))80 ))(pulsec (toggleh (slaveb (horn )84 ))63 )
+(togglec (pulseb (toggle (slavec (horn )26 ))123 ))(pulsed (toggleb (slaved (horn )76 ))34 )
+(salsab (toggled )(mountc ))(salsac (pulsec )(smokec ))
+(salsad (togglec )(smoked ))(salsae (slaved )(mountb ))
+(horn 
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(bar ))(left 
+(fog (slavec )(salsab )54 (mul (salsac )44 )8 )
+(modo (waveb (pulse )3 (mul (salsab )76 32 ))2 )
+(modo (waterd (pulseb )2 (mul (salsad )32 23 ))2 )
+(mul (smokeb (sauce (mul (salsac )13 )(pulseb )))(mul (salsae )12 )))(right 
+(fogb (slaved )24 (mul (salsad )61 32 )48 (mul (salsae )32 24 ))
+(modo (waterc (pulsec )5 (mul (salsac )35 14 ))2 )
+(modo (wavec (pulsed )4 (mul (salsae )25 21 ))2 )
+(combd (zitherb (sauceb (mul (salsad )7 )(slaved ))(salsab )(salsad ))
+(mul (salsac )(salsae ))(mul (salsad )17 110 )(mul (salsab )46 80 )))
+};corp VCAs
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(left 
+(pan (horn 
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(corp ))(add (togo )(togoc )(corpb )))
+(pan (hornb 
+(togoc (majorb )-75 60 64 72 80 90 48 54 )
+(togod (minorb )13 48 24 96 12 (arab 192 ))
+(corpb ))(add (togob )(togo )(corp )))
+)(right 
+(pan 
+(hornc 
+(togoe (majorc )-5 72 80 90 48 54 60 64 )
+(togof (minorc )13 48 24 96 12 (arab 192 ))
+(corp ))
+(add (togod )(corpb )))
+(pan 
+(hornd 
+(togog (majord )-5 90 48 54 60 64 72 80 )
+(togoh (minord )13 48 24 96 12 (arab 192 ))
+(corpb ))
+(add (corp )))
+)
+};mount buttons
+{;C 
+(jump (tar 1 ))
+(srate (short 8 51 ))
+(mount 24 64 )
+(mountb 96 36 )
+(salsa (majorb )(mount ))
+(salsab (major )(mountb ))
+(salsac (majord )(mount ))
+(salsad (majorc )(mountb ))
+(toggle (slave (haze )(mul (salsab )63 17 )));toggle for HORN
+(toggleb (slaveb (haze )(mul (salsac )9 )
+))
+(togglec (slavec (fog )(mul (salsa )63 17 )))
+(toggled (slaved (fog )(mul (salsad )9 )
+))
+(left 
+(horn (toggleb )(salsad )(toggle ))
+(pan (haze 
+(major )
+(togo (major )48 (salsa )-5 (salsad ))
+(togob (minor )13 (salsab )12 (salsac ))
+(togoc )(togog ))(add (togo )(togoc )(corpb )))
+(pan (fog 
+(majorb )
+(togoc (majorb )-75 (salsab )48 (salsad ))
+(togod (minorb )13 (salsa )104 (salsac ))
+(togof )(togoh )
+)(add (togob )(togo )(corp ))))(right 
+(pan 
+(horse 
+(togoe (majorc )-5 (salsac )60 (salsab ))
+(togof (minorc )13 (salsad )24 (salsa ))
+(togo )(toggled )(togglec )
+)
+(add (togod )(corpb )))
+(pan 
+(modo (hazeb 
+(majord )
+(togog (majord )-5 (salsad )80 (salsa ))
+(togoh (minord )13 (salsac )(arab 192 )(salsab ))
+(togoe )(togob )
+)3 )
+(add (corp )))
+)
+}

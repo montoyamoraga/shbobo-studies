@@ -1,0 +1,6 @@
+;exampl
+{(srate (short 22 54 ))(right (left 
+(horn 64 64 (bar ))
+(hornb 80 64 (barb ))
+(hornc 96 64 (barc ))
+(hornd 120 64 (bard ))))}

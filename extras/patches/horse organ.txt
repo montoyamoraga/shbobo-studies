@@ -1,0 +1,26 @@
+0;bb
+{(srate 24 )(pan (pan (horse 
+(add (salsa (major )(smoke ))(mul (mul (horsed )(corp ))(toggle (minor ))));minor: mod with previous horse, corp controls amt
+(add (horn (major 64 )127 )(mul (mul (horse )(bar (square (bar )0 )))(toggleb (minorb ))));minorb: self-mod with bar press
+(add (salsae (major )(bar ))(mul (mul (horseb )(corpb ))(togglec (minorc ))));minorc:  mod with next horse, corpb controls amt
+(add (mount (major 127 )64 )(mul (mul (horsec )(mul (bar -128 )(square (bar -128 )0 )))(toggled (minord ))));minord: mod with bar release of 2nd horse over
+)(bar )
+)(bar ))
+(pan (pan (horseb 
+(add (salsab (majorb )(smokeb ))(mul (mul (horse )(corp ))(toggle (minor ))))
+(add (hornb (majorb 64 )127 )(mul (mul (horseb )(barb (square (barb )0 )))(toggleb (minorb ))))
+(add (salsaf (majorb )(barb 127 1 ))(mul (mul (horsec )(corpb ))(togglec (minorc ))))
+(add (mountb (majorb 127 )64 )(mul (mul (horsed )(mul (barb -128 )(square (barb -128 )0 )))(toggled (minord )))))(barb ))(barb ))
+(pan (pan (horsec 
+(add (salsac (majorc )(smokec ))(mul (mul (horseb )(corp ))(toggle (minor ))))
+(add (hornc (majorc 64 )127 )(mul (mul (horsec )(barc (square (barc )0 )))(toggleb (minorb ))))
+(add (salsag (majorc )(barc 127 1 ))(mul (mul (horsed )(corpb ))(togglec (minorc ))))
+(add (mountc (majorc 127 )64 )(mul (mul (horse )(mul (barc -128 )(square (barc -128 )0 )))(toggled (minord )))))(barc ))(barc ))
+(pan (pan (horsed 
+(add (salsad (majord )(smoked ))(mul (mul (horsec )(corp ))(toggle (minor ))))
+(add (hornd (majord 64 )127 )(mul (mul (horsed )(bard (square (bard )0 )))(toggleb (minorb ))))
+(add (salsah (majord )(bard ))(mul (mul (horse )(corpb ))(togglec (minorc ))))
+(add (mountd (majord 127 )64 )(mul (mul (horseb )(mul (bard -128 )(square (bard -128 )0 )))(toggled (minord )))))(bard ))(bard ))
+(lights (add (mul (toggle )2 )(mul (toggleb )8 )(mul (togglec )32 )(mul (toggled )128 )
+))
+(left (left (mul (horse )(major ))(mul (horseb )(majorb ))(mul (horsec )(majorc ))(mul (horsed )(majord ))))}

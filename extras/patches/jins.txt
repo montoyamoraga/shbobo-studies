@@ -1,0 +1,43 @@
+;hijaz gharib
+{([jump] ([tar] 1 ))([lights] 1 )
+([short] 29 119 )
+([arab] 
+([left] 
+([horn] ([add] 128 ([bard] 12 ))128 ([slew] ([major] 85 )120 120 ))
+([hornc] ([add] 160 ([bard] 12 ))128 ([slewc] ([majorc] 85 )120 120 ))
+([horne] ([add] 192 ([bard] 16 ))128 ([slewe] ([minord] 85 )120 120 ))
+([horng] ([add] 240 ([bard] 16 ))135 ([slewg] ([minorb] 85 )120 120 ))
+)([right] 
+([hornb] ([add] 144 ([bard] 12 ))135 ([slewb] ([majorb] 85 )120 120 ))
+([hornd] ([add] 180 ([bard] 16 ))135 ([slewd] ([majord] 85 )120 120 ))
+([hornf] ([add] 216 ([bard] 16 ))135 ([slewf] ([minorc] 85 )120 120 ))
+([hornh] ([add] 255 ([bard] 16 ))128 ([slewh] ([minor] 85 )120 120 ))))
+};hijaz shehnaz
+{([jump] ([tar] 1 ))([lights] 4 )
+([srate] ([short] 29 119 ))
+([arab] 
+([left] 
+([horn] ([add] 128 ([bard] 12 ))128 ([slew] ([major] 85 )120 120 ))
+([hornc] ([add] 160 ([bard] 12 ))128 ([slewc] ([majorc] 85 )120 120 ))
+([horne] ([add] 192 ([bard] 16 ))128 ([slewe] ([minord] 85 )120 120 ))
+([horng] ([add] 240 ([bard] 16 ))128 ([slewg] ([minorb] 85 )120 120 ))
+)([right] 
+([hornb] ([add] 144 ([bard] 12 ))135 ([slewb] ([majorb] 85 )120 120 ))
+([hornd] ([add] 180 ([bard] 16 ))135 ([slewd] ([majord] 85 )120 120 ))
+([hornf] ([add] 216 ([bard] 16 ))135 ([slewf] ([minorc] 85 )120 120 ))
+([hornh] ([add] 255 ([bard] 16 ))128 ([slewh] ([minor] 85 )120 120 ))))
+};maqam bayati
+{([jump] ([tar] 1 ))([lights] ([toggled] ([tar] 1 )16 ))
+([srate] ([short] 29 119 ))
+([arab] 
+([left] 
+([horn] ([add] 128 ([bard] 12 ))128 ([slew] ([major] 85 )120 120 ))
+([hornc] ([add] 156 ([bard] 12 ))130 ([slewc] ([majorc] 85 )120 120 ))
+([horne] ([add] 192 ([bard] 16 ))128 ([slewe] ([minord] 85 )120 120 ))
+([horng] ([add] 240 ([bard] 16 ))135 ([slewg] ([minorb] 85 )120 120 ))
+)([right] 
+([hornb] ([add] 143 ([bard] 12 ))130 ([slewb] ([majorb] 85 )120 120 ))
+([hornd] ([add] 180 ([bard] 16 ))135 ([slewd] ([majord] 85 )120 120 ))
+([hornf] ([add] 216 ([bard] 16 ))135 ([slewf] ([minorc] 85 )120 120 ))
+([hornh] ([add] 255 ([bard] 16 ))128 ([slewh] ([minor] 85 )120 120 ))))
+}

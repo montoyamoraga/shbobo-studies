@@ -1,0 +1,6 @@
+;bb
+{(arab (togoc (major )(minor )(short 9 51 )10 11 (short 13 77 )15 (short 15 64 )
+20 22 (short 23 64 )30 33 34 
+44 47 50 66 68 75 94 100 110 136 150 165 )
+(left (right (modo (hornc (togoc )(short 26 80 ))4 ))))
+}

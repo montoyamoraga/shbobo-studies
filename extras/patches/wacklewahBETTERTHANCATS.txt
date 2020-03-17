@@ -1,0 +1,3 @@
+;BETTER THAN CATS
+{(left (waveb (sawb (bar -89 (wavec (slave (dustb -13 )69 )-46 (majorb (saucec -45 91 ))))(barb -76 85 ))(corp 104 )(corpb )))
+(right (wave (saw (bard -81 (waved (slave (dust -11 )67 )-48 (majorc (sauced -46 88 ))))(barc -77 44 ))(corp 104 )(corpb )))}

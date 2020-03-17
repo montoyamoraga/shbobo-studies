@@ -1,0 +1,25 @@
+;SAw
+{(jump (tar 1 ))(srate (short 8 51 ))
+(pan
+(saw
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(bar ))
+(bar ))(pan
+(sawb
+(togoc (majorb )-75 60 64 72 80 90 48 54 )
+(togod (minorb )13 48 24 96 12 (arab 192 ))
+(barb ))
+(barb ))
+(pan
+(sawc
+(togoe (majorc )-5 72 80 90 48 54 60 64 )
+(togof (minorc )13 48 24 96 12 (arab 192 ))
+(barc ))
+(barc ))(pan
+(sawd
+(togog (majord )-5 90 48 54 60 64 72 80 )
+(togoh (minord )13 48 24 96 12 (arab 192 ))
+(bard ))
+(bard ))
+}

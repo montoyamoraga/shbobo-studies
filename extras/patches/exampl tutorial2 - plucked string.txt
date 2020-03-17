@@ -1,0 +1,3 @@
+;bb
+{(left (stringc (sauce 3 (dust (bar 36 )))5 (add 45 (corp -6 )(bar (corpb 6 )))))
+(right (stringd (sauceb 3 (dustb (bard 36 )))5 (add 60 (corp -6 )(bard (corpb 6 )))))}

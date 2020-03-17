@@ -1,0 +1,5 @@
+;bb
+{(left (right (combb (sauceb 5 (sawb (square (togob (dusth 37 )(hornc (pulsee (sawh 63 127 )(smokef 7 ))(salt (mountd 62 (sawg 88 (wheel -56 83 )))62 113 ))-23 113 6 -72 84 2 )99 )
+(wavec (sauceg -36 (string (saw 70 -45 )(waterd (dustf 99 )(wheelg 78 -83 )102 )(hornd 60 116 )))(slavee (dustg 78 )90 )(wheelc 114 -26 ))))
+(sauce 89 (smokeh (wheelb 43 -31 )))(sauceh 2 (smokeg 34 )(xor (sawd 77 68 )(slaveh (dustb 12 )))))
+))}

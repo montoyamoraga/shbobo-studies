@@ -1,0 +1,4 @@
+;seq 
+{([srate] 14 ) 
+([left] ([wave] ([horn] ([togo] ([mount] 64 1 )([mountc] 96 1 ([major] ))64 72 56 84 60 36 62 44 )96 ([slew] ([pulse] ([mount] )40 )45 45 ))12 ([corp] 45 69 ))) 
+([right] ([waveb] ([hornb] ([togob] ([mountb] 32 1 )24 36 42 30 26 )120 ([slewb] ([pulseb] ([mountb] )60 )45 45 ))4 ([corpb] 50 110 )))}

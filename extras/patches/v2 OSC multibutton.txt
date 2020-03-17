@@ -1,0 +1,25 @@
+;2 OSC multibutton
+{(srate (short 16 2 ))(jump (tar 1 ));C#3
+(left
+(saw
+(add
+(mul (return (majorc )(minorc ))12 48 )(mul (and (minorc )(majorc ))24 )
+(mul (return (minorc )(majorc ))6 )(mul (return (majord )(minord ))16 )
+(mul (and (minord )(majord ))32 )(mul (return (minord )(majord ))36 )
+)
+(add
+(mul (and (minor )(major ))96 48 )
+)
+(major ))
+)(right
+(sawc
+(add
+(mul (return (majorc )(minorc ))6 24 )(mul (and (minorc )(majorc ))12 )
+(mul (return (minorc )(majorc ))3 )(mul (return (majord )(minord ))8 )
+(mul (and (minord )(majord ))16 )(mul (return (minord )(majord ))18 )
+)
+(add
+(mul (and (minorb )(majorb ))-36 48 )
+)
+(majorb )))
+}

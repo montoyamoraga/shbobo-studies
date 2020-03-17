@@ -1,0 +1,384 @@
+SHBOBO OPCODE INFO
+
+ADD is the same as the ADD that every (finite) opcode has at its tail.
+ ;It superposes, or mixes sounds.
+
+AND, a nut, processes two inputs
+ ;As named, it ANDs the INN off the other.
+ ;...waveshaping.
+
+DIRAC and ARAB switch from 
+ ;signed to unsigned math, respectively.
+ ;The default is DIRAC, so it is only used
+ ;To switch back...
+
+BAR is the four bar sensors on SHNTH.
+ ;There are four [a-d], use it for pitch
+
+BEND, along with JUMP
+ ;is how to change SOUPs
+ ;or presets. BEND is more raw and hackerly than JUMP
+ ;BEND does nothing on zero INN
+ ;Nonzero INN makes it go!
+bend is like jump on steroids. instead of an orderly, triggered move to the next patch, bend changes patches all the time (well, at the sample rate) based on the data values its receving from its INN. try it with corp to get a feel for it, taring the corp with different amounts of flesh will also give different sounds. - - bend pairs nicely with randuplicate (make a lot of variations on a patch, then bend through them) 
+
+COMB [a-d] is a short delay.
+ ;INN is the input
+ ;NUME should be 1
+ ;DENO is the pitch control (delay length)
+ ;Put FB as a high number like 120
+
+CORP is the antenna on the SHNTH
+ ;There are two [a-b].
+
+DIRAC and ARAB switch from 
+ ;signed to unsigned math, respectively.
+
+DUST [a-h] is random pulses
+small numbers are less dense, large numbers are very dense duststorm (to test, put dust as the trigger for water, try dust: 4 versus dust: 40)
+
+FOG [a-d] is four triangular grains:
+ ;A simple granular synthesis.
+ ;TRIG fires off another one.
+ ;SWNU is the speed of envelopes
+ ;SWDE is the width of envelopes
+ ;HONU is the speed of horns
+ ;HODE is the DENO of horns.
+
+HAZE [a-d] is four sawtooth grains:
+ ;A simple granular synthesis.
+ ;TRIG fires off another one.
+ ;SWNU is the speed of envelopes
+ ;SWDE is the width of envelopes
+ ;HONU is the speed of horns
+ ;HODE is the DENO of horns.
+
+HORN is a triangle wave
+ ;NUME is its harmonic speed
+ ;DENO is its loudness and profundity:
+ ;its UNDERTONE
+
+HORSE, and this is not a granular assemblage.
+ ;Rather, they are to emulate FOURSES, their boundaries contingent.
+ ;Thus a horse has four inputs:
+ ;Two for bounce speed up and down UPNU DNNU
+ ;Two for bounds on the top and bottom UPDE DNDE
+ ;To emulate FOURSES, the HORSES must be used as references,
+ ;Within each other at the UPDE DNDE, the boundaries:
+the thing to make sure of here is that the upper bound (3rd parameter) is higher than the lower bound (4th parameter)..as long as you do that you'll be fine 
+
+JUMP, along with BEND
+ ;is how to change SOUPs
+ ;or presets. JUMP only jumps once per cycle, so it is easier to control.
+ ;It does nothing on zero INN
+ ;Nonzero INN makes it jump relative to the current preset.
+ ;Multiply the TRIG by 1 to make it jump exactly one.
+jump needs to have a mul in it to tell it how many bowls to jump. 
+- you can use any opcode to jump, even audio rate ones like horn or fog. you can also use a mount to clock your jumps, aka a patch sequencer 
+
+LEAK removes DC offset
+ ;Like a very low freq HP filter
+
+LEFT put sound out LEFT speaker!
+
+MAJOR [a-d] are the lower buttons on SHNTH
+
+MINOR [a-d] are the lower buttons on SHNTH
+
+MODO is like MUL but makes things super loud!
+ ;Also, when it goes past the boundaries, it RETURNs,
+ ;So it is kindof like waveshaping.
+
+MOUNT [a-h] is a slow triangle wave.
+ ;NUME is how fast it rises and falls.
+ ;DENO is how far it rises and falls.
+a small nume and a large deno is a slower envelope (small nume = rises slowly, large deno = must cover a large distance to the bounds). if you want it even slower than that than put it in sauce 
+
+MUL is the same as the MUL that every (finite) opcode has at its tail.
+ ;MUL by 128 and you get full volume, 1 is very quiet, and 0 is silent.
+ ;Think of MIDI style, volume from 0-128.
+ ;The phollowing are all equivalent:
+
+NEGWON only outputs negative one!
+
+PAN is like LEFT and RIGHT, a stereo output control.
+ ;PLACE makes it PAN left and RIGHT.
+
+PRESS is a compressor!
+
+PULSE is kindof like the opposite of SLAVE
+ ;TRIGger it to its DENO, and then it decays,
+ ;It can be used as a trigger for something slower
+
+REFLECT, a nut, processes two inputs
+ ;As named, it bounces the INN off the other.
+ ;...waveshaping.
+the 'other' term is the threshold above which the waveshaping occurs so make sure this threshold is not higher than the range of the input sound or you won't hear any effect..you can use the deno of the input sound as a guide as to where to set the threshold..ie try waveshaping a horn tuned to 48/64 with a corp with a mul of 32 and add of 64, you should hear it kick in as you touch more wire and the threshold falls below the horn's frequency
+
+RETURN, a nut, processes two inputs
+ ;As named, it folds the INN off the other.
+ ;...waveshaping.
+the 'other' term is the threshold above which the waveshaping occurs so make sure this threshold is not higher than the range of the input sound or you won't hear any effect..you can use the deno of the input sound as a guide as to where to set the threshold..ie try waveshaping a horn tuned to 48/64 with a corp with a mul of 32 and add of 64, you should hear it kick in as you touch more wire and the threshold falls below the horn's frequency
+
+RIGHT put sound out RIGHT speaker!
+
+SALSA is like SAUCE, but you trigger the samples.
+ ;Put it around something, and give it a TRIGGER.
+ ;It will only calculate samples on the TRIGGER.
+
+SALT [a-d] is the hi=pass version of WAVE, which is a wave equation resonant filter.
+ ;So salt has a high spectrum.
+ ;INN is obvious, so is Q, and rate is too!
+ a low value for Q is higher resonance (more wet, ringy). cutoff can be most anywhere (as long as not completely closed) for different kinds of effects 
+
+
+SAUCE is like a bubble of low sample rate.
+ ;Put it around something, and give it a period...
+ ;In sample ticks, so PER of 2 is twice as slow.
+bigger period is slower (longer wait between samples) 
+
+SAW is a sawtooth wave
+ ;It has more timbre than HORN
+ ;NUME is its harmonic speed
+ ;DENO is its loudness and profundity:
+ ;its UNDERTONE
+
+SHORT gives you fine control over numbers.
+ ;A regular number is an 8-bit byte
+
+SLAVE is for making drum machines?
+ ;It counts TRIGs for as many ticks as DENO,
+ ;then changes direction. Then,
+ ;It can be used as a trigger for something slower
+
+SLEW is just that, it relieves sharp direction changes.
+ ;UPP is how fast to rise.
+ ;DON is how fast to fall.
+low values are more slewing (ie slower to reach the target value), higher values are less slewing 
+
+SMOKE [a-h] is noise.
+
+SQUARE makes a square by comparation.
+ ;Give it an INN and an OTH to compare to.
+
+SRATE changes the global sampling rate!
+[srate] normally only has one value 
+but inside of the [srate] above is a [short] 
+[short] is like a fine tuning opcode where (big) represents the coarse tuning and (small) represents the fine tuning 
+this works well in lots of opcodes 
+like I said normally even if you don't have [srate] in your patch the default is 16 
+
+STRING [a-d] is Karpluss-Strong
+ ;TRIG plucks it.
+ ;NUME should be 1
+ ;DENO is the pitch control (delay length)
+ ;Leave out FB for infinite feedback.
+this one can be a bit tricky at first but its actually just a nume/deno tuning in there. so to get a typical resonant pluck you want a small nume and a large deno, it will then be bassier.. try a string triggered by majorbutt with nume of 4 and deno of 77 for example. if you want higher pitch strikes raise the nume value, if you want less resonance lower the feedback though i usually just delete the feedback parameter or set it very high (in the 120's). 
+
+SWAMP [a-d] is four weird grains:
+ ;A simple granular synthesis.
+ ;TRIG fires off another one.
+ ;SWNU is the speed of envelopes
+ ;SWDE is the width of envelopes
+ ;HONU is the speed of horns
+ ;HODE is the DENO of horns.
+
+SWOOP [a-h] is a rise and fall envelope shape.
+ ;TRIG is its input
+ ;NUME is how fast it rises and falls
+ ;DENO is how far it rises to.
+ ;SWOOP is a double shape in DIRAC, single in ARAB
+a small nume and a large deno is a slower envelope (small nume = rises slowly, large deno = must cover a large distance to the bounds). if you want it even slower than that than put it in sauce 
+
+TAR gives you the TAR button;
+ ;It is orange on SHNTH,
+
+TOGGLE [a-h] is a triggered flip-flop
+ ;TRIG is its input
+
+TOGO [a-h] is a sequence.
+ ;It has a trigger to make it advance,
+ ;And also a trigger for retreat.
+
+WATER [a-d], like fog, is a cluster of four...
+ ;WAVES, or resonant filters.
+ ;TRIG is obvious, so is Q, and rate is too!
+ a low value for Q is higher resonance (more wet, ringy). cutoff can be most anywhere (as long as not completely closed) for different kinds of effects 
+
+
+WAVE [a-h] is your basic resonant filter...
+ ;A Wave equation!.... so Q is ringier when lower.
+ ;INN is obvious, so is Q, and rate is too!
+  a low value for Q is higher resonance (more wet, ringy). cutoff can be most anywhere (as long as not completely closed) for different kinds of effects 
+
+
+WHEEL is a variable voltage reference,
+ ;that you change by giving it UPP or DON
+
+WIND is the microphone on the SHNTH
+
+WORM is now a rectifier, analog to some diodes and a capacitor.
+ ;simply INN MUL ADD. outputs the absolute value and has a decay.
+ ;Note that finger means wind, as in put your mouth to the mike.
+
+XOR, a nut, processes two inputs
+ ;As named, it XORs the INN off the other.
+ ;...waveshaping.
+the 'other' term is the threshold above which the waveshaping occurs so make sure this threshold is not higher than the range of the input sound or you won't hear any effect..you can use the deno of the input sound as a guide as to where to set the threshold..ie try waveshaping a horn tuned to 48/64 with a corp with a mul of 32 and add of 64, you should hear it kick in as you touch more wire and the threshold falls below the horn's frequency
+
+ZITHER [a-d] is, like fog, a cluster of four...
+ ;Strings! 
+ ;TRIG is your plucking finger, DENO is the pitch!
+is similar to string but just has a deno (nume is a constant) so try larger deno values for richer plucks. also its best triggered by dust for recurring plucks like a zither. try zither triggered by dust:15, deno:99 for example. 
+
+
+wind = microphone input
+corp = the antennas on the bottom
+bar = the wooden bars
+major = the top row of buttons
+minor = the bottom row of buttons
+horn = triangle oscillator
+saw = sawtooth oscillator
+toggle = a toggle
+togo = a sequencer
+swoop = a triggered triangle envelope
+mount = a slow lfo
+smoke = white noise
+dust = random pulses
+fog = a granular oscillator (based on tri wave)
+haze = another granular oscillator (based on saw wave)
+swamp = animated grains
+string = string synthesis
+comb = comb filter
+zither = trigger 4 strings at once
+wave = lowpass filter
+water = triggered filter pings
+salt = hipass filter
+horse = asymetric tri-wave oscillator
+slew = a slew
+wheel = accumulates values, used to make things scroll
+sauce = slows things down
+salsa = sample and hold
+press = compressor
+leak = noise gate
+reflect = waveshaper, refelcts down at threshold
+return = waveshaper, returns to 0 at threshold
+and = waveshaper / logic
+xor = waveshaper / logic
+negwon = -1, not needed in Fish
+left = left DAC
+right = right DAC
+square = comparator
+modo = multiply w/o scaling
+srate = sample rate
+mul = multiply
+add = add
+tar = tare the antenna
+bend = circuit bend through situations
+jump = jump through situations
+pan = stereo panning
+short = specify w/ 16 bits (short data type)
+dirac = signed chars
+arab = unsigned chars
+lights = leds
+
+
+
+lights = LED's 
+wind = microphone input 
+corp = the antennas 
+Oval section of crisscrossed wires on the bottom 
+
+tar = tare the antennae via depressing the orange button and touching the antennae simultaneously briefly and letting go of both at the same time 
+or.... centering the corps' value and Shnths output values (as previously programmed) with the your body's electromagnetic resistance (as explained above) 
+
+bar = the 4 wooden bars which are pressed, then the pressure on these bars is measured via contacts below the bars and coverted 
+major = the top row of 3 buttons 
+minor = the bottom row of 4 buttons 
+horn = a triangle oscillator 
+saw = a sawtooth oscillator 
+smoke = white noise 
+dust = random pulses 
+fog = a granular oscillator (based on a triangle wave) 
+haze = another granular oscillator (based on a saw wave) 
+horse = an asymetric tri-wave oscillator 
+swamp = animated grains 
+string = string synthesis 
+zither = trigger 4 strings at once 
+comb = comb filter 
+wave = lowpass filter 
+water = triggered filter-type pings 
+salt = hipass filter 
+swoop = a triggered triangle envelope 
+mount = a slow lfo 
+reflect = waveshaper - it reflects down at the threshold 
+return = waveshaper, 
+returns to 0 at the threshold 
+and = waveshaper / logic 
+xor = waveshaper / logic 
+slew = bi-directional slew 
+salsa = sample and hold 
+press = compressor 
+leak = noise gate 
+square = comparator 
+modo = multiply w/o scaling 
+srate = sample rate 
+mul = multiply 
+add = add (whew) 
+negwon = -1, not needed in Fish 
+left = left DAC 
+Digital to Analog Convertor 
+(Code to Sound) 
+right = right DAC 
+Digital to Analog Convertor 
+(Code to Sound) 
+bend = circuit bend through situations... 
+jump = jump through situations... 
+wheel = accumulates values, used to make things scroll 
+toggle = a toggle 
+togo = a sequencer 
+sauce = slows modified things down 
+pan = stereo panning 
+short = specify w/ 16 bits (short data type) 
+dirac = signed numbers (-128 to 127) 
+arab = unsigned numbers (0 to 255) 
+threshold = 
+Theres the nume and deno which are values in the bubbles of each modifier or opcode 
+A group of combined of situations is a Bouiliabase 
+Calanque is the palette/menu area on the lower right of Fish, 
+comprised of all the (above listed) opcode and modifier terms. 
+------------------------- 
+Pitches to Shnth nume & deno conversions 
+
+note - srate (use 'short' for all ) 
+C2 - short(67,24) 
+C#2 - 63, 53 
+D2 - 59, 110 
+D#2 - 56, 64 
+E2 - 53, 42 
+F2 - 50,43 
+F#2 - 47, 65 
+G2 - 44, 108 
+G#2 - 42,42 
+A2 - 39, 122 
+A#2 - 37, 91 
+B2 - 35, 76 
+C3 - 33,76 
+C#3 - 31,91 
+D3 - 29, 119 
+D#3 - 28, 32 
+E3 - 26, 85 
+F3 - 25, 21 
+F#3 - 23, 97 
+G3 - 22, 54 
+G#3 - 21, 21 
+A3 - 19, 125 
+A#3 - 18, 109 
+B3 - 17, 102 
+then halve for each additional octave using a limit of 128 (so C4 is 16, 102; D4 is 14, 123 etc.)
+
+
+- tuning is pretty straightforward once you become familiar with just intonation..1:1 is the base frequency, 2:1 is the octave, 3:2 the perfect fifth,etc. note that there are several equivalent tunings for each note..ie 48/32 and 54/36 are the same pitch. the fundamental frequency is the current sampling rate as set by srate or defaults to 16 (approx. c#). use arab mode to get finer granularity in your tuning ratios. 
+
+ 
+

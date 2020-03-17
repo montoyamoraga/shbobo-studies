@@ -1,0 +1,9 @@
+;WeepingWebs
+{(left (modo (comb (horn (mul 127 (hornb (mul 1 (modo (mount 18 110 )1 )(salsa (dustf 18 )(smoke )))127 ))(salsab (dustg 3 )(smoke ))(bar ))
+(togo (add (square (mountc 91 25 ))(square (mountd 87 35 )))(add (dust 9 )(dustb 6 )(dustc 13 )(dustd 29 ))
+2 (sawc 16 91 )120 (smoke )99 10 67 )
+(togob (add (duste 18 )(mounte 125 4 ))122 117 41 -38 -80 )105 )4 127 (bar )))
+(right (modo (combb (sawb (mul 127 (hornc (mul 1 (modo (mountb 25 109 )1 )(salsa ))127 ))(salsab )(bard ))
+(togoc (add (square (hornd 4 127 )-72 )(square (horne 3 127 )-10 ))(add (add (duste )(mounte )))85 (add (square (hornd 4 127 )-72 )(square (horne 3 127 )-10 ))100 5 (smoke )(zither (add (dust 9 )(dustb 6 )(dustc 13 )(dustd 29 ))45 ))
+(togod (add (sawd 9 127 )(sawe (mul 127 (hornc ))127 ))-14 (hornd )88 31 (swoop (square (hornc ))96 124 )34 (horne )112 )26 )4 127 (bard )))
+}

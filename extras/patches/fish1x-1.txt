@@ -1,0 +1,93 @@
+;C 
+{;C 
+(srate (short 8 51 ))
+(left 
+
+(pan 
+(horn 
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(sauce 14 (slew (bar )46 12 )))
+(add (sauce )(togo )(togob )(bar )))
+(pan 
+(hornb 
+(togoc (majorb )-75 60 64 72 80 90 48 54 )
+(togod (minorb )13 48 24 96 12 (arab 192 ))
+(sauceb 21 (slewb (barb )72 24 )))
+(add (sauceb )(togob )(togoc )(barb )))
+)(right 
+
+
+(pan 
+(hornc 
+(togoe (majorc )-5 72 80 90 48 54 60 64 )
+(togof (minorc )13 48 24 96 12 (arab 192 ))
+(saucec 24 (slewc (barc )54 12 )))
+(add (saucec )(togoc )(togod )(barc )))
+(pan 
+(hornd 
+(togog (majord )-5 90 48 54 60 64 72 80 )
+(togoh (minord )13 48 24 96 12 (arab 192 ))
+(saucee 14 (slewe (bard )68 24 )))
+(add (sauced )(togod )(togo )(bard )))
+)
+};D 
+{(srate (short 14 16 ))
+(left 
+(right 
+(pan (horn 
+(togo (major )102 48 54 60 64 72 80 90 )
+(togob (minor )13 48 24 96 12 (arab 192 ))
+(swoop (square (bar )15 )48 (bar ))
+)(swoop ))
+(pan (hornb 
+(togoc (majorb )-75 60 64 72 80 90 48 54 )
+(togod (minorb )13 48 24 96 12 (arab 192 ))
+(swoopb (square (barb )35 )48 (barb ))
+)(swoopb ))
+(pan (hornc 
+(togoe (majorc )-5 72 80 90 48 54 60 64 )
+(togof (minorc )13 48 24 96 12 (arab 192 ))
+(swoopc (square (barc )78 )48 (barc )))(swoopc ))
+))
+};E 
+{(srate (short 13 42 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};F 
+{(srate (short 12 75 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};G 
+{(srate (short 11 27 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};A 
+{(srate (short 9 126 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+};B 
+{(srate (short 8 115 ))
+(left 
+(right 
+(horn 48 48 (bar ))
+(hornb 60 48 (bar ))
+(hornc 72 48 (bar ))
+))
+}

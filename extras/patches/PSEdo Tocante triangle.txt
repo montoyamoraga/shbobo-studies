@@ -1,0 +1,28 @@
+;bb
+ (arab (togo (major) (minor) (short 9 51) 10 11 (short 13 77) 15 (short 15 64) 
+ 20 22 (short 23 64) 30 33 34 
+ 44 47 50 66 68 75 94 100 110 136 150 165) 
+ (togod (majord) (minord) (short 9 51) 10 11 (short 13 77) 15 (short 15 64) 
+ 20 22 (short 23 64) 30 33 34 
+ 44 47 50 66 68 75 94 100 110 136 150 165) 
+ (togoc (majorc) (minorc) (short 9 51) 10 11 (short 13 77) 15 (short 15 64) 
+ 20 22 (short 23 64) 30 33 34 
+ 44 47 50 66 68 75 94 100 110 136 150 165) 
+ (togob (majorb) (minorb) (short 9 51) 10 11 (short 13 77) 15 (short 15 64) 
+ 20 22 (short 23 64) 30 33 34 
+ 44 47 50 66 68 75 94 100 110 136 150 165) 
+ (modo (hornd (togod) (short 26 80)) 4) 
+ (modo (hornc (togoc) (short 26 80)) 4) 
+ (modo (hornb (togob) (short 26 80)) 4) 
+ (modo (horn (togo) (short 26 80)) 4) 
+) (left (right (arab (modo (hornd (togod) (short 26 80) (bard)) 4) 
+ (modo (hornb (togob) (short 26 80) (barb)) 4) 
+ (modo (hornc (togoc) (short 26 80) (barc)) 4) 
+ (modo (horn (togo) (short 26 80) (bar)) 4) 
+ 
+ 
+) 
+ 
+ 
+ 
+))

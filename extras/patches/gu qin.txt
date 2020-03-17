@@ -1,0 +1,106 @@
+;   "Gu Qin"
+;   By Meng Qi
+;   www.mengqimusic.com
+;   2013.04
+
+{
+
+   ([togo a] ([minor a]) 24 27 30 36 40)
+   ([togo b] ([minor a]) 30 36 40 48 54)
+   ([togo c] ([minor a]) 40 48 54 60 72)
+   ([togo d] ([minor a]) 54 60 72 80 96)
+
+   ([toggle a] ([major a]))
+   ([toggle b] ([major b]))
+   ([toggle c] ([major c]))
+   ([toggle d] ([major d]))
+   
+   ([left] 
+      ([wave a]
+         ([add]
+            ([zither a]
+               ([square] ([bar a]) 20)
+               ([add]
+                  ([togo a])
+                  ([horn a] ([bar a]) 100 ([mul] ([toggle a]) ([corp a])))
+                  ([dust a] ([bar a]) ([mul] ([toggle b]) ([corp a])))
+                  ([horse a] ([bar a]) ([bar b]) ([bar c]) ([bar d]) ([mul] ([toggle c]) ([corp a])))
+                  ([fog a] ([smoke a]) ([bar b]) ([bar c]) ([bar d]) ([mul] ([toggle d]) ([corp a])))
+               )
+               48
+               ([corp b]) 
+               ([bar a])
+            )
+
+            ([zither b]
+               ([square] ([bar b]) 20)
+                  ([add] 
+                     ([togo b])
+                     ([horn b] ([bar b]) 100 ([mul] ([toggle a]) ([corp a])))
+                     ([dust b] ([bar b]) ([mul] ([toggle b]) ([corp a])))
+                     ([horse b] ([bar b]) ([bar c]) ([bar d]) ([bar a]) ([mul] ([toggle c]) ([corp a])))
+                     ([fog b] ([smoke b]) ([bar c]) ([bar d]) ([bar a]) ([mul] ([toggle d]) ([corp a])))
+                  )
+               48
+               ([corp b]) 
+               ([bar b])
+            )
+
+            ([zither c]
+               ([square] ([bar c]) 20)
+                  ([add] 
+                     ([togo c])
+                     ([horn c] ([bar c]) 100 ([mul] ([toggle a]) ([corp a])))
+                     ([dust c] ([bar c]) ([mul] ([toggle b]) ([corp a])))
+                     ([horse c] ([bar c]) ([bar d]) ([bar a]) ([bar b]) ([mul] ([toggle c]) ([corp a])))
+                     ([fog c] ([smoke c]) ([bar d]) ([bar a]) ([bar b]) ([mul] ([toggle d]) ([corp a])))
+                  )
+               48
+               ([corp b]) 
+               ([bar c])
+            )
+
+            ([zither d]
+               ([square] ([bar d]) 20)
+                  ([add] 
+                     ([togo d])
+                     ([horn d] ([bar d]) 100 ([mul] ([toggle a]) ([corp a])))
+                     ([dust d] ([bar d]) ([mul] ([toggle b] ([major b])) ([corp a])))
+                     ([horse d] ([bar d]) ([bar a]) ([bar b]) ([bar c]) ([mul] ([toggle c] ([major c])) ([corp a])))
+                     ([fog d] ([smoke d]) ([bar a]) ([bar b]) ([bar c]) ([mul] ([toggle d] ([major d])) ([corp a])))
+                  )
+               48
+               ([corp b]) 
+               ([bar d])
+            )
+         )
+         20
+         ([add] 
+            ([bar a] 15) 
+            ([bar b] 20) 
+            ([bar c] 25) 
+            ([bar d] 30)
+            35
+         )
+      )
+   )
+
+   ([right] 
+      ([wave b]
+         ([add]
+            ([zither a])
+            ([zither b])
+            ([zither c])
+            ([zither d])
+         )
+         20 
+         ([add] 
+            ([bar a] 30) 
+            ([bar b] 25) 
+            ([bar c] 20) 
+            ([bar d] 15)
+            35s
+         )
+      )
+   )
+}

@@ -1,0 +1,14 @@
+;C
+{;C
+(srate (short 8 51 ))
+(left 
+(right 
+(horn (salsad )(salsae )(bar ))
+(hornb (salsab )(salsac )(barb ))
+(hornc (salsa )(salsah )(barc ))
+(wave (dust 1 )1 (salsah (dusth )(smokeb )))(waveb (dustb 2 )1 (salsa (dust )(smokec )))
+(wavec (dustc 2 )1 (salsab (dustb )(smokeb )))(waved (dustd 1 )1 (salsac (dustc )(smoke )))
+(wavee (duste 2 )1 (salsad (dustd )(smoke )))(wavef (dustf 2 )1 (salsae (duste )(smokeb )))
+(waveg (dustg 4 )1 (salsaf (dustf )(smoke )))(waveh (dusth 1 )1 (salsag (dustg )(smokec )))
+))
+}

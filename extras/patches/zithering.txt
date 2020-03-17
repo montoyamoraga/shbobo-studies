@@ -1,0 +1,20 @@
+(
+{
+([srate] 12)
+([togo a] ([minor a]) 10 15 30)
+([togo b] ([minor b]) 48 60 72)
+([togo c] ([minor c]) 32 40 48)
+([togo d] ([minor d]) () -36)
+
+([left]
+
+([zither b] ([square] ([swoop b] ([swoop b] 1) ([slew a] ([togo a]) 4 4) 100) 1) ([togo b]) 30 118))
+
+([right]
+([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
+
+
+
+))))
+
+}

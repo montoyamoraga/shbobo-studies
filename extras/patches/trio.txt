@@ -1,0 +1,21 @@
+(
+
+{
+
+([left] ([left]
+([water a] ([square] ([bar a]) 50) 1 ([salsa a] ([square] ([bar a]) 50) ([smoke a] 44)) )
+([horn d] ([salsa d] ([square] ([bar d]) 50) ([mul] ([horn d]) 64 60)) 80 ([sauce d] 13 ([slew d] ([bar d]) 40 10)))
+([arab]
+([salt a] ([smoke d] ([swoop a] ([major b]) 250 160)) 80 225))
+
+))
+
+
+([right] 
+([mul] ([zither b]  ([sauce c] 4 (dust ([square] ([bar b]) 90))) ([salsa b] ([square] ([bar b]) 50) ([smoke b] ([corp a] 30) 48)) 126) 80)
+([mul] ([zither c] ([square] ([bar c]) 50) ([salsa c] ([square] ([bar c]) 50) ([smoke c] 20 104)) 126) 80)
+([string a]([major d]) 110 110))
+
+))))
+
+}

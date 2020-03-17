@@ -1,0 +1,57 @@
+;wayergrelkOOF
+{(jump (minor 1 (major -1 )))(lights 1 2 4 8 16 32 64 128 )
+(left (right (modo (hornc (waveb (sawf (bar 122 )80 )(pulsed (square (hornd (barb -113 )67 )4 )48 )(barc 36 ))
+(wavec (sawg (swoop (sawh 98 (bard 4 ))34 -5 )(wheel 58 56 ))(corp -3 )(corpb -90 )))-44 )))};scratching6
+{(jump (minor 1 (major -1 )))(lights 1 2 4 8 16 32 64 )
+(left (right (modo (hornb (water )(haze ))-32 )(modo (saltb (hornc (sauceb 3 (haze ))(togo ))56 -92 )-23 )))
+(togod 12 (sawf 1 (corp -111 24 ))48 24 (mountd 56 68 ))
+(haze (pulseb (dustb 24 )18 )
+(barc -2 )(sauce 2 (sawe 2 -90 ))
+(mount 74 7 )(salt (swoop (dustc 7 )5 78 )5 48 ))
+(water (sawd (barb )67 )(bar -24 )94 )};croozle2
+{(jump (minor 1 (major -1 )))(lights 1 2 4 8 16 32 )
+(left (right (modo (wave (horn (water )(waterb ))(sawd -9 38 )124 )83 )))
+(square (saltb (water (saw (togoc )(pulsec (dustd 4 )17 ))(saucec 2 (togo ))(pulseb (dustc 100 )(togob )))-90 43 )6 )
+(togob (dustb 3 )78 98 106 62 )
+(togo (duste -14 )80 7 88 21 -98 7 100 
+(togoc (dustf 117 )80 117 -6 75 -18 -2 )8 45 )
+(togoh (dust 7 )67 -9 124 )
+(salt (waterb (togoh )7 90 )(sawe 2 90 )(togo ))};moodlys2
+{(jump (minor 1 (major -1 )))(lights 1 2 4 8 16 )
+(left (right (modo (horn (togo )(swamp ))-45 )))
+(swamp (waterb (sawh 2 (pulseb ))5 95 )
+(pulse (dust 80 )4 )(salt (sawb (wave (saw 2 77 )(togoc )90 )(sawe 5 72 ))
+(wheelc 6 77 )3 )
+(pulsed (sawd 3 73 )42 )(togob (sawc 2 75 )4 32 (wheelb 6 75 )-17 63 ))
+(togo (pulsec (hornb 3 100 )13 )-8 (pulseb (hornc -2 82 )-94 )-62 )
+(togoc (dustb 45 )(salt (sawf 3 108 )38 126 )4 (smoke 16 )7 128 )};jumpsiesfondle2
+{(jump (minor 1 (major -1 )))(lights 1 2 4 8 )
+(left (right (modo (wave (horn (saw (corpb -2 )80 )(horse ))(sawb 60 120 )100 )-75 )))
+(swamp (smoke )(corp -90 )(bar -12 )80 15 )
+(horse (swamp (barc -68 -115 ))(pulse (dust (corp -59 ))95 )(togo )(bard -42 )78 )
+(togo (barb -120 )(sawc 2 120 )5 70 32 )
+};road3
+{(jump (minor 1 (major -1 )))(lights 1 2 4 )
+(left (right (modo (waveb (horne (swoop (sawg -7 57 )45 -93 )
+(pulsef (sawh 4 78 )(slewg (sawd 2 42 )5 2 )))
+(mountb 4 56 )102 )-6 )
+))
+};roadmoisture 
+{(jump (minor 1 (major -1 )))(lights 1 2 )
+(left (right (modo (waveb (horne (swoop (sawg -7 (barc -90 ))(bar 105 )-93 )
+(pulsef (sawh (barb -69 )78 )(slewg (sawd 1 65 )5 2 )))
+(saw 3 123 )(bard -120 ))-6 )
+))};moisturewhip
+{(jump (minor 1 (major -1 )))(lights 1 )
+(left (right (modo (waveb (horne (swoop (sawg (corpb -36 113 )(barc -90 ))(bar 105 )-93 )
+(pulsef (sawh (barb -69 )78 )(slewg (sawd (corp 78 )65 )5 2 )))
+(saw 3 123 )(bard -120 ))-6 )
+))};CLOBBSA
+{(jump (minor 1 (major -1 )))(lights 1 2 4 8 )
+(left (right (modo (hornh (saw (dustd 6 )(corpb -53 ))(pulsed (sawb (barc )81 )6 ))-30 )
+(modo (horng (swoopb (sawh 23 (corp -41 ))(barb )(bar -91 ))(swoopc (sawg 7 121 )(bard -90 )72 ))-30 )))};CRASNKTSA4
+{(jump (minor 1 (major -1 )))(lights 1 2 4 )
+(left (right (modo (horn (water (saw (pulseb (sawc 3 23 )(slewb ))(duste (barc 80 )))
+(slew (sawd 1 (bar ))37 2 )122 )
+(salt (pulse (sawb (haze (dust 13 )-120 40 (barb 8 )(slewb (dustb 28 )28 -2 ))
+(dustf (bard -48 )))7 )23 100 ))20 )))}

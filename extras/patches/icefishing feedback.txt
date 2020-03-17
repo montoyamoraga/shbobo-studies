@@ -1,0 +1,43 @@
+;1
+{(srate (short -8 -19 ))
+(jump (minor 1 ))
+(left (right (waterc (dustc 3 )(barc )(mount (corpb )(corp )))))
+(left (right (combb (horn 40 88 (barb 84 ))(corp (sauceh -25 (smoke (corpb ))))(corpb )(corp 90 ))))
+(arab )(left (right (comb (hornh 33 (wavec (saucef (slewc (bar -80 )9 (slewd (bar )16 7 )68 )(bar ))(corp )(corpb ))(corpb )(bar 7 ))(corp )(corpb )41 )))};1
+{(srate (short -53 3 ))
+(jump (minor 56 ))
+(left (right (waterc (dustc -37 )(barc )(mount (corpb )(corp )))))
+(left (right (combb (horn 64 -59 (barb -87 ))(corp (sauceh 23 (smoke (corpb ))))(corpb )(corp -40 ))))
+(arab )(left (right (comb (hornh -77 (wavec (saucef (slewc (bar 103 )59 (slewd (bar )81 -9 )-94 )(bar ))(corp )(corpb ))(corpb )(bar 39 ))(corp )(corpb )38 )))};2
+{(srate 66 )
+(jump (minor 1 ))
+(left (right (reflect (horse 21 97 8 3 (bar ))121 )
+(waved (sawc 8 66 (bard ))118 -32 )))
+(left (right (hazeb (dustd (mountb 0 -56 (barc )))80 49 -98 31 )))
+(left (right (arab )(waterc (dustc 3 )(barc )(mount (corpb )(corp )))))
+(left (right (combb (horn 40 88 (barb 84 ))(corp )(corpb )(corp 77 ))))
+(arab )(left (right (comb (hornh 33 (wavec (saucef (slewc (bar -80 )9 (slewd (bar )16 7 )68 )(bar ))(corp )(corpb (slewe (bard )45 118 )))(corpb )(bar 7 ))(corp )(corpb )41 )))};2
+{(srate 93 )
+(jump (minor 118 ))
+(left (right (reflect (horse -22 125 -22 117 (bar ))-10 )
+(waved (sawc 123 87 (bard ))96 125 )))
+(left (right (hazeb (dustd (mountb -71 -19 (barc )))-102 -16 -54 -113 )))
+(left (right (arab )(waterc (dustc -101 )(barc )(mount (corpb )(corp )))))
+(left (right (combb (horn -5 -18 (barb 16 ))(corp )(corpb )(corp 7 ))))
+(arab )(left (right (comb (hornh 20 (wavec (saucef (slewc (bar 17 )115 (slewd (bar )-35 -87 )95 )(bar ))(corp )(corpb (slewe (bard )-57 -19 )))(corpb )(bar 44 ))(corp )(corpb )126 )))};3
+{(srate 21 )
+(jump (minor 1 ))
+(left (right (reflect (hornb 84 56 (bar ))8 )(waterd (mountc (corpb )(corp ))(barc )(corpb ))))
+(left (right (sawc 55 66 (bard ))))
+(left (right (hazeb (dustd (mountb 0 -56 (barc )))60 49 -98 31 )))
+(left (right (waterc (dustc 3 )(barc 56 )(mount (corpb )(corp )))))
+(left (right (combb (horn 40 88 (barb 84 ))(corp )(corpb )(corp 90 ))))
+(arab )(left (right (comb (hornh 33 (wavec (saucef (slewc (bar -80 )9 (slewd (bar )16 7 )68 )(bar ))(corp )(corpb ))(corpb )(bar 7 ))(corp )(corpb )41 )))};3
+{(srate 74 )
+(jump (minor -102 ))
+(left (right (reflect (hornb -8 -63 (bar ))-32 )(waterd (mountc (corpb )(corp ))(barc )(corpb ))))
+(left (right (sawc 111 -113 (bard ))))
+(left (right (hazeb (dustd (mountb 83 -70 (barc )))-30 78 55 -94 )))
+(left (right (waterc (dustc -15 )(barc 73 )(mount (corpb )(corp )))))
+(left (right (combb (horn 15 108 (barb -89 ))(corp )(corpb )(corp -14 ))))
+(arab )(left (right (comb (hornh 123 (wavec (saucef (slewc (bar -123 )15 (slewd (bar )115 39 )-125 )(bar ))(corp )(corpb ))(corpb )(bar -72 ))(corp )(corpb )121 )))}
