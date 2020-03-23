@@ -90,7 +90,18 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### wind
 
-microphone
+* Description: Transmits the value received by the onboard microphone. 
+* Arguments: mul add
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+    ```
+    ;use mic to control volume and pitch of triangle oscillator
+    ([left]
+        ([arab]
+        ([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
+      )
+    ```
 
 #### finger 
 
@@ -638,20 +649,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* wind
-  * [wind] mul add
-  * Description: transmits the value received by the onboard microphone
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ;use mic to control volume and pitch of triangle oscillator
-    ([left]
-        ([arab]
-        ([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
-      )
-    ```
 
 * corp
   * [corp] mul add
