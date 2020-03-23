@@ -410,11 +410,16 @@ sixteen bit precision number
 * Description:  esoteric, execute using unsigned numbers, range from 0 to 255.
 * Arguments: liszt
 
-####  lights
+#### lights
 
-put an input to the LEDs
-
-
+* Description: put an input to the LEDs. Used to address the 8 burgundy LEDs.
+* Arguments: inn
+  * inn: determines which LEDs are on/off
+* Example:
+  ```
+  ; use LEDs to represent value of [corp a]
+  ([lights] ([corp a]))
+  ```
 
 TODO: cleanup after this
 
@@ -1141,13 +1146,3 @@ Part 5. Glossary of m-expressions
   * bigg: coarser adjustment of value (msb)
   * smal: finer adjustment of value (lsb)
   * example:
-
-* lights
-  * [lights] inn
-  * Description: used to address the 8 burgundy LEDs                
-  * inn: determines which LEDs are on/off
-  * example:
-    ```
-    ; use LEDs to represent value of [corp a]
-    ([lights] ([corp a]))
-    ```
