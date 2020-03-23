@@ -6,74 +6,77 @@ Shlisp is the language that Shbobo instruments use.
 
 Shlisp can be programmed either with text, or through the graphical user interface Fish.
 
-
 ## Opcodes
 
-This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0:
+### Opcodes as listed on Fish 2.0
 
-* wind
-* finger
-* corp 2
-* plank 2
-* bar 4
-* top
-* bot
-* heart
-* bridge
-* minor 4
-* brass 4
-* major 4
-* steel 4
-* horn 8
-* saw 8
-* toggle 8
-* togo 8
-* swoop 8
-* mount 8
-* smoke 8
-* dust 8
-* fog 4
-* haze 4
-* swamp 4
-* string 4
-* comb 4
-* zither 4
-* wave 8
-* water 4
-* salt 4
-* horse 4
-* slew 8
-* wheel 8
-* slave 8
-* pulse 8
-* sauce 8
-* salsa 8
-* melody 4
-* worm 4
-* scale 4
-* ladder 4
-* press 4
-* leak 4
-* reflect
-* return
-* and
-* xor
-* negwon
-* left
-* right
-* square
-* modo
-* srate
-* mul
-* add
-* tar
-* bend
-* jump
-* pan
-* short
-* dirac
-* arab
-* lights
+This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0, and with the description that is presented when hovering over them.
+
+* wind: microphone
+* finger: top finger fretted
+* corp 2: antennae
+* plank 2: all the frets' bits
+* bar 4: barflex
+* top: top knob
+* bot: bottom knob
+* heart: heart-shaped chambre
+* bridge: bridge of the strings
+* minor 4: lower buttons
+* brass 4: brass marked frets
+* major 4: upper buttons
+* steel 4: steel marked frets
+* horn 8: triangle waveform
+* saw 8: sawtooth waveform
+* toggle 8: trigger a flipflop
+* togo 8: sequencer
+* swoop 8: trigger a pyramid
+* mount 8: slow triangle waveform
+* smoke 8: random noise
+* dust 8: random pulses
+* fog 4: trigger triangular grains
+* haze 4: trigger sawtooth grains
+* swamp 4: trigger swoping grains
+* string 4: trigger a pluckd string
+* comb 4: input sound to the string
+* zither 4: trigger a bunch strings
+* wave 8: low pass filter
+* water 4: trigger a cluster of waves
+* salt 4: hi pass filter
+* horse 4: variable duty sawtri
+* slew 8: filter a signal with different up and down rates
+* wheel 8: input numbers to bring the value up or down
+* slave : count pulses by variable integer amount
+* pulse 8: trigger a pulse and decay with variable height
+* sauce 8: slow an input by a period
+* salsa 8: selectively trigger an input
+* melody 4: record and repeat melodies
+* worm 4: rectify and hold an input, like an envelope generator
+* scale 4: convert frets to exponential (musical) pitch
+* ladder 4: traverse a list of 32 according to input
+* press 4: compressor
+* leak 4: leak DC from a sound
+* reflect: waveshaper that reflects
+* return: waveshaper that returns
+* and: bitwise and of two signals
+* xor: bitwise xor of two signals
+* negwon: return negative one
+* left: send sound out the left
+* right: send sound out the right
+* square: make an input into a square, compared against an optional other
+* modo: multiply without scaling
+* srate: change the sample rate!
+* mul: multiply scaling
+* add: add a lizst
+* tar: tarbutton
+* bend: bend through the fish soup
+* jump: trigger a jump to another soup
+* pan: send sound out spatialized
+* short: sixteen bit precision number
+* dirac: default, execute using negative numbers
+* arab: esoteric, execute using no negatives
+* lights: put an input to the LEDs
+
+### Opcodes as listed on Fish 2.0
 
 
 
