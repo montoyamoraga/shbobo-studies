@@ -1,5 +1,14 @@
 # Fish
 
+## About
+
+### Fish description at petermopar.blogspot.com
+
+Fish is the program (for Windows, Linux, and Macintosh) to edit and upload patches for Shbobo devices (SHNTH and SHTAR). With the release of the new Shbobo SHTAR, the program has received an overhaul. Most noticeably, the older system of tabbed soups has been replaced with a universal map of the whole file as loaded. Thus, soups are all visible, adjacent to each other. It is like a world map, and users are encouraged to use both horizontal and vertical layouts to organize their patch ideas. 
+
+*Retrieved from the Fish 2.0 blog post at the petermopar.blogspot.com website, available at <https://petermopar.blogspot.com/2018/04/fish-20.html>, accessed on Monday March 23 2020.* )
+
+
 ## Download
 
 As of March 2020, the newest version of Fish is available at [shbobo.net](https://shbobo.net/), as shbobo.zip.
