@@ -59,7 +59,7 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * [pulse 8](#pulse): trigger a pulse and decay with variable height
 * [sauce 8](#sauce): slow an input by a period
 * [salsa 8](#salsa): selectively trigger an input
-* [**melody 4**](#): record and repeat melodies
+* [**melody 4**](#melody): record and repeat melodies
 * [**worm 4**](#worm): rectify and hold an input, like an envelope generator
 * [**scale 4**](#scale): convert frets to exponential (musical) pitch
 * [**ladder 4**](#ladder): traverse a list of 32 according to input
