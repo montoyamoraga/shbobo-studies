@@ -10,13 +10,13 @@ Shlisp can be programmed either with text, or through the graphical user interfa
 
 ### Opcodes as listed on Fish 2.0
 
-This is a screenshot of all 63 opcodes, as shown on the Fish graphical user interface.
+Here is a screenshot of all 63 opcodes, as shown on the Fish 2.0 graphical user interface.
 
 ![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/fish-opcodes.png "fish-opcodes.png")
 
-This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0, and with the description that is presented when hovering over them.
+*Screenshot of the opcodes on the software Fish, running on a MacOS system, retrieved on Monday March 23 2020*
 
-Some of the opcodes are presented with a red background, which was trancrihere as **bold**.
+Here is a transcription of all the 63 opcodesa list of all the 63 opcodes, in the same order and notation, inlcuding the description that pops up when hovering over them, and notating the original red background as **bold**.
 
 * wind: microphone
 * **finger**: top finger fretted
