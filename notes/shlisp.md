@@ -1,5 +1,12 @@
 # Shlisp
 
+## About
+
+Shlisp is the language that Shbobo instruments use.
+
+Shlisp can be programmed either with text, or through the graphical user interface Fish.
+
+
 ## Opcodes
 
 This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0:
