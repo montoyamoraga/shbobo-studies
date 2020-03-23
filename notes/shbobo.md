@@ -1,1 +1,7 @@
+# Shbobo
+
+## About
+
+Taken from the Shbobo website [https://shbobo.net/about.html](https://shbobo.net/about.html):
+
  Shbobo was founded around 2010 by Peter Blasser and Steve Korn. An alternative name for the company was KORNBLASSER. We decided Shbobo was better because it sound-symbolizes "sh" for data and bobo is the bouncing and alive sound of human gestures. As you can see by the picture, I leaned on Steve a lot and he facilitated a bunch. It was his original idea of taking the analog inventions of Ciat-Lonbarde and making them USB.
