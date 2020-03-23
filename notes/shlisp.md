@@ -10,13 +10,17 @@ Shlisp can be programmed either with text, or through the graphical user interfa
 
 ### Opcodes as listed on Fish 2.0
 
-Here is a screenshot of all 63 opcodes, as shown on the Fish 2.0 graphical user interface.
+Here is a screenshot of the complete 63 opcodes palette, as shown on the Fish 2.0 graphical user interface.
 
 ![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/fish-opcodes.png "fish-opcodes.png")
 
 *Screenshot of the opcodes on the software Fish, running on a MacOS system, retrieved on Monday March 23 2020*
 
-Here is a transcription of all the 63 opcodesa list of all the 63 opcodes, in the same order and notation, inlcuding the description that pops up when hovering over them, and notating the original red background as **bold**.
+Here is a transcription of the complete ordered list of 63 opcodes, inlcuding the description that pops up when hovering over them.
+
+Most opcodes can be used for programming both Shbobo instruments (Shnth and Shtar), and they are shown with a white background on the opcodes palette.
+
+The few ones that are only for the Shtar and not for the Shbobo, are shown with a red background on the opcode palette, and in this transcription that is represented with **bold letters**.
 
 * wind: microphone
 * **finger**: top finger fretted
@@ -81,6 +85,8 @@ Here is a transcription of all the 63 opcodesa list of all the 63 opcodes, in th
 * dirac: default, execute using negative numbers
 * arab: esoteric, execute using no negatives
 * lights: put an input to the LEDs
+
+
 
 ### Opcodes as listed on Fish 2.0
 
