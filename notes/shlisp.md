@@ -13,18 +13,18 @@ Shlisp can be programmed either with text, or through the graphical user interfa
 This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0, and with the description that is presented when hovering over them.
 
 * wind: microphone
-* finger: top finger fretted
+* **finger**: top finger fretted
 * corp 2: antennae
-* plank 2: all the frets' bits
+* **plank 2**: all the frets' bits
 * bar 4: barflex
-* top: top knob
-* bot: bottom knob
-* heart: heart-shaped chambre
-* bridge: bridge of the strings
+* **top**: top knob
+* **bot**: bottom knob
+* **heart**: heart-shaped chambre
+* **bridge**: bridge of the strings
 * minor 4: lower buttons
-* brass 4: brass marked frets
+* **brass 4**: brass marked frets
 * major 4: upper buttons
-* steel 4: steel marked frets
+* **steel 4**: steel marked frets
 * horn 8: triangle waveform
 * saw 8: sawtooth waveform
 * toggle 8: trigger a flipflop
@@ -49,10 +49,10 @@ This is a list of all the 63 opcodes, in the same order and notation as listed o
 * pulse 8: trigger a pulse and decay with variable height
 * sauce 8: slow an input by a period
 * salsa 8: selectively trigger an input
-* melody 4: record and repeat melodies
-* worm 4: rectify and hold an input, like an envelope generator
-* scale 4: convert frets to exponential (musical) pitch
-* ladder 4: traverse a list of 32 according to input
+* **melody 4**: record and repeat melodies
+* **worm 4**: rectify and hold an input, like an envelope generator
+* **scale 4**: convert frets to exponential (musical) pitch
+* **ladder 4**: traverse a list of 32 according to input
 * press 4: compressor
 * leak 4: leak DC from a sound
 * reflect: waveshaper that reflects
