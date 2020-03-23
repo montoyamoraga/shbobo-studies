@@ -26,7 +26,7 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * [**finger**](#finger): top finger fretted
 * [corp 2](#corp): antennae
 * [**plank 2**](#plank): all the frets' bits
-* [bar 4]: barflex
+* [bar 4](#bar): barflex
 * **top**: top knob
 * **bot**: bottom knob
 * **heart**: heart-shaped chambre
