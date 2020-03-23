@@ -16,6 +16,14 @@ Shbobo creates warm and wooden digital synths that connect to your computer for 
 
 *Retrieved from the Ordering section of the synthmall.com website, found at <https://synthmall.com/ordering.html>  accesed on Monday March March 23 2020.*
 
+## Technical specifications
+
+### Power supplies specification at synthmall.com
+
+Shbobo instruments are powered off of the USB connection. You will need USB type-A to type-B cable (not included). The instruments have built-in, NiMH batteries, that can run it for many hours on a full charge. They automatically trickle charge when connected to USB. When storing, make sure the power switch is off to save batteries.
+
+*Retrieved from the Ordering section of the synthmall.com website, found at <https://synthmall.com/ordering.html>  accesed on Monday March March 23 2020.*
+
 ## Images
 
 ![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/kornBLASSER.jpg "kornBlasser.jpg")
