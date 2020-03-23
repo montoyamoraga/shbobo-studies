@@ -12,6 +12,8 @@ Shlisp can be programmed either with text, or through the graphical user interfa
 
 This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0, and with the description that is presented when hovering over them.
 
+Some of the opcodes are presented with a red background, which was trancrihere as **bold**.
+
 * wind: microphone
 * **finger**: top finger fretted
 * corp 2: antennae
