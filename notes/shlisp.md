@@ -10,6 +10,10 @@ Shlisp can be programmed either with text, or through the graphical user interfa
 
 ### Opcodes as listed on Fish 2.0
 
+This is a screenshot of all 63 opcodes, as shown on the Fish graphical user interface.
+
+![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/fish-opcodes.png "fish-opcodes.png")
+
 This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0, and with the description that is presented when hovering over them.
 
 Some of the opcodes are presented with a red background, which was trancrihere as **bold**.
