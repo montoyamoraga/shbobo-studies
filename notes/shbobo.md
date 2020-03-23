@@ -18,6 +18,6 @@ Shbobo creates warm and wooden digital synths that connect to your computer for 
 
 ## Images
 
-[alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/kornBLASSER.jpg "kornBlasser.jpg")
+![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/kornBLASSER.jpg "kornBlasser.jpg")
 
 *Retrieved from the About section of the shbobo.net website, available at <https://shbobo.net/about.html>, accessed on Monday March 23 2020.* )
