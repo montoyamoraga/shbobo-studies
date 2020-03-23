@@ -27,64 +27,64 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * [corp 2](#corp): antennae
 * [**plank 2**](#plank): all the frets' bits
 * [bar 4](#bar): barflex
-* **top**: top knob
-* **bot**: bottom knob
-* **heart**: heart-shaped chambre
-* **bridge**: bridge of the strings
-* minor 4: lower buttons
-* **brass 4**: brass marked frets
-* major 4: upper buttons
-* **steel 4**: steel marked frets
-* horn 8: triangle waveform
-* saw 8: sawtooth waveform
-* toggle 8: trigger a flipflop
-* togo 8: sequencer
-* swoop 8: trigger a pyramid
-* mount 8: slow triangle waveform
-* smoke 8: random noise
-* dust 8: random pulses
-* fog 4: trigger triangular grains
-* haze 4: trigger sawtooth grains
-* swamp 4: trigger swoping grains
-* string 4: trigger a pluckd string
-* comb 4: input sound to the string
-* zither 4: trigger a bunch strings
-* wave 8: low pass filter
-* water 4: trigger a cluster of waves
-* salt 4: hi pass filter
-* horse 4: variable duty sawtri
-* slew 8: filter a signal with different up and down rates
-* wheel 8: input numbers to bring the value up or down
-* slave : count pulses by variable integer amount
-* pulse 8: trigger a pulse and decay with variable height
-* sauce 8: slow an input by a period
-* salsa 8: selectively trigger an input
-* **melody 4**: record and repeat melodies
-* **worm 4**: rectify and hold an input, like an envelope generator
-* **scale 4**: convert frets to exponential (musical) pitch
-* **ladder 4**: traverse a list of 32 according to input
-* press 4: compressor
-* leak 4: leak DC from a sound
-* reflect: waveshaper that reflects
-* return: waveshaper that returns
-* and: bitwise and of two signals
-* xor: bitwise xor of two signals
-* negwon: return negative one
-* left: send sound out the left
-* right: send sound out the right
-* square: make an input into a square, compared against an optional other
-* modo: multiply without scaling
-* srate: change the sample rate!
-* mul: multiply scaling
-* add: add a lizst
-* tar: tarbutton
-* bend: bend through the fish soup
-* jump: trigger a jump to another soup
-* pan: send sound out spatialized
-* short: sixteen bit precision number
-* dirac: default, execute using negative numbers
-* arab: esoteric, execute using no negatives
-* lights: put an input to the LEDs
+* [**top**](#top): top knob
+* [**bot**](#bot): bottom knob
+* [**heart**](#heart): heart-shaped chambre
+* [**bridge**](#bridge): bridge of the strings
+* [minor 4](#minor): lower buttons
+* [**brass 4**](#brass): brass marked frets
+* [major 4](#major): upper buttons
+* [**steel 4**](#steel): steel marked frets
+* [horn 8](#horn): triangle waveform
+* [saw 8](#saw): sawtooth waveform
+* [toggle 8](#toggle): trigger a flipflop
+* [togo 8](#togo): sequencer
+* [swoop 8](#swoop): trigger a pyramid
+* [mount 8](#mount): slow triangle waveform
+* [smoke 8](#smoke): random noise
+* [dust 8](#dust): random pulses
+* [fog 4](#fog): trigger triangular grains
+* [haze 4](#haze): trigger sawtooth grains
+* [swamp 4](#swamp): trigger swoping grains
+* [string 4](#string): trigger a pluckd string
+* [comb 4](#comb): input sound to the string
+* [zither 4](#zither): trigger a bunch strings
+* [wave 8](#wave): low pass filter
+* [water 4](#water): trigger a cluster of waves
+* [salt 4](#salt): hi pass filter
+* [horse 4](#horse): variable duty sawtri
+* [slew 8](#slew): filter a signal with different up and down rates
+* [wheel 8](#wheel): input numbers to bring the value up or down
+* [slave 8](#slave): count pulses by variable integer amount
+* [pulse 8](#pulse): trigger a pulse and decay with variable height
+* [sauce 8](#sauce): slow an input by a period
+* [salsa 8](#salsa): selectively trigger an input
+* [**melody 4**](#): record and repeat melodies
+* [**worm 4**](#worm): rectify and hold an input, like an envelope generator
+* [**scale 4**](#scale): convert frets to exponential (musical) pitch
+* [**ladder 4**](#ladder): traverse a list of 32 according to input
+* [press 4](#press): compressor
+* [leak 4](#leak): leak DC from a sound
+* [reflect](#reflect): waveshaper that reflects
+* [return](#return): waveshaper that returns
+* [and](#and): bitwise and of two signals
+* [xor](#xor): bitwise xor of two signals
+* [negwon](#negwon): return negative one
+* [left](#left): send sound out the left
+* [right](#right): send sound out the right
+* [square](#square): make an input into a square, compared against an optional other
+* [modo](#modo): multiply without scaling
+* [srate](#srate): change the sample rate!
+* [mul](#mul): multiply scaling
+* [add](#add): add a lizst
+* [tar](#tar): tarbutton
+* [bend](#bend): bend through the fish soup
+* [jump](#jump): trigger a jump to another soup
+* [pan](#pan): send sound out spatialized
+* [short](#short): sixteen bit precision number
+* [dirac](#dirac): default, execute using negative numbers
+* [arab](#arab): esoteric, execute using no negatives
+* [lights](#lights): put an input to the LEDs
 
 ### Opcodes reference
 
@@ -399,6 +399,7 @@ send sound out spatialized
 #### short
 
 sixteen bit precision number
+
 #### dirac
 
 default, execute using negative numbers
