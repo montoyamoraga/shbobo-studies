@@ -402,11 +402,13 @@ sixteen bit precision number
 
 #### dirac
 
-default, execute using negative numbers
+* Description: default, execute using signed numbers, range from -128 to 127.
+* Arguments: liszt
 
 #### arab
 
-esoteric, execute using no negatives
+* Description:  esoteric, execute using unsigned numbers, range from 0 to 255.
+* Arguments: liszt
 
 ####  lights
 
@@ -1133,30 +1135,12 @@ Part 5. Glossary of m-expressions
   * inn: value to be panned
   * place: position in the stereo field
 
-* arab
-  * [arab] liszt
-  * Description: invokes ‘arabic’ mode in which values are unsigned,  i.e., no negative numbers. value range is thus 0 to 254.
-  * liszt: takes an unlimited list
-  * example:
-    ```
-    ([arab] ….
-    ```
-
 * short
   *[short] bigg smal
   * Description: describes a value with 16-bit precision. use bigg for coarser adjustments and  smal for finer
   * bigg: coarser adjustment of value (msb)
   * smal: finer adjustment of value (lsb)
   * example:
-
-* dirac
-  * [dirac] liszt
-  * Description: invokes ‘dirac’ mode in which values are unsigned (range of -128 to 127)
-  * liszt: takes an unlimited list
-  * example:
-    ```
-    ([arab] ….
-    ```
 
 * lights
   * [lights] inn
