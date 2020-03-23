@@ -11,9 +11,10 @@ DISCLAIMER: the contents right now are raw and unorganized, I am finding all the
 ## Structure of this repository
 
 * [notes/](notes/): notes taken about the shbobo ecosystem, including:
-  * [notes/fish.md](notes/fish.md): 
-  * [notes/shbobo.md](notes/shbobo.md): 
-  * [notes/shnth.md](notes/shnth.md): 
-  * [notes/shtar.md](notes/shtar.md): 
+  * [notes/fish.md](notes/fish.md): Fish is a graphical user interface for programming Shlisp.
+  * [notes/shbobo.md](notes/shbobo.md): Shbobo is the name of the instrument maker. These notes include their history.
+  * [notes/shlisp.md](notes/shlisp.md): Shlisp is the name of the programming language used by Shbobo instruments. These notes include a reference of the language.
+  * [notes/shnth.md](notes/shnth.md): Shnth is the first instrument released by Shbobo. These notes include its history, design principles, and manual for use.
+  * [notes/shtar.md](notes/shtar.md): Shtar is the second instrument released by SHbobo. These notes include its history, design principles, and manual for use.
 * [backup/](backup/): original files from [shbobo.net](http://shbobo.net/).
 * [software/](software/): software written.
