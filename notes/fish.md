@@ -10,9 +10,12 @@ Fish is the program (for Windows, Linux, and Macintosh) to edit and upload patch
 
 ## Download
 
-As of March 2020, the newest version of Fish is available at [shbobo.net](https://shbobo.net/), as shbobo.zip.
+As of Monday March 23 2020, Fish 2.0 is available for download at [shbobo.net](https://shbobo.net/), as shbobo.zip.
 
 The shbobo.zip file is also included in the [assets/]() folder of this repository.
+
+
+
 
 "will definitely do a tuning one. just to try and answer your question here briefly, with the Shnth the opcode 'srate' sets the fundamental frequency (which is 4 octaves below the *actual* sampling rate). if you want to do tonal stuff then its best to specify the srate using 16-bit numbers, then you can dial it in exactly. meng qi made a very helpful srate calculator which gives the 'short' (16-bit number) for each corresponding note on a standard keyboard, its available on the shbobo forum. so basically the nume and deno of an oscillator specify its pitch relationship to that fundamental based on the just intonation tuning system...so for example a horn with a nume of 96 and a deno of 64 will be a perfect 5th above the fundamental (ie 3:2 ratio), one with a nume of 80 and a deno of 64 will be a major 3rd above it (5:4 ratio), etc. there's a couple of really good websites on just intonation online, i can send you the links if you like. its gets really interesting when you get into the larger prime limits like 11 or 13, then you can explore these really hairy microtonal scales. i'll try to explain all this better in a video and associated forum post but hopefully this will help a bit until then."
 
