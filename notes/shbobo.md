@@ -10,6 +10,6 @@ Shbobo was founded around 2010 by Peter Blasser and Steve Korn. An alternative n
 
 ---
 
-> Taken from the Ordering section of the synthmall website, found at [https://synthmall.com/ordering.html](https://synthmall.com/ordering.html) accesed on Monday March March 23 2020:
-> 
-> Shbobo creates warm and wooden digital synths that connect to your computer for gaming, soundmaking, and other host-side worldmaking applications. 
+Shbobo creates warm and wooden digital synths that connect to your computer for gaming, soundmaking, and other host-side worldmaking applications. 
+
+> Retrieved from the Ordering section of the synthmall website, found at [https://synthmall.com/ordering.html](https://synthmall.com/ordering.html) accesed on Monday March March 23 2020.
