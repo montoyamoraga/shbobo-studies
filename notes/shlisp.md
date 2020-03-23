@@ -23,7 +23,7 @@ Most opcodes can be used for programming both Shbobo instruments (Shnth and Shta
 The few ones that are only for the Shtar and not for the Shbobo, are shown with a red background on the opcode palette, and in this transcription that is represented with **bold letters**.
 
 * [wind](#wind): microphone
-* **finger**: top finger fretted
+* [**finger**](#finger): top finger fretted
 * corp 2: antennae
 * **plank 2**: all the frets' bits
 * bar 4: barflex
