@@ -8,7 +8,7 @@ Shlisp can be programmed either with text, or through the graphical user interfa
 
 ## Opcodes
 
-### Opcodes as listed on Fish 2.0
+### Opcodes palette as shown on Fish 2.0
 
 Here is a screenshot of the complete 63 opcodes palette, as shown on the Fish 2.0 graphical user interface.
 
@@ -86,9 +86,81 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * arab: esoteric, execute using no negatives
 * lights: put an input to the LEDs
 
+### Opcodes reference
 
+#### wind
 
-### Opcodes as listed on Fish 2.0
+microphone
+
+#### finger 
+
+top finger fretted
+
+#### corp 2
+
+antennae
+
+* **plank 2**: all the frets' bits
+* bar 4: barflex
+* **top**: top knob
+* **bot**: bottom knob
+* **heart**: heart-shaped chambre
+* **bridge**: bridge of the strings
+* minor 4: lower buttons
+* **brass 4**: brass marked frets
+* major 4: upper buttons
+* **steel 4**: steel marked frets
+* horn 8: triangle waveform
+* saw 8: sawtooth waveform
+* toggle 8: trigger a flipflop
+* togo 8: sequencer
+* swoop 8: trigger a pyramid
+* mount 8: slow triangle waveform
+* smoke 8: random noise
+* dust 8: random pulses
+* fog 4: trigger triangular grains
+* haze 4: trigger sawtooth grains
+* swamp 4: trigger swoping grains
+* string 4: trigger a pluckd string
+* comb 4: input sound to the string
+* zither 4: trigger a bunch strings
+* wave 8: low pass filter
+* water 4: trigger a cluster of waves
+* salt 4: hi pass filter
+* horse 4: variable duty sawtri
+* slew 8: filter a signal with different up and down rates
+* wheel 8: input numbers to bring the value up or down
+* slave : count pulses by variable integer amount
+* pulse 8: trigger a pulse and decay with variable height
+* sauce 8: slow an input by a period
+* salsa 8: selectively trigger an input
+* **melody 4**: record and repeat melodies
+* **worm 4**: rectify and hold an input, like an envelope generator
+* **scale 4**: convert frets to exponential (musical) pitch
+* **ladder 4**: traverse a list of 32 according to input
+* press 4: compressor
+* leak 4: leak DC from a sound
+* reflect: waveshaper that reflects
+* return: waveshaper that returns
+* and: bitwise and of two signals
+* xor: bitwise xor of two signals
+* negwon: return negative one
+* left: send sound out the left
+* right: send sound out the right
+* square: make an input into a square, compared against an optional other
+* modo: multiply without scaling
+* srate: change the sample rate!
+* mul: multiply scaling
+* add: add a lizst
+* tar: tarbutton
+* bend: bend through the fish soup
+* jump: trigger a jump to another soup
+* pan: send sound out spatialized
+* short: sixteen bit precision number
+* dirac: default, execute using negative numbers
+* arab: esoteric, execute using no negatives
+* lights: put an input to the LEDs
+
 
 
 
