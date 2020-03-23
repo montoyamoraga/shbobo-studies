@@ -1,5 +1,75 @@
 # Shlisp
 
+## Opcodes
+
+This is a list of all the 63 opcodes, in the same order and notation as listed on Fish 2.0:
+
+* wind
+* finger
+* corp 2
+* plank 2
+* bar 4
+* top
+* bot
+* heart
+* bridge
+* minor 4
+* brass 4
+* major 4
+* steel 4
+* horn 8
+* saw 8
+* toggle 8
+* togo 8
+* swoop 8
+* mount 8
+* smoke 8
+* dust 8
+* fog 4
+* haze 4
+* swamp 4
+* string 4
+* comb 4
+* zither 4
+* wave 8
+* water 4
+* salt 4
+* horse 4
+* slew 8
+* wheel 8
+* slave 8
+* pulse 8
+* sauce 8
+* salsa 8
+* melody 4
+* worm 4
+* scale 4
+* ladder 4
+* press 4
+* leak 4
+* reflect
+* return
+* and
+* xor
+* negwon
+* left
+* right
+* square
+* modo
+* srate
+* mul
+* add
+* tar
+* bend
+* jump
+* pan
+* short
+* dirac
+* arab
+* lights
+
+
+
 PLEASE NOTE: This Section is for advanced users who want to  program their Shnth using the text-based ShLISP language. Non-programmer musicians are recommended to instead use Fish, which is our easy-to-use graphical interface for the Shnth (tutorials are on Vimeo)
 
 What is shLISP?
