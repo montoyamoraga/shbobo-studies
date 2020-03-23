@@ -24,9 +24,9 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 * [wind](#wind): microphone
 * [**finger**](#finger): top finger fretted
-* corp 2: antennae
-* **plank 2**: all the frets' bits
-* bar 4: barflex
+* [corp] 2: antennae
+* [**plank 2**]: all the frets' bits
+* [bar 4]: barflex
 * **top**: top knob
 * **bot**: bottom knob
 * **heart**: heart-shaped chambre
