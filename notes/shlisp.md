@@ -398,7 +398,10 @@ send sound out spatialized
 
 #### short
 
-sixteen bit precision number
+* Description: describes a 16-bit precision number. Use bigg for coarser adjustments and  smal for finer.
+* Arguments: bigg smal
+  * bigg: coarser adjustment of value (msb)
+  * smal: finer adjustment of value (lsb)
 
 #### dirac
 
@@ -1139,10 +1142,3 @@ Part 5. Glossary of m-expressions
   * Description: pans the output through the stereo field. In Dirac mode, -128 is full left and 127 is full right. In Arab mode 0 is full left and 255 is full right
   * inn: value to be panned
   * place: position in the stereo field
-
-* short
-  *[short] bigg smal
-  * Description: describes a value with 16-bit precision. use bigg for coarser adjustments and  smal for finer
-  * bigg: coarser adjustment of value (msb)
-  * smal: finer adjustment of value (lsb)
-  * example:
