@@ -798,15 +798,38 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### modo
 
-multiply without scaling
+* Description: a circuit-bending type effect whereby one input is mulitplied by another without scaling to keep it in range
+* Syntax: [modo] inn oth mul add
+* Arguments: inn oth mul add
+  * inn: the input
+  * oth: the other input
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### srate
 
-change the sample rate!
+* Description: sets the sampling rate. this is a global variable
+* Syntax: [srate] inn
+* Arguments: inn
+  * inn: sets the sampling rate
+* Example:
+```
+([srate] ….
+```
 
 #### mul
 
-multiply scaling
+* Description: multiplies values in the list
+* Syntax: [mul] inn mul add
+* Arguments: inn mul add
+  * inn: input to be mul’d
+  * mul: inn will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+[mul] ….
+```
 
 #### add
 
@@ -1070,35 +1093,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* modo
-  * [modo] inn oth mul add
-  * Description: a circuit-bending type effect whereby one input is mulitplied by another without scaling to keep it in range
-  * inn: the input
-  * oth: the other input
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-
-* srate
-  * [srate] inn
-  * Description: sets the sampling rate. this is a global variable
-  * inn: sets the sampling rate
-  * Example:
-    ```
-    ([srate] ….
-    ```
-
-* mul
-  * [mul] inn mul add
-  * Description: multiplies values in the list.
-  * inn: input to be mul’d
-  * mul: inn will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    [mul] ….
-    ```
 
 * add
   * [add] liszt
