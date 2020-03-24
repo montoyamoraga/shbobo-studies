@@ -213,8 +213,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: TODO
 * Example: TODO
 
-4
-
 #### major
 
 * Description: transmits the value of the top buttons  (0 or 1)
@@ -237,25 +235,64 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: TODO
 * Example: TODO
 
-4
-
 #### horn
 
-8
+* Description: a triangle oscillator
+* Syntax: [horn] nume deno mul add
+* Arguments: nume deno mul add
+  * nume: sets the rate at which the oscillator rises and falls
+  * deno: sets the oscillator’s boundaries (height/depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+;use barres to amplitude modulate
+([left]
+([horn a]  84 ([corp a] -12 48) ([bar a]))
+([horn b]  96 ([corp b] -16 48) ([bar d])))
 
-triangle waveform
+;frequency modulate the nume with another horn
+([right]
+([arab]
+([horn c]  ([horn b]) ([corp a] 40 96) ([swoop c] ([square] ([bar c]) 50) 4 252))
+([horn d]  ([horn a]) ([corp b] 30 126) ([swoop d] ([square] ([bar b]) 50) 6 242)))
+```
 
 #### saw
 
-8
-
-sawtooth waveform
+* Description: a sawtooth oscillator (instantaneous rise)
+* Syntax: [saw] nume deno mul add
+* Arguments: nume deno mul add
+  * nume: sets the rate at which the oscillator falls
+  * deno: sets the oscillator’s boundaries (height/depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; turn saws on and off with toggle
+([right] ([right]
+([toggle a] ([major d])
+  ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55)))
+)))
+([left]
+([toggle b] ([major b])
+  ([saw b] 38 111 ([swoop b] ([swoop b] 1) 15 55)))
+([toggle c] ([major c])
+  ([saw b] 52 111 ([swoop c] ([swoop c] 1) 3 118)))
+```
 
 #### toggle
 
-8
-
-trigger a flipflop
+* Description: turns things on and off
+* Syntax: [toggle] square
+* Arguments: square
+  * square: switches the toggle from on to off
+* Example:
+```
+  ; use minor b button to toggle on/off a granular synth you control with corps
+([fog a] ([dust a] ([corp a] 100) ([toggle a] ([minor b])))
+  ([corp b] 40 20) ([corp a] 20 105) ([corp a] 68 24) ([corp b] 60 64))
+```
 
 #### togo
 
@@ -735,58 +772,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* horn
-  * [horn] nume deno mul add
-  * Description: a triangle oscillator
-  * nume: sets the rate at which the oscillator rises and falls
-  * deno: sets the oscillator’s boundaries (height/depth).
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ;use barres to amplitude modulate
-    ([left]
-    ([horn a]  84 ([corp a] -12 48) ([bar a]))
-    ([horn b]  96 ([corp b] -16 48) ([bar d])))
-
-    ;frequency modulate the nume with another horn
-    ([right]
-    ([arab]
-    ([horn c]  ([horn b]) ([corp a] 40 96) ([swoop c] ([square] ([bar c]) 50) 4 252))
-    ([horn d]  ([horn a]) ([corp b] 30 126) ([swoop d] ([square] ([bar b]) 50) 6 242)))
-    ```
-
-* saw
-  * [saw] nume deno mul add
-  * Description: a sawtooth oscillator  (instantaneous rise)
-  * nume: sets the rate at which the oscillator falls
-  * deno: sets the oscillator’s boundaries (height/depth)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:  ; turn saws on and off with toggle
-    ```
-    ([right] ([right]
-    ([toggle a] ([major d])
-      ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55)))
-    )))
-    ([left]
-    ([toggle b] ([major b])
-      ([saw b] 38 111 ([swoop b] ([swoop b] 1) 15 55)))
-    ([toggle c] ([major c])
-      ([saw b] 52 111 ([swoop c] ([swoop c] 1) 3 118)))
-    ```
-
-* toggle
-  * [toggle] square
-  * Description:  turns things on and off
-  * square: switches the toggle from on to off
-  * Example:
-  ```
-    ; use minor b button to toggle on/off a granular synth you control with corps
-  ([fog a] ([dust a] ([corp a] 100) ([toggle a] ([minor b])))
-    ([corp b] 40 20) ([corp a] 20 105) ([corp a] 68 24) ([corp b] 60 64))
-  ```
 
 * togo
   * [togo a] signotrig liszt
