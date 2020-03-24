@@ -95,13 +95,13 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * mul: output will be multiplied by this value
   * add: this value will be added to output
 * Example:
-    ```
-    ;use mic to control volume and pitch of triangle oscillator
-    ([left]
-        ([arab]
-        ([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
-      )
-    ```
+```
+;use mic to control volume and pitch of triangle oscillator
+([left]
+    ([arab]
+    ([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
+  )
+```
 
 #### finger 
 
@@ -111,9 +111,16 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### corp
 
-2
-
-antennae
+* Description: transmits the value of the specified antenna, range is -128 to 127.
+* Syntax: [corp] mul add
+* Parameters: mul add
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+;use corp to widely bend horn pitch. slew smooths out steppiness
+([horn a] ([slew a] ([corp a] 70 30) 8 8) ([slew b] ([corp b] 30 70) 8 8))
+```
 
 #### plank
 
@@ -121,13 +128,28 @@ antennae
 * Arguments: TODO
 * Example: TODO
 
-2
-
 #### bar
 
-4
+* Description: transmits the value of the specified barre. Typical response is an s-curve (press and release) between -128 to 127.
+* Syntax:
+```
+[bar] mul add
+```
+* Arguments:
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+;simple 4note saw organ
+([saw a] 24 94 ([bar a])) ([saw b] 28 85 ([bar b]))
+([saw c] 39 73 ([bar c])) ([saw d] 43 61 ([bar d]))
 
-barflex
+;simple sidrassi emulation with panning
+([horn a] 24 94 ([bar a])) ([horn b] 28 85 ([bar b]))
+([horn c] 39 73 ([bar c])) ([horn d] 43 61 ([bar d]))
+(pan ([horn a]) ([bar a])) (pan ([horn b]) ([bar b]))
+(pan ([horn c]) ([bar c])) (pan ([horn d]) ([bar d]))
+```
 
 #### top
 
@@ -673,35 +695,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* corp
-  * [corp] mul add
-  * Description: transmits the value of the specified antenna, range is -128 to 127
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ;use corp to widely bend horn pitch. slew smooths out steppiness
-    ([horn a] ([slew a] ([corp a] 70 30) 8 8) ([slew b] ([corp b] 30 70) 8 8))
-    ```
-
-* bar
-  * [bar] mul add
-  * Description: transmits the value of the specified barre. typical response is an s-curve (press and release) between -128 to 127
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ;simple 4note saw organ
-    ([saw a] 24 94 ([bar a])) ([saw b] 28 85 ([bar b]))
-    ([saw c] 39 73 ([bar c])) ([saw d] 43 61 ([bar d]))
-
-    ;simple sidrassi emulation with panning
-    ([horn a] 24 94 ([bar a])) ([horn b] 28 85 ([bar b]))
-    ([horn c] 39 73 ([bar c])) ([horn d] 43 61 ([bar d]))
-    (pan ([horn a]) ([bar a])) (pan ([horn b]) ([bar b]))
-    (pan ([horn c]) ([bar c])) (pan ([horn d]) ([bar d]))
-    ```
 
 * minor
   * [minor] mul add
