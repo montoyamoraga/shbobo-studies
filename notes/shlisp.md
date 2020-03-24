@@ -297,7 +297,7 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 #### togo
 
 * Description: steps through a sequence of values, advancing one step each time it receives a trigger. takes an unlimited list
-* Syntax: [togo a] 
+* Syntax: [togo a] signotrig liszt
 * Arguments: signotrig liszt
   * signotrig: a signed trigger - positive moves one step forward in the sequence, negative moves one step back. in dirac mode it may be necessary to use [square] before some trigger sources
   * liszt: the sequence of values or S-expressions to be stepped through
