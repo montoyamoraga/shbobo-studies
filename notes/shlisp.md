@@ -629,13 +629,17 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### slave
 
-count pulses by variable integer amount
+* Description: count pulses by variable integer amount
+* Syntax: TODO
+* Arguments: TODO
+* Example: TODO
 
 #### pulse
 
-8:
-
-trigger a pulse and decay with variable height
+* Description: trigger a pulse and decay with variable height
+* Syntax: TODO
+* Arguments: TODO
+* Example: TODO
 
 #### sauce
 
