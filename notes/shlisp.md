@@ -91,6 +91,10 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 #### wind
 
 * Description: Transmits the value received by the onboard microphone.
+* Syntax:
+```
+[wind] mul add
+```
 * Arguments: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
@@ -106,13 +110,17 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 #### finger 
 
 * Description: Top finger fretted. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
 #### corp
 
 * Description: transmits the value of the specified antenna, range is -128 to 127.
-* Syntax: [corp] mul add
+* Syntax:
+```
+[corp] mul add
+```
 * Parameters: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
@@ -125,6 +133,7 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 #### plank
 
 * Description: all the frets' bits. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
@@ -154,42 +163,75 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 #### top
 
 * Description: top knob. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
 #### bot
 
 * Description: bottom knob. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
 #### heart 
 
 * Description: heart-shaped chambre. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
 #### bridge
 
 * Description: bridge of the strings. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
 #### minor
 
-4
-
-lower buttons
+* Description: transmits the value of the bottom buttons (0 or 1).
+* Syntax:
+```
+[minor] mul add
+```
+* Parameters: mul add
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+;use minor buttons to play synth
+([horn b] 24 126 ([slew b] ([minor b]) 80 5))
+([horn c] 36 127 ([slew c] ([minor c]) 80 5))
+([horn d] 48 128 ([slew d] ([minor d]) 80 5))
+```
 
 #### brass
 
 * Description: brass marked frets. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
 4
 
 #### major
+
+* Description: transmits the value of the top buttons  (0 or 1)
+* Syntax: [major] mul add
+
+* major
+  * 
+  
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+  * Example:
+    ```
+    ;use major buttons and bars to play synth with filtering
+    ([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
+    ([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))
+    ([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
+    ```
 
 4
 
@@ -198,6 +240,7 @@ upper buttons
 #### steel
 
 * Description: steel marked frets. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
@@ -348,6 +391,7 @@ selectively trigger an input
 #### melody
 
 * Description: record and repeat melodies. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
@@ -356,6 +400,7 @@ selectively trigger an input
 #### worm
 
 * Description: rectify and hold an input, like an envelope generator. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
@@ -364,6 +409,7 @@ selectively trigger an input
 #### scale
 
 * Description: convert frets to exponential (musical) pitch. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
@@ -372,6 +418,7 @@ selectively trigger an input
 #### ladder
 
 * Description: traverse a list of 32 according to input. Only for SHTAR.
+* Syntax: TODO
 * Arguments: TODO
 * Example: TODO
 
@@ -695,32 +742,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* minor
-  * [minor] mul add
-  * Description: transmits the value of the bottom buttons (0 or 1)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ;use minor buttons to play synth
-    ([horn b] 24 126 ([slew b] ([minor b]) 80 5))
-    ([horn c] 36 127 ([slew c] ([minor c]) 80 5))
-    ([horn d] 48 128 ([slew d] ([minor d]) 80 5))
-    ```
-
-* major
-  * [major] mul add
-  * Description: transmits the value of the top buttons  (0 or 1)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ;use major buttons and bars to play synth with filtering
-    ([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
-    ([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))
-    ([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
-    ```
 
 * horn
   * [horn] nume deno mul add
