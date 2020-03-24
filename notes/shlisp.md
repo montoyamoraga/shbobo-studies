@@ -853,36 +853,57 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### bend
 
-bend through the fish soup
+* Description: bend through the fish soup
+* Syntax: TODO
+* Arguments: TODO
+* Example: TODO
 
 #### jump
+
+* Description: if 0, stays put; otherwise  jumps value situations, as demarcated by curly brackets {... }. value may be negative
+* Syntax: [jump] value
+* Arguments: value
+* Example: TODO
 
 trigger a jump to another soup
 
 #### pan
 
-send sound out spatialized
+* Description: pans the output through the stereo field. In Dirac mode, -128 is full left and 127 is full right. In Arab mode 0 is full left and 255 is full right
+* Syntax: [pan] inn place
+* Arguments: inn place
+  * Description: 
+  * inn: value to be panned
+  * place: position in the stereo field
+* Example: TODO
 
 #### short
 
-* Description: describes a 16-bit precision number. Use bigg for coarser adjustments and  smal for finer.
+* Description: describes a 16-bit precision number. Use bigg for coarser adjustments and  smal for finer
+* Syntax: [short] bigg smal
 * Arguments: bigg smal
   * bigg: coarser adjustment of value (msb)
   * smal: finer adjustment of value (lsb)
+* Example: TODO
 
 #### dirac
 
-* Description: default, execute using signed numbers, range from -128 to 127.
+* Description: default, execute using signed numbers, range from -128 to 127
+* Syntax: TODO
 * Arguments: liszt
+* Example: TODO
 
 #### arab
 
-* Description:  esoteric, execute using unsigned numbers, range from 0 to 255.
+* Description:  esoteric, execute using unsigned numbers, range from 0 to 255
+* Syntax: TODO
 * Arguments: liszt
+* Example: TODO
 
 #### lights
 
-* Description: put an input to the LEDs. Used to address the 8 burgundy LEDs.
+* Description: put an input to the LEDs. Used to address the 8 burgundy LEDs
+* Syntax: TODO
 * Arguments: inn
   * inn: determines which LEDs are on/off
 * Example:
@@ -1103,21 +1124,3 @@ Swamp, like fog, is a string quartet.  This means that there are four voices per
 Let me explain these four runes.  Each grain has two parts: a swoop and a horn, built into it.  When the swoop is triggered, it goes up and down, or makes a scurve, depending if you are Arab or Dirac.  This swoop goes on to mul by the value of the horn, which is saying "VCA", i.e. it envelopes it.  It modulates the volume of it, making the traditional grain surrounded by silence.
 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
-
-Part 5. Glossary of m-expressions
-
-* orange
-  * [orange] inn
-  * Description:  WARNING: this is an experimental nut, which makes the orange LED addressable in the same manner as [lights]. however since doing so also initiates fast-charging of the batteries, continual use of this nut could possibly lead to shortened battery life. therefore it is NOT recommended to use [orange] until further testing can be completed.
-  * inn:  determines if LED is on or offz
-
-* jump
-  * [jump] value
-  * Description: if 0, stays put; otherwise  jumps value situations, as demarcated by curly brackets {... }. value may be negative
-  * value: moves this number of situations within a txt file.
-
-* pan
-  *[pan] inn place
-  * Description: pans the output through the stereo field. In Dirac mode, -128 is full left and 127 is full right. In Arab mode 0 is full left and 255 is full right
-  * inn: value to be panned
-  * place: position in the stereo field
