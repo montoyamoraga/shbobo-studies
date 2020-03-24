@@ -347,15 +347,34 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### smoke
 
-8
-
-random noise
+* Description: generates white smoke (random values)
+* Syntax: [smoke] mul add
+* Arguments: mul add
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; use major b and d buttons to trigger 808 kick and hihat
+([smoke a] ([slew a] ([major a]) 100 5 64))
+([horn a] 24 127([slew b] ([minor a]) 100 1))
+```
 
 #### dust
 
-8
-
-random pulses
+* Description: pulses spaced randomly over a wide range
+* Syntax: [dust] speed mul add
+* Arguments: speed mul add
+  * speed: sets the density of pulses
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; use the bars to trigger a chaotic cascade of zither strings
+([zither a] ([sauce a] 30 ([dust a] ([bar a]))) ([corp a]) ([corp b] 80 40))
+([zither b] ([sauce b] 20 ([dust b] ([bar b]))) ([corp b] 70 50) ([corp a]))
+([zither c] ([sauce c] 10 ([dust c] ([bar c]))) ([corp a]) ([corp b] 60 60))
+([zither d] ([dust d] ([bar d] 60)) ([corp b] 50 70) ([corp a]))
+```
 
 #### fog
 
@@ -805,33 +824,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* smoke
-  * [smoke] mul add
-  * Description: generates white smoke (random values)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; use major b and d buttons to trigger 808 kick and hihat
-    ([smoke a] ([slew a] ([major a]) 100 5 64))
-    ([horn a] 24 127([slew b] ([minor a]) 100 1))
-    ```
-
-* dust
-  * [dust] speed mul add
-  * Description: pulses spaced randomly over a wide range
-  * speed: sets the density of pulses
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; use the bars to trigger a chaotic cascade of zither strings
-    ([zither a] ([sauce a] 30 ([dust a] ([bar a]))) ([corp a]) ([corp b] 80 40))
-    ([zither b] ([sauce b] 20 ([dust b] ([bar b]))) ([corp b] 70 50) ([corp a]))
-    ([zither c] ([sauce c] 10 ([dust c] ([bar c]))) ([corp a]) ([corp b] 60 60))
-    ([zither d] ([dust d] ([bar d] 60)) ([corp b] 50 70) ([corp a]))
-    ```
 
 * fog
   * [fog] trig nume deno nume deno mul add
