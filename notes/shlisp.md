@@ -90,7 +90,7 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### wind
 
-* Description: Transmits the value received by the onboard microphone. 
+* Description: Transmits the value received by the onboard microphone.
 * Arguments: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
@@ -105,7 +105,9 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### finger 
 
-top finger fretted
+* Description: Top finger fretted. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
 #### corp
 
@@ -115,9 +117,11 @@ antennae
 
 #### plank
 
-2
+* Description: all the frets' bits. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-all the frets' bits
+2
 
 #### bar
 
@@ -127,19 +131,27 @@ barflex
 
 #### top
 
-top knob
+* Description: top knob. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
 #### bot
 
-bottom knob
+* Description: bottom knob. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
 #### heart 
 
-heart-shaped chambre
+* Description: heart-shaped chambre. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
 #### bridge
 
-bridge of the strings
+* Description: bridge of the strings. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
 #### minor
 
@@ -149,9 +161,11 @@ lower buttons
 
 #### brass
 
-4
+* Description: brass marked frets. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-brass marked frets
+4
 
 #### major
 
@@ -161,9 +175,11 @@ upper buttons
 
 #### steel
 
-4
+* Description: steel marked frets. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-steel marked frets
+4
 
 #### horn
 
@@ -309,27 +325,35 @@ selectively trigger an input
 
 #### melody
 
-4
+* Description: record and repeat melodies. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-record and repeat melodies
+4
 
 #### worm
 
-4
+* Description: rectify and hold an input, like an envelope generator. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-rectify and hold an input, like an envelope generator
+4
 
 #### scale
 
-4
+* Description: convert frets to exponential (musical) pitch. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-convert frets to exponential (musical) pitch
+4
 
 #### ladder
 
-4
+* Description: traverse a list of 32 according to input. Only for SHTAR.
+* Arguments: TODO
+* Example: TODO
 
-traverse a list of 32 according to input
+4
 
 #### press
 
