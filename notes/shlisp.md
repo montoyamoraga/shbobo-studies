@@ -296,21 +296,54 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### togo
 
-8
-
-sequencer
+* Description: steps through a sequence of values, advancing one step each time it receives a trigger. takes an unlimited list
+* Syntax: [togo a] 
+* Arguments: signotrig liszt
+  * signotrig: a signed trigger - positive moves one step forward in the sequence, negative moves one step back. in dirac mode it may be necessary to use [square] before some trigger sources
+  * liszt: the sequence of values or S-expressions to be stepped through
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+([horn a]
+([togo a] ([major d]) 53 13 94 11 52 110 35 26 35 43 36 8)
+([togo b] ([major d]) 65 14 32 85 57 43 14 28 50 11 35)
+([slew a] ([major d]) 8 8)))
+```
 
 #### swoop
 
-8
-
-trigger a pyramid
+* Description: a slow triangle wave, can be used as envelope or LFO
+* Syntax: [swoop] trig nume deno mul add
+* Arguments: trig nume deno mul add
+  * trig/square: begins a swoop cycle
+  * nume: sets the rate of rise and fall of the swoop
+  * deno: sets the swoop’s boundaries (height or depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; use minor b button to trigger a note with separate envelopes for amplitude,  filter q and filter freq
+([wave a] ([horn a] 60 84 ([swoop a] ([minor b]) 3 120))
+([swoop b] ([minor b]) 10 30 40 5)
+([swoop c] ([minor b]) 2 72))
+```
 
 #### mount
 
-8
-
-slow triangle waveform
+* Description: a slow-cycling LFO
+* Syntax: [mount] nume deno mul add
+* Arguments: nume deno mul add
+  * nume: sets the rate of rise and fall
+  * deno: sets the boundaries
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; slow moving LFOs modulating pitch (nume and deno) and volume of two saws
+([saw a] ([mount a] 73 21) ([mount b] 32 41) ([mount c] 80 100))
+([saw b] ([mount d] 13 52) ([mount e] 99 98) ([mount f] 23 83))
+```
 
 #### smoke
 
@@ -772,51 +805,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* togo
-  * [togo a] signotrig liszt
-  * Description: steps through a sequence of values, advancing one step each time it receives a trigger. takes an unlimited list
-  * signotrig: a signed trigger - positive moves one step forward in the sequence, negative moves one step back. in dirac mode it may be necessary to use [square] before some trigger sources.
-  * liszt: the sequence of values or S-expressions to be stepped through
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ([horn a]
-    ([togo a] ([major d]) 53 13 94 11 52 110 35 26 35 43 36 8)
-    ([togo b] ([major d]) 65 14 32 85 57 43 14 28 50 11 35)
-    ([slew a] ([major d]) 8 8)))
-    ```
-
-* swoop
-  * [swoop] trig nume deno mul add
-  * Description: a slow triangle wave, can be used as envelope or LFO
-  * trig/square: begins a swoop cycle
-  * nume: sets the rate of rise and fall of the swoop
-  * deno: sets the swoop’s boundaries (height or depth)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; use minor b button to trigger a note with separate envelopes for amplitude,  filter q and filter freq
-    ([wave a] ([horn a] 60 84 ([swoop a] ([minor b]) 3 120))
-    ([swoop b] ([minor b]) 10 30 40 5)
-    ([swoop c] ([minor b]) 2 72))
-    ```
-
-* mount
-  * [mount] nume deno mul add
-  * Description: a slow-cycling LFO
-  * nume: sets the rate of rise and fall
-  * deno: sets the boundaries
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; slow moving LFOs modulating pitch (nume and deno) and volume of two saws
-    ([saw a] ([mount a] 73 21) ([mount b] 32 41) ([mount c] 80 100))
-    ([saw b] ([mount d] 13 52) ([mount e] 99 98) ([mount f] 23 83))
-    ```
 
 * smoke
   * [smoke] mul add
