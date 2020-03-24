@@ -531,21 +531,48 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### wave
 
-8
-
-low pass filter
+* Description: variable resonance filter - wave is lopass
+* Syntax: [wave ] inn q rate mul add
+* Arguments: inn q rate mul add
+  * inn: the source to be filtered
+  * q: sets the filter resonance
+  * rate: sets the filter base frequency
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; waveering a saw wave with freq being swept by mount, vary Q with corp
+  ([pan] ([mount a])
+([wave a]
+    ([saw a] 36 87 )
+  ([corp a] 14 2)  ([mount a] 11 97))
+```
 
 #### water
 
-4
-
-trigger a cluster of waves
+* Description: a wash of resonant filter pings
+* Syntax: [water ] trig q rate mul add
+* Arguments: trig q rate mul add
+  * trig: the trigger source
+  * q: sets the filter resonance
+  * rate: sets the filter base frequency
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### salt
 
-4
-
-hi pass filter
+* Description: variable resonance filters - salt is highpass
+* Syntax: [salt ] inn q rate mul add
+* Arguments: inn q rate mul add
+* Example:
+```
+; waveering a saw wave with freq being swept by mount, vary Q with corp
+  ([pan] ([mount a])
+([wave a]
+    ([saw a] 36 87 )
+  ([corp a] 14 2)  ([mount a] 11 97))
+```
 
 #### horse
 
@@ -941,35 +968,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* wave
-  * [wave ] inn q rate mul add
-* salt
-  * [salt ] inn q rate mul add
-  * Description: variable resonance filters - wave is lopass; salt is highpass;
-  * inn: the source to be filtered
-  * q: sets the filter resonance
-  * rate: sets the filter base frequency
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; waveering a saw wave with freq being swept by mount, vary Q with corp
-      ([pan] ([mount a])
-    ([wave a]
-        ([saw a] 36 87 )
-      ([corp a] 14 2)  ([mount a] 11 97))
-    ```
-
-* water
-  * [water ] trig q rate mul add
-  * Description: a wash of resonant filter pings
-  * trig: the trigger source
-  * q: sets the filter resonance
-  * rate: sets the filter base frequency
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
 
 * horse
   * [horse] nume nume deno deno mul add
