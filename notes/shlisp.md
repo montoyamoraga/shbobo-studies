@@ -576,21 +576,56 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### horse
 
-4
-
-variable duty sawtri
+* Description: an oscillator with independently settable rise and fall and upper/lower boundaries
+* Syntax: [horse] nume nume deno deno mul add
+* Arguments: nume nume deno deno mul add
+  * nume: sets the rate at which the oscillator rises
+  * deno: sets the rate at which the oscillator falls
+  * nume: sets the oscillator’s upper boundary (height)
+  * deno: sets the oscillator’s lower boundary (depth)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; set waveshape with barres and corps, waveer output with [corp a] also modulating cutoff)
+  ([wave a]
+    ([horse a]
+      ([bar a] 26 ([corp a] 35 50))
+      ([bar b] 14 91)
+      ([bar c] 53 61)
+      ([bar d] 42 ([corp b] 22 63))
+    ([corp b]))
+  11  ([corp a] 33 60)
+```
 
 #### slew
 
-8
-
-filter a signal with different up and down rates
+* Description: slows the movement from one value to the next; works bi-directionally
+* Syntax: [slew] inn upp donn mul add
+* Arguments: inn upp donn mul add
+  * inn: input the expression to be slewed
+  * upp: the slew rate for increasing values (lower number is slower)
+  * donn: the slew rate for decreasing values (lower number is slower)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+([slew a]) ….
+```
 
 #### wheel
 
-8
-
-input numbers to bring the value up or down
+* Description: accumulates values, often used to make bars, buttons and corps increment upwards and/or downwards
+* Syntax: [wheel] up down mul add
+* Arguments: up down mul add
+  * up: value to be positively incremented
+  * down: value to be negatively incremented
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+([wheel a] ….
+```
 
 #### slave
 
@@ -968,53 +1003,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* horse
-  * [horse] nume nume deno deno mul add
-  * Description: an oscillator with independently settable rise and fall and upper/lower boundaries
-  * nume: sets the rate at which the oscillator rises
-  * deno: sets the rate at which the oscillator falls
-  * nume: sets the oscillator’s upper boundary (height)
-  * deno: sets the oscillator’s lower boundary (depth)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Examples:
-    ```
-    ; set waveshape with barres and corps, waveer output with [corp a] also modulating cutoff)
-      ([wave a]
-        ([horse a]
-          ([bar a] 26 ([corp a] 35 50))
-          ([bar b] 14 91)
-          ([bar c] 53 61)
-          ([bar d] 42 ([corp b] 22 63))
-        ([corp b]))
-      11  ([corp a] 33 60)
-    ```
-
-* slew
-  * [slew] inn upp donn mul add
-  * Description: slows the movement from one value to the next; works bi-directionally
-  * inn: input the expression to be slewed
-  * upp: the slew rate for increasing values (lower number is slower)
-  * donn: the slew rate for decreasing values (lower number is slower)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ([slew a]) ….
-    ```
-
-* wheel
-  * [wheel] up down mul add
-  * Description: accumulates values, often used to make bars, buttons and corps increment upwards and/or downwards.
-  * up: value to be positively incremented
-  * down: value to be negatively incremented
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-  ```
-  ([wheel a] ….
-  ```
 
 * sauce
   * [sauce] period inn mul add
