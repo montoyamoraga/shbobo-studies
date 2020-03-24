@@ -378,21 +378,81 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### fog
 
-4
-
-trigger triangular grains
+* Description: granular synthesis-type effect, utilizing an internal oscillator and envelope to articulate the grains. fog uses horn grains.
+* Syntax: [fog] trig nume deno nume deno mul add
+* Arguments: trig nume deno nume deno mul add
+  * trig: trigger the playing of grains
+  * nume: sets the rate of rise/fall of the internal envelope
+  * deno: sets the boundaries (height/depth) of the internal envelope
+  * nume: sets the rise/fall of the internal oscillator
+  * deno: sets the boundaries (heigh/depth) of the internal oscillator
+  * mul:  output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; use the bars to trigger a chaotic cascade of grains
+([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
+([salsa a] ([dust a]) ([smoke a])) 80)
+([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
+([salsa b] ([dust b]) ([smoke b])) 60 50))
+([right]
+([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
+([salsa c] ([dust c]) ([smoke c])) 40 50)
+([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
+([salsa d] ([dust d]) ([smoke d])) 20))
+```
 
 #### haze
 
-4
-
-trigger sawtooth grains
+* Description: granular synthesis-type effect, utilizing an internal oscillator and envelope to articulate the grains. haze uses saw grains
+* Syntax: [haze] trig nume deno nume deno mul add
+* Arguments: trig nume deno nume deno mul add
+  * trig: trigger the playing of grains
+  * nume: sets the rate of rise/fall of the internal envelope
+  * deno: sets the boundaries (height/depth) of the internal envelope
+  * nume: sets the rise/fall of the internal oscillator
+  * deno: sets the boundaries (heigh/depth) of the internal oscillator
+  * mul:  output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; use the bars to trigger a chaotic cascade of grains
+([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
+([salsa a] ([dust a]) ([smoke a])) 80)
+([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
+([salsa b] ([dust b]) ([smoke b])) 60 50))
+([right]
+([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
+([salsa c] ([dust c]) ([smoke c])) 40 50)
+([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
+([salsa d] ([dust d]) ([smoke d])) 20))
+```
 
 #### swamp
 
-4
-
-trigger swoping grains
+* Description: granular synthesis-type effect, utilizing an internal oscillator and envelope to articulate the grains. uses animated grains
+* Syntax: [swamp] trig nume deno nume deno mul add
+* Arguments: trig nume deno nume deno mul add
+  * trig: trigger the playing of grains
+  * nume: sets the rate of rise/fall of the internal envelope
+  * deno: sets the boundaries (height/depth) of the internal envelope
+  * nume: sets the rise/fall of the internal oscillator
+  * deno: sets the boundaries (heigh/depth) of the internal oscillator
+  * mul:  output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; use the bars to trigger a chaotic cascade of grains
+([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
+([salsa a] ([dust a]) ([smoke a])) 80)
+([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
+([salsa b] ([dust b]) ([smoke b])) 60 50))
+([right]
+([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
+([salsa c] ([dust c]) ([smoke c])) 40 50)
+([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
+([salsa d] ([dust d]) ([smoke d])) 20))
+```
 
 #### string
 
@@ -824,34 +884,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* fog
-  * [fog] trig nume deno nume deno mul add
-* haze
-  * [haze] trig nume deno nume deno mul add
-* swamp
-  * [swamp] trig nume deno nume deno mul add
-  * Description: these are granular synthesis-type effects, each utilizing an internal oscillator and envelope to articulate the grains. fog uses horn grains, haze uses saw grains and swamp features animated grains
-  * trig: trigger the playing of grains
-  * nume: sets the rate of rise/fall of the internal envelope
-  * deno: sets the boundaries (height/depth) of the internal envelope
-  * nume: sets the rise/fall of the internal oscillator
-  * deno: sets the boundaries (heigh/depth) of the internal oscillator
-  * mul:  output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; use the bars to trigger a chaotic cascade of grains
-    ([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
-    ([salsa a] ([dust a]) ([smoke a])) 80)
-    ([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
-    ([salsa b] ([dust b]) ([smoke b])) 60 50))
-    ([right]
-    ([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
-    ([salsa c] ([dust c]) ([smoke c])) 40 50)
-    ([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
-    ([salsa d] ([dust d]) ([smoke d])) 20))
-    ```
 
 * string
   * [string] trig nume deno feedback mul add
