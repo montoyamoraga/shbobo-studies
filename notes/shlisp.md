@@ -764,19 +764,37 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### negwon
 
-return negative one
+* Description: use this expression for the value -1
+* Syntax: (negwon)
+* Arguments: TODO
+* Example: TODO
 
 #### left
 
-send sound out the left
+* Description: sends the output to the left DAC
+* Syntax: [left] liszt
+* Arguments: liszt
+  * liszt: takes an unlimited list
+* Example: TODO
 
 #### right
 
-send sound out the right
+* Description: sends the output to the right DAC
+* Syntax: [right] liszt
+* Arguments: liszt
+  * liszt: takes an unlimited list
+* Example: TODO
 
 #### square
 
-make an input into a square, compared against an optional other
+* Description: a comparator which generates a squarewave if the input is greater than the other
+* Syntax: [square] inn oth mul add
+* Arguments: inn oth mul add
+  * inn: the input
+  * oth: the other input (reference)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### modo
 
@@ -1052,28 +1070,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* negwon
-  * (negwon)
-  * Description: use this expression for the value ‘-1’
-
-* left
-  * [left] liszt
-  * Description: sends the output to the left DAC
-  * liszt: takes an unlimited list
-
-* right
-  * [right] liszt
-  * Description: sends the output to the right DAC
-  * liszt: takes an unlimited list
-
-* square
-  * [square] inn oth mul add
-  * Description:  a comparator which generates a squarewave if the input is greater than the other.
-  * inn: the input
-  * oth: the other input (reference)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
 
 * modo
   * [modo] inn oth mul add
