@@ -673,16 +673,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: TODO
 * Example: TODO
 
-4
-
 #### worm
 
 * Description: rectify and hold an input, like an envelope generator. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
 * Example: TODO
-
-4
 
 #### scale
 
@@ -691,8 +687,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: TODO
 * Example: TODO
 
-4
-
 #### ladder
 
 * Description: traverse a list of 32 according to input. Only for SHTAR.
@@ -700,19 +694,29 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: TODO
 * Example: TODO
 
-4
-
 #### press
 
-4
-
-compressor
+* Description: a compressor
+* Syntax: [press] inn att dec mul add
+* Arguments: inn att dec mul add
+  * inn: the source to be compressed
+  * att: the attack of the compressor
+  * dec: the decay of the compressor
+  * thresh: the threshold above which the compressor kicks in
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### leak
 
-4
-
-leak DC from a sound
+* Description: a noise gate
+* Syntax: [leak] inn nume mul add
+* Arguments: inn nume mul add
+  * inn: the source to be gated
+  * nume: the amount of noise gating to apply
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### reflect
 
@@ -1020,25 +1024,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* press
-  * [press] inn att dec mul add
-  * Description: a compressor
-  * inn: the source to be compressed
-  * att: the attack of the compressor
-  * dec: the decay of the compressor
-  * thresh: the threshold above which the compressor kicks in
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-
-* leak
-  * [leak] inn nume mul add
-  * Description: a noise gate
-  * inn: the source to be gated
-  * nume: the amount of noise gating to apply
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
 
 * reflect
   * [reflect] inn oth mul add
