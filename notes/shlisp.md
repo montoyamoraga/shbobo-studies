@@ -456,21 +456,78 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### string
 
-4
-
-trigger a pluckd string
+* Description: a stringlus-strong string synthesis algorithm
+* Syntax: [string] trig nume deno feedback mul add
+* Arguments: trig nume deno feedback mul add
+  * trig:  the excitation source
+  * nume: numerator of delay period (set to 1 for lower pitch effects)
+  * deno: denominator of delay period (set higher for lower pitch effects)
+  * feedback: sets the feedback amount (set higher for more resonance)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; play strings with butts and corps
+([string a] ([minor a]) 1 ([corp b]  8 24) 126)
+([string b] ([minor b]) 1 ([corp b]  8 20) 125)
+([string c] ([minor c]) 1 ([corp a]  4 16) 127)
+([string d] ([minor d]) 1 ([corp a]   4 12) 126)
+```
 
 #### comb
 
-4
-
-input sound to the string
+* Description: a comb filter with variable delay time and feedback
+* Syntax: [comb] inn nume deno feedback mul add
+* Arguments: inn nume deno feedback mul add
+  * inn: the source to be delayed
+  * nume: numerator of delay period (set to 1 for lower pitch effects)
+  * deno: denominator of delay period (set higher for lower pitch effects)
+  * feedback: sets the feedback amount (set higher for more resonance)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+; comb filtered resonant pings - play with bars and corps
+([right]
+([comb a]
+  ([water b]
+    ([dust b]  ([corp a] 8) -6)
+    1 ([corp b] 33 38))
+  1  100 110))
+([left]
+([comb b]
+  ([sauce a] 3 ([water c]
+    ([dust c]  ([bar a] 18) -8)
+    1 ([bar d] 18 28)))
+  1  110 112))
+```
 
 #### zither
 
-4
+* Description: stringlus-strong synthesis consisting of 4 plucks per instance
+* Syntax: [string] trig nume deno feedback mul add
+* Arguments: trig nume deno feedback mul add
+  * trig: the excitation source
+  * nume: numerator of delay period (set to 1 for lower pitch effects)
+  * deno: denominator of delay period (set higher for lower pitch effects)
+  * feedback: sets the feedback amount (set higher for more resonance)
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+([srate] 12)
+([togo a] ([major b]) 10 15 30)
+([togo b] ([major c]) 48 60 72)
+([togo c] ([major d]) 40 46 54)
+([togo d] ([minor d]) () -36)
 
-trigger a bunch strings
+([left]
+
+([zither b] ([square] ([swoop b] ([swoop b] 1) ([slew a] ([togo a]) 4 4) 100) 1) ([togo b]) 30 118))
+
+([right]
+([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
+```
 
 #### wave
 
@@ -884,74 +941,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* string
-  * [string] trig nume deno feedback mul add
-  * Description: a stringlus-strong string synthesis algorithm
-  * trig:  the excitation source
-  * nume: numerator of delay period (set to 1 for lower pitch effects)
-  * deno: denominator of delay period (set higher for lower pitch effects)
-  * feedback: sets the feedback amount (set higher for more resonance)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; play strings with butts and corps
-    ([string a] ([minor a]) 1 ([corp b]  8 24) 126)
-    ([string b] ([minor b]) 1 ([corp b]  8 20) 125)
-    ([string c] ([minor c]) 1 ([corp a]  4 16) 127)
-    ([string d] ([minor d]) 1 ([corp a]   4 12) 126)
-    ```
-
-* comb
-  * [comb] inn nume deno feedback mul add
-  * Description: a comb filter with variable delay time and feedback
-  * inn: the source to be delayed
-  * nume: numerator of delay period (set to 1 for lower pitch effects)
-  * deno: denominator of delay period (set higher for lower pitch effects)
-  * feedback: sets the feedback amount (set higher for more resonance)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ; comb filtered resonant pings - play with bars and corps
-    ([right]
-    ([comb a]
-      ([water b]
-        ([dust b]  ([corp a] 8) -6)
-        1 ([corp b] 33 38))
-      1  100 110))
-    ([left]
-    ([comb b]
-      ([sauce a] 3 ([water c]
-        ([dust c]  ([bar a] 18) -8)
-        1 ([bar d] 18 28)))
-      1  110 112))
-
-* zither
-  * [string] trig nume deno feedback mul add
-  * Description: stringlus-strong synthesis consisting of 4 plucks per instance
-  * trig: the excitation source
-  * nume: numerator of delay period (set to 1 for lower pitch effects)
-  * deno: denominator of delay period (set higher for lower pitch effects)
-  * feedback: sets the feedback amount (set higher for more resonance)
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ([srate] 12)
-    ([togo a] ([major b]) 10 15 30)
-    ([togo b] ([major c]) 48 60 72)
-    ([togo c] ([major d]) 40 46 54)
-    ([togo d] ([minor d]) () -36)
-
-    ([left]
-
-    ([zither b] ([square] ([swoop b] ([swoop b] 1) ([slew a] ([togo a]) 4 4) 100) 1) ([togo b]) 30 118))
-
-    ([right]
-    ([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
-    ```
 
 * wave
   * [wave ] inn q rate mul add
