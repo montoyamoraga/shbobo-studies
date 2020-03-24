@@ -720,19 +720,47 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### reflect
 
-waveshaper that reflects
+* Description: part of a family of waveshapers; reflect - reflects input down at threshold
+* Syntax: [reflect] inn oth mul add
+* Arguments: inn oth mul add
+  * inn: input to be waveshaped
+  * oth: threshold / other value for logic function
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### return
 
-waveshaper that returns
+* Description: part of a family of waveshapers; return-  returns input to 0 at threshold;
+* Syntax: [return] inn oth mul add
+* Arguments: inn oth mul add
+  * inn: input to be waveshaped
+  * oth: threshold / other value for logic function
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### and
 
-bitwise and of two signals
+* Description: part of a family of waveshapers; and - bitwise and of two signals
+* Syntax: [and] inn oth mul add
+* Arguments: inn oth mul add
+  * inn: input to be waveshaped
+  * oth: threshold / other value for logic function
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### xor
 
-bitwise xor of two signals
+* Description: part of a family of waveshapers; xor - bitwise xor of two signals
+* Syntax: [xor] inn oth mul add
+* Arguments: inn oth mul add
+  * inn: input to be waveshaped
+  * oth: threshold / other value for logic function
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### negwon
 
@@ -1024,20 +1052,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* reflect
-  * [reflect] inn oth mul add
-* return
-  * [return] inn oth mul add
-* and
-  * [and] inn oth mul add
-* xor
-  * [xor] inn oth mul add
-  * Description:  a family of waveshapers; reflect - reflects input down at threshold; return-  returns input to 0 at threshold; and, xor - apply logic functions to inputs
-  * inn: input to be waveshaped
-  * oth: threshold / other value for logic function
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
 
 * negwon
   * (negwon)
