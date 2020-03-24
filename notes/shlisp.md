@@ -643,15 +643,28 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 #### sauce
 
-8
-
-slow an input by a period
+* Description: slows things down by only evaluating expressions after waiting a specified delay period
+* Syntax: [sauce] period inn mul add
+* Arguments: period inn mul add
+  * period: sets the period to wait before evaluating each expression
+  * inn: the expression to be slowed down
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example:
+```
+([sauce c] ….
+```
 
 #### salsa
 
-8
-
-selectively trigger an input
+* Description: a sample and hold
+* Syntax: [salsa] trig inn mul add
+* Arguments: trig inn mul add
+  * trig: triggers a sample
+  * inn: the source to be sampled
+  * mul: output will be multiplied by this value
+  * add: this value will be added to output
+* Example: TODO
 
 #### melody
 
@@ -1007,26 +1020,6 @@ Let me explain these four runes.  Each grain has two parts: a swoop and a horn, 
 Fog and swamp both output a superposition of the four grains.  Now, what is the difference between fog and swamp?  In swamp, the swoops are added to the static value of the horn deno, making them swoop in pitch like swamp creatures!
 
 Part 5. Glossary of m-expressions
-
-* sauce
-  * [sauce] period inn mul add
-  * Description: slows things down by only evaluating expressions after waiting a specified delay period.
-  * period: sets the period to wait before evaluating each expression
-  * inn: the expression to be slowed down
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
-  * Example:
-    ```
-    ([sauce c] ….
-    ```
-
-* salsa
-  * [salsa] trig inn mul add
-  * Description: a sample and hold
-  * trig: triggers a sample
-  * inn: the source to be sampled
-  * mul: output will be multiplied by this value
-  * add: this value will be added to output
 
 * press
   * [press] inn att dec mul add
