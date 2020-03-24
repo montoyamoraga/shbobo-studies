@@ -219,23 +219,16 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 
 * Description: transmits the value of the top buttons  (0 or 1)
 * Syntax: [major] mul add
-
-* major
-  * 
-  
+* Parameters: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-  * Example:
-    ```
-    ;use major buttons and bars to play synth with filtering
-    ([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
-    ([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))
-    ([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
-    ```
-
-4
-
-upper buttons
+* Example:
+```
+;use major buttons and bars to play synth with filtering
+([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
+([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))
+([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
+```
 
 #### steel
 
