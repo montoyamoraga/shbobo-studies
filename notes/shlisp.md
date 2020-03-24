@@ -933,15 +933,7 @@ Well to answer this question is difficult.  First let me say that there are many
 
 Part 3: Getting Started with shLISP
 
-The latest source code for shLISP can be downloaded at www.shbobo.net. The zip file contains the source and binaries for the three main political parties in the OS arena: mac, lin, and win.  That's macintosh, linux, and windows. To use SHLISP you must be familiar with the terminal.  On Macintosh it is buried down in applications->utilities, but on Linux it is usually a central part of the system. So, after you have unzipped the source to your Desktop, then you must "cd" there.  That means "change directories".  So for example your first step will probably be "cd Desktop".  Then cd into the shnth directory.  Then, cd into the shlsp directory.  From here you can run shlisp as "./shlisp.app".  On Linux, you will also need sudo.  So, to program your device with an example file, here are the respective commands:
-
-./shlisp.app examp/vancouver.txt
-
-sudo ./shlisp examp/vancouver.txt
-
-These program the device with the "vancouver" source text.
-
-Now we should talk about what's in that text.
+The latest source code for shLISP can be downloaded at www.shbobo.net. The zip file contains the source and binaries for the three main political parties in the OS arena: mac, lin, and win.  That's macintosh, linux, and windows. To use SHLISP you must be familiar with the terminal.  On Macintosh it is buried down in applications->utilities, but on Linux it is usually a central part of the system. So, after you have unzipped the source to your Desktop, then you must "cd" there.  That means "change directories".  So for example your first step will probably be "cd Desktop".  Then cd into the shnth directory.  Then, cd into the shlsp directory.  From here you can run shlisp as "./shlisp.app".
 
 SHLISP is a computer music programming language based loosely on LISP.  LISP looks vintage, and there are even some "lost" features that we have brought back to life here.  The original specification had two kinds of expressions:
 
