@@ -8,11 +8,11 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 
 ## Images
 
-### Front view
+### Front side
 
 ![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
 
-The Shnth's front panel has the following features:
+The Shnth's front side has the following features:
 * 4 vertical wooden bars
 * 8 upper LEDs (2 per wooden bar)
 * 1x upper row of circular black pushbuttons (1 per wooden bar)
@@ -20,7 +20,13 @@ The Shnth's front panel has the following features:
 * 1 upper center circular red pushbutton 
 * 1 microphone (under the hood)
 
+### Back side
+
 ![shnth-back.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back.jpg "shnth-back.jpg")
+
+The Shnth's back side has the following features:
+* 1 left antenna, gray, for left hand
+* 1 right antenna, yellow and orange, for right hand
 
 ![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg")
 
