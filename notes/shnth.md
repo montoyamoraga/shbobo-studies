@@ -17,9 +17,7 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1 upper center circular red pushbutton 
 * 1 microphone (under the hood)
 
-![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
-
-![shnth-front-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-annotated.jpg "shnth-front-annotated.jpg")
+![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg") ![shnth-front-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-annotated.jpg "shnth-front-annotated.jpg")
 
 
 ### Back
