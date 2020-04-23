@@ -6,13 +6,10 @@ The Shnth, by Shbobo, is a computer music device that features the ARM Cortex M3
 
 The Shnth is an attempt to do classic computer music in an embedded setting.  Granular synthesis was a big goal, but we could only fit a limited number in.  Thus it is the sound, the hallmark of granular synthesis, but unlimited clouds are not possible.  I like it better, with limitations, and I think you will too!  It was an adventure, quite frustrating at times, especially programming the USB stack.  But everything folds over, and the USB code may have even informed the more creative, sonic codes. 
 
-## Images
+## Description with images
 
-### Front side
+### Front
 
-![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
-
-The Shnth's front side has the following features:
 * 4 vertical wooden bars
 * 8 upper LEDs (2 per wooden bar)
 * 1x upper row of circular black pushbuttons (1 per wooden bar)
@@ -20,19 +17,35 @@ The Shnth's front side has the following features:
 * 1 upper center circular red pushbutton 
 * 1 microphone (under the hood)
 
-### Back side
+![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
 
-![shnth-back.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back.jpg "shnth-back.jpg")
 
-The Shnth's back side has the following features:
+### Back
+
 * 1 left antenna, gray, for left hand
 * 1 right antenna, yellow and orange, for right hand
 
+![shnth-back.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back.jpg "shnth-back.jpg")
+
+### Up
+
+* 1x 1/8" stereo line output jack, for headphones or mixer
+* 1x USB B cable, for uploading scripts and charging internal batteries
+* 1x on/off switch, on is towards USB, off is towards edge of instrument
+
 ![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg")
+
+### Down
+
+* 1x 1/8" stereo(?) line input jack
 
 ![shnth-down.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down.jpg "shnth-down.jpg")
 
+### Left
+
 ![shnth-left.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left.jpg "shnth-left.jpg")
+
+### Right
 
 ![shnth-right.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right.jpg "shnth-right.jpg")
 
