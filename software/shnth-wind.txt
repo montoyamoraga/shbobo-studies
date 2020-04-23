@@ -1,4 +1,1 @@
-(srate 
- (short 22 10) 
-) 
- (left (right (arab (horna (slewa 90) 190)) (wind 245 5)))
+(left (right (wind 245 5)))
