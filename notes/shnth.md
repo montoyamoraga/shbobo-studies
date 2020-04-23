@@ -17,7 +17,7 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1 upper center circular red pushbutton 
 * 1 microphone (under the hood)
 
-![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg") ![shnth-front-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-annotated.jpg "shnth-front-annotated.jpg")
+![shnth-front-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-small.jpg "shnth-front-small.jpg") ![shnth-front-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-notes.jpg "shnth-front-notes.jpg")
 
 
 ### Back
@@ -25,9 +25,7 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1 left antenna, gray, for left hand
 * 1 right antenna, yellow and orange, for right hand
 
-![shnth-back.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back.jpg "shnth-back.jpg")
-
-![shnth-back-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back-annotated.jpg "shnth-back-annotated.jpg")
+![shnth-back-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back-small.jpg "shnth-back-small.jpg") ![shnth-back-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back-notes.jpg "shnth-back-notes.jpg")
 
 ### Up
 
@@ -35,23 +33,21 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1x USB B cable, for uploading scripts and charging internal batteries
 * 1x on/off switch, on is towards USB, off is towards edge of instrument
 
-![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg") ![shnth-up-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up-annotated.jpg "shnth-up-annotated.jpg")
+![shnth-up-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up-small.jpg "shnth-up-small.jpg") ![shnth-up-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up-notes.jpg "shnth-up-notes.jpg")
 
 ### Down
 
 * 1x 1/8" stereo(?) line input jack
 
-![shnth-down.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down.jpg "shnth-down.jpg")
-
-![shnth-down-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down-annotated.jpg "shnth-down-annotated.jpg")
+![shnth-down-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down-small.jpg "shnth-down-small.jpg") ![shnth-down-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down-notes.jpg "shnth-down-notes.jpg")
 
 ### Left
 
-![shnth-left.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left.jpg "shnth-left.jpg") ![shnth-left-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left-annotated.jpg "shnth-left-annotated.jpg")
+![shnth-left-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left-small.jpg "shnth-left-small.jpg") ![shnth-left-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left-notes.jpg "shnth-left-notes.jpg")
 
 ### Right
 
-![shnth-right.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right.jpg "shnth-right.jpg") ![shnth-right-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right-annotated.jpg "shnth-right-annotated.jpg")
+![shnth-right-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right-small.jpg "shnth-right-small.jpg") ![shnth-right-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right-notes.jpg "shnth-right-notes.jpg")
 
 
 ## UNORGANIZED
