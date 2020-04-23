@@ -19,7 +19,7 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 
 ![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
 
-![shnth-front-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
+![shnth-front-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-annotated.jpg "shnth-front-annotated.jpg")
 
 
 ### Back
@@ -29,6 +29,8 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 
 ![shnth-back.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back.jpg "shnth-back.jpg")
 
+![shnth-back-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back-annotated.jpg "shnth-back-annotated.jpg")
+
 ### Up
 
 * 1x 1/8" stereo line output jack, for headphones or mixer
@@ -37,19 +39,27 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 
 ![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg")
 
+![shnth-up-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up-annotated.jpg "shnth-up-annotated.jpg")
+
 ### Down
 
 * 1x 1/8" stereo(?) line input jack
 
 ![shnth-down.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down.jpg "shnth-down.jpg")
 
+![shnth-down-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down-annotated.jpg "shnth-down-annotated.jpg")
+
 ### Left
 
 ![shnth-left.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left.jpg "shnth-left.jpg")
 
+![shnth-left-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left-annotated.jpg "shnth-left-annotated.jpg")
+
 ### Right
 
 ![shnth-right.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right.jpg "shnth-right.jpg")
+
+![shnth-right-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right-annotated.jpg "shnth-right-annotated.jpg")
 
 
 ## UNORGANIZED
