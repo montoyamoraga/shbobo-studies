@@ -1,16 +1,27 @@
-# Shnth
-
-## Images
-
-![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
+# SHNTH
 
 ## About
 
-The SHNTH, a computer music device by SHBOBO, features the ARM Cortex 32 bit processor. It connects via USB to host computer (windows, linux, or macintosh) which may read its squish data, or program the standalone synthesizer in the computer music language, SHLISP. A switch enables internal batteries; electronic sounds out a stereo-mini jack. It is handtop: four bars on top feel your fingers and two woven antennae below sense palm flesh, complimented by a battery of buttons. There are red lights. 
-
-Ghe Shnth is an attempt to do classic computer music in an embedded setting.  Granular synthesis was a big goal, but we could only fit a limited number in.  Thus it is the sound, the hallmark of granular synthesis, but unlimited clouds are not possible.  I like it better, with limitations, and I think you will too!  It was an adventure, quite frustrating at times, especially programming the USB stack.  But everything folds over, and the USB code may have even informed the more creative, sonic codes. 
-
 The Shnth, by Shbobo, is a computer music device that features the ARM Cortex M3 32 bit processor. It connects to host computer via USB, wherein the host computer (windows, linux, or macintosh) may read its "squish data" and create graphics and sound. Or, the Shnth itself is a standalone synthesizer, which may be programmed by host in the new language, "Shlisp", by Shbobo. It is potentially self powered, by batteries, which are charged, again, via USB. A switch turns it on, and 16 bit sound comes out a standard stereo 3.5mm jack. Like a laptop; it is "handtop". Four bars on top feel your fingers and two woven antennae below sense flesh, complimented by a battery of buttons. There are red lights.
+
+The Shnth is an attempt to do classic computer music in an embedded setting.  Granular synthesis was a big goal, but we could only fit a limited number in.  Thus it is the sound, the hallmark of granular synthesis, but unlimited clouds are not possible.  I like it better, with limitations, and I think you will too!  It was an adventure, quite frustrating at times, especially programming the USB stack.  But everything folds over, and the USB code may have even informed the more creative, sonic codes. 
+
+## Images
+
+![shnth-front.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
+
+![shnth-back.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-back.jpg "shnth-back.jpg")
+
+![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg")
+
+![shnth-down.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-down.jpg "shnth-down.jpg")
+
+![shnth-left.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-left.jpg "shnth-left.jpg")
+
+![shnth-right.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right.jpg "shnth-right.jpg")
+
+
+## UNORGANIZED
 
 This pursual of intuition was essential in developing the idea of the Shinth, and also a hatred of knobs.  
 
