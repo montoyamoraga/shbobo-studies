@@ -1,5 +1,9 @@
 # Shnth
 
+## Images
+
+![alt text](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front.jpg "shnth-front.jpg")
+
 ## About
 
 The SHNTH, a computer music device by SHBOBO, features the ARM Cortex 32 bit processor. It connects via USB to host computer (windows, linux, or macintosh) which may read its squish data, or program the standalone synthesizer in the computer music language, SHLISP. A switch enables internal batteries; electronic sounds out a stereo-mini jack. It is handtop: four bars on top feel your fingers and two woven antennae below sense palm flesh, complimented by a battery of buttons. There are red lights. 
