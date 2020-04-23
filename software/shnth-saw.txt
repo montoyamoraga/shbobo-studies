@@ -1,5 +1,3 @@
 ; turn saws on and off with toggle
- ([right] ([right] 
- ([toggle a] ([major d]) 
- ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55))) 
-))
+ (left right ([toggle a] ([major a]) 
+ ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55)))) 
