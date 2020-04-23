@@ -53,9 +53,7 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 
 ### Right
 
-![shnth-right.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right.jpg "shnth-right.jpg")
-
-![shnth-right-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right-annotated.jpg "shnth-right-annotated.jpg")
+![shnth-right.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right.jpg "shnth-right.jpg") ![shnth-right-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-right-annotated.jpg "shnth-right-annotated.jpg")
 
 
 ## UNORGANIZED
