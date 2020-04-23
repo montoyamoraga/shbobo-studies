@@ -35,9 +35,7 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1x USB B cable, for uploading scripts and charging internal batteries
 * 1x on/off switch, on is towards USB, off is towards edge of instrument
 
-![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg")
-
-![shnth-up-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up-annotated.jpg "shnth-up-annotated.jpg")
+![shnth-up.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up.jpg "shnth-up.jpg") ![shnth-up-annotated.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-up-annotated.jpg "shnth-up-annotated.jpg")
 
 ### Down
 
