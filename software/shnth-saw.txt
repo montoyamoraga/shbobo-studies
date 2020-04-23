@@ -1,6 +1,5 @@
 ; turn saws on and off with toggle
- 
- (right ([toggle d] ([major d]) 
- ([saw d] 22 58 ([swoop d] ([swoop d] 1) 14 55)))) 
- 
- (left (wind))
+ (left ([toggle a] ([major a]) 
+ ([saw a] 22 58 ([swoop a] ([swoop a] 1) 15 55)))) 
+ (right ([toggled d] ([majord d]) 
+ ([sawd d] 22 58 ([swoopd d] ([swoopd d] 1) 15 55)))) 
