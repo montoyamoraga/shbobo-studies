@@ -1,0 +1,4 @@
+;use major buttons and bars to play synth with filtering
+ ([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7)) 
+ ([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7)) 
+ ([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
