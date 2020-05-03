@@ -12,13 +12,12 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 
 * 4 vertical wooden bars
 * 8 upper LEDs (2 per wooden bar)
-* 1x upper row of circular black pushbuttons (1 per wooden bar)
-* 1x lower row of circular gray pushbuttons (1 per wooden bar)
+* 1 upper row of circular black pushbuttons (1 per wooden bar)
+* 1 lower row of circular gray pushbuttons (1 per wooden bar)
 * 1 upper center circular red pushbutton 
 * 1 microphone (under the hood)
 
 ![shnth-front-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-small.jpg "shnth-front-small.jpg") ![shnth-front-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shnth-front-notes.jpg "shnth-front-notes.jpg")
-
 
 ### Back
 
