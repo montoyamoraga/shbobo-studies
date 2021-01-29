@@ -21,7 +21,7 @@ The neck is marked, with neutral intervals in brass and power chords in steel. 3
 * 1 USB jack
 * 1 audio stereo jack for output (TRS 1/8")
 
-![shtar-front-small.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shtar-front-small.jpg "shtar-front-small.jpg") ![shtar-front-notes.jpg](https://github.com/montoyamoraga/shbobo-studies/raw/master/images/shtar-front-notes.jpg "shtar-front-notes.jpg")
+![shtar-front-small.jpg](../images/shtar-front-small.jpg "shtar-front-small.jpg") ![shtar-front-notes.jpg](../images/shtar-front-notes.jpg "shtar-front-notes.jpg")
 
 ### Back
 
