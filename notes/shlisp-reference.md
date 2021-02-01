@@ -82,21 +82,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-;use mic to control volume and pitch of triangle oscillator
-([left]
-    ([arab]
-    ([horn a] ([add] ([slew a]) 90) 190 ([slew a] ([wind]) 245 5))
-  )
-```
 
 #### finger 
 
 * Description: Top finger fretted. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### corp
 
@@ -108,18 +99,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Parameters: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-;use corp to widely bend horn pitch. slew smooths out steppiness
-([horn a] ([slew a] ([corp a] 70 30) 8 8) ([slew b] ([corp b] 30 70) 8 8))
-```
 
 #### plank
 
 * Description: all the frets' bits. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### bar
 
@@ -131,46 +116,30 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments:
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-;simple 4note saw organ
-([saw a] 24 94 ([bar a])) ([saw b] 28 85 ([bar b]))
-([saw c] 39 73 ([bar c])) ([saw d] 43 61 ([bar d]))
-
-;simple sidrassi emulation with panning
-([horn a] 24 94 ([bar a])) ([horn b] 28 85 ([bar b]))
-([horn c] 39 73 ([bar c])) ([horn d] 43 61 ([bar d]))
-(pan ([horn a]) ([bar a])) (pan ([horn b]) ([bar b]))
-(pan ([horn c]) ([bar c])) (pan ([horn d]) ([bar d]))
-```
 
 #### top
 
 * Description: top knob. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### bot
 
 * Description: bottom knob. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### heart 
 
 * Description: heart-shaped chambre. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### bridge
 
 * Description: bridge of the strings. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### minor
 
@@ -182,20 +151,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Parameters: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-;use minor buttons to play synth
-([horn b] 24 126 ([slew b] ([minor b]) 80 5))
-([horn c] 36 127 ([slew c] ([minor c]) 80 5))
-([horn d] 48 128 ([slew d] ([minor d]) 80 5))
-```
 
 #### brass
 
 * Description: brass marked frets. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### major
 
@@ -204,20 +165,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Parameters: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-;use major buttons and bars to play synth with filtering
-([wave b] ([saw b] 24 126 ([slew b] ([major b]) 120 10)) 20 ([slew f] ([bar d]) 7 7))
-([wave c] ([saw c] 36 127 ([slew c] ([major c]) 120 10)) 20 ([slew g] ([bar c]) 7 7))
-([wave d] ([saw d] 48 128 ([slew d] ([major d]) 120 10)) 20 ([slew h] ([bar b]) 7 7))
-```
 
 #### steel
 
 * Description: steel marked frets. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### horn
 
@@ -228,19 +181,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the oscillator’s boundaries (height/depth)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-;use barres to amplitude modulate
-([left]
-([horn a]  84 ([corp a] -12 48) ([bar a]))
-([horn b]  96 ([corp b] -16 48) ([bar d])))
-
-;frequency modulate the nume with another horn
-([right]
-([arab]
-([horn c]  ([horn b]) ([corp a] 40 96) ([swoop c] ([square] ([bar c]) 50) 4 252))
-([horn d]  ([horn a]) ([corp b] 30 126) ([swoop d] ([square] ([bar b]) 50) 6 242)))
-```
 
 #### saw
 
@@ -251,19 +191,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the oscillator’s boundaries (height/depth)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; turn saws on and off with toggle
-([right] ([right]
-([toggle a] ([major d])
-  ([saw a] 22 111 ([swoop a] ([swoop a] 1) 14 55)))
-)))
-([left]
-([toggle b] ([major b])
-  ([saw b] 38 111 ([swoop b] ([swoop b] 1) 15 55)))
-([toggle c] ([major c])
-  ([saw b] 52 111 ([swoop c] ([swoop c] 1) 3 118)))
-```
 
 #### toggle
 
@@ -271,12 +198,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Syntax: [toggle] square
 * Arguments: square
   * square: switches the toggle from on to off
-* Example:
-```
-  ; use minor b button to toggle on/off a granular synth you control with corps
-([fog a] ([dust a] ([corp a] 100) ([toggle a] ([minor b])))
-  ([corp b] 40 20) ([corp a] 20 105) ([corp a] 68 24) ([corp b] 60 64))
-```
 
 #### togo
 
@@ -287,13 +208,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * liszt: the sequence of values or S-expressions to be stepped through
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-([horn a]
-([togo a] ([major d]) 53 13 94 11 52 110 35 26 35 43 36 8)
-([togo b] ([major d]) 65 14 32 85 57 43 14 28 50 11 35)
-([slew a] ([major d]) 8 8)))
-```
 
 #### swoop
 
@@ -305,13 +219,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the swoop’s boundaries (height or depth)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; use minor b button to trigger a note with separate envelopes for amplitude,  filter q and filter freq
-([wave a] ([horn a] 60 84 ([swoop a] ([minor b]) 3 120))
-([swoop b] ([minor b]) 10 30 40 5)
-([swoop c] ([minor b]) 2 72))
-```
 
 #### mount
 
@@ -322,12 +229,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the boundaries
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; slow moving LFOs modulating pitch (nume and deno) and volume of two saws
-([saw a] ([mount a] 73 21) ([mount b] 32 41) ([mount c] 80 100))
-([saw b] ([mount d] 13 52) ([mount e] 99 98) ([mount f] 23 83))
-```
 
 #### smoke
 
@@ -336,12 +237,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; use major b and d buttons to trigger 808 kick and hihat
-([smoke a] ([slew a] ([major a]) 100 5 64))
-([horn a] 24 127([slew b] ([minor a]) 100 1))
-```
 
 #### dust
 
@@ -351,14 +246,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * speed: sets the density of pulses
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; use the bars to trigger a chaotic cascade of zither strings
-([zither a] ([sauce a] 30 ([dust a] ([bar a]))) ([corp a]) ([corp b] 80 40))
-([zither b] ([sauce b] 20 ([dust b] ([bar b]))) ([corp b] 70 50) ([corp a]))
-([zither c] ([sauce c] 10 ([dust c] ([bar c]))) ([corp a]) ([corp b] 60 60))
-([zither d] ([dust d] ([bar d] 60)) ([corp b] 50 70) ([corp a]))
-```
 
 #### fog
 
@@ -372,19 +259,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the boundaries (heigh/depth) of the internal oscillator
   * mul:  output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; use the bars to trigger a chaotic cascade of grains
-([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
-([salsa a] ([dust a]) ([smoke a])) 80)
-([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
-([salsa b] ([dust b]) ([smoke b])) 60 50))
-([right]
-([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
-([salsa c] ([dust c]) ([smoke c])) 40 50)
-([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
-([salsa d] ([dust d]) ([smoke d])) 20))
-```
 
 #### haze
 
@@ -398,19 +272,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the boundaries (heigh/depth) of the internal oscillator
   * mul:  output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; use the bars to trigger a chaotic cascade of grains
-([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
-([salsa a] ([dust a]) ([smoke a])) 80)
-([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
-([salsa b] ([dust b]) ([smoke b])) 60 50))
-([right]
-([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
-([salsa c] ([dust c]) ([smoke c])) 40 50)
-([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
-([salsa d] ([dust d]) ([smoke d])) 20))
-```
 
 #### swamp
 
@@ -424,19 +285,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the boundaries (heigh/depth) of the internal oscillator
   * mul:  output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; use the bars to trigger a chaotic cascade of grains
-([fog a] ([dust a] ([bar a])) ([corp a] 60 10) ([corp b] 90 30)
-([salsa a] ([dust a]) ([smoke a])) 80)
-([haze b] ([dust b] ([bar b])) ([corp a] 70 20) ([corp b] 100 20)
-([salsa b] ([dust b]) ([smoke b])) 60 50))
-([right]
-([haze c] ([dust c] ([bar c])) ([corp a] 52 10) ([corp b] 96 26)
-([salsa c] ([dust c]) ([smoke c])) 40 50)
-([swamp d] ([dust d] ([bar d])) ([corp a] 63 20) ([corp b] 88 38)
-([salsa d] ([dust d]) ([smoke d])) 20))
-```
 
 #### string
 
@@ -449,14 +297,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * feedback: sets the feedback amount (set higher for more resonance)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; play strings with butts and corps
-([string a] ([minor a]) 1 ([corp b]  8 24) 126)
-([string b] ([minor b]) 1 ([corp b]  8 20) 125)
-([string c] ([minor c]) 1 ([corp a]  4 16) 127)
-([string d] ([minor d]) 1 ([corp a]   4 12) 126)
-```
 
 #### comb
 
@@ -469,22 +309,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * feedback: sets the feedback amount (set higher for more resonance)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; comb filtered resonant pings - play with bars and corps
-([right]
-([comb a]
-  ([water b]
-    ([dust b]  ([corp a] 8) -6)
-    1 ([corp b] 33 38))
-  1  100 110))
-([left]
-([comb b]
-  ([sauce a] 3 ([water c]
-    ([dust c]  ([bar a] 18) -8)
-    1 ([bar d] 18 28)))
-  1  110 112))
-```
 
 #### zither
 
@@ -497,21 +321,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * feedback: sets the feedback amount (set higher for more resonance)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-([srate] 12)
-([togo a] ([major b]) 10 15 30)
-([togo b] ([major c]) 48 60 72)
-([togo c] ([major d]) 40 46 54)
-([togo d] ([minor d]) () -36)
-
-([left]
-
-([zither b] ([square] ([swoop b] ([swoop b] 1) ([slew a] ([togo a]) 4 4) 100) 1) ([togo b]) 30 118))
-
-([right]
-([zither c] ([square] ([swoop c] ([swoop c] 1) ([slew a]) ([add] 100 ([togo d]))) 1) ([togo c]) 70 118))
-```
 
 #### wave
 
@@ -523,14 +332,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * rate: sets the filter base frequency
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; waveering a saw wave with freq being swept by mount, vary Q with corp
-  ([pan] ([mount a])
-([wave a]
-    ([saw a] 36 87 )
-  ([corp a] 14 2)  ([mount a] 11 97))
-```
 
 #### water
 
@@ -542,21 +343,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * rate: sets the filter base frequency
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### salt
 
 * Description: variable resonance filters - salt is highpass
 * Syntax: [salt ] inn q rate mul add
 * Arguments: inn q rate mul add
-* Example:
-```
-; waveering a saw wave with freq being swept by mount, vary Q with corp
-  ([pan] ([mount a])
-([wave a]
-    ([saw a] 36 87 )
-  ([corp a] 14 2)  ([mount a] 11 97))
-```
 
 #### horse
 
@@ -569,18 +361,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * deno: sets the oscillator’s lower boundary (depth)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-; set waveshape with barres and corps, waveer output with [corp a] also modulating cutoff)
-  ([wave a]
-    ([horse a]
-      ([bar a] 26 ([corp a] 35 50))
-      ([bar b] 14 91)
-      ([bar c] 53 61)
-      ([bar d] 42 ([corp b] 22 63))
-    ([corp b]))
-  11  ([corp a] 33 60)
-```
 
 #### slew
 
@@ -592,10 +372,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * donn: the slew rate for decreasing values (lower number is slower)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-([slew a]) ….
-```
 
 #### wheel
 
@@ -606,24 +382,18 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * down: value to be negatively incremented
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-([wheel a] ….
-```
 
 #### slave
 
 * Description: count pulses by variable integer amount
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### pulse
 
 * Description: trigger a pulse and decay with variable height
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### sauce
 
@@ -634,10 +404,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * inn: the expression to be slowed down
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-([sauce c] ….
-```
 
 #### salsa
 
@@ -648,35 +414,30 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * inn: the source to be sampled
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### melody
 
 * Description: record and repeat melodies. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### worm
 
 * Description: rectify and hold an input, like an envelope generator. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### scale
 
 * Description: convert frets to exponential (musical) pitch. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### ladder
 
 * Description: traverse a list of 32 according to input. Only for SHTAR.
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### press
 
@@ -689,7 +450,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * thresh: the threshold above which the compressor kicks in
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### leak
 
@@ -700,7 +460,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * nume: the amount of noise gating to apply
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### reflect
 
@@ -711,7 +470,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * oth: threshold / other value for logic function
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### return
 
@@ -722,7 +480,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * oth: threshold / other value for logic function
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### and
 
@@ -733,7 +490,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * oth: threshold / other value for logic function
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### xor
 
@@ -744,14 +500,12 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * oth: threshold / other value for logic function
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### negwon
 
 * Description: use this expression for the value -1
 * Syntax: (negwon)
 * Arguments: TODO
-* Example: TODO
 
 #### left
 
@@ -759,7 +513,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Syntax: [left] liszt
 * Arguments: liszt
   * liszt: takes an unlimited list
-* Example: TODO
 
 #### right
 
@@ -767,7 +520,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Syntax: [right] liszt
 * Arguments: liszt
   * liszt: takes an unlimited list
-* Example: TODO
 
 #### square
 
@@ -778,7 +530,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * oth: the other input (reference)
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### modo
 
@@ -789,7 +540,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * oth: the other input
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example: TODO
 
 #### srate
 
@@ -797,10 +547,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Syntax: [srate] inn
 * Arguments: inn
   * inn: sets the sampling rate
-* Example:
-```
-([srate] ….
-```
 
 #### mul
 
@@ -810,10 +556,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
   * inn: input to be mul’d
   * mul: inn will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-[mul] ….
-```
 
 #### add
 
@@ -821,7 +563,6 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Syntax: [add] liszt
 * Arguments: liszt
   * liszt: takes an unlimited list
-* Example: TODO
 
 #### tar
 
@@ -830,24 +571,18 @@ The few ones that are only for the Shtar and not for the Shbobo, are shown with 
 * Arguments: mul add
   * mul: output will be multiplied by this value
   * add: this value will be added to output
-* Example:
-```
-([tar] ….
-```
 
 #### bend
 
 * Description: bend through the fish soup
 * Syntax: TODO
 * Arguments: TODO
-* Example: TODO
 
 #### jump
 
 * Description: if 0, stays put; otherwise  jumps value situations, as demarcated by curly brackets {... }. value may be negative
 * Syntax: [jump] value
 * Arguments: value
-* Example: TODO
 
 trigger a jump to another soup
 
@@ -859,7 +594,6 @@ trigger a jump to another soup
   * Description: 
   * inn: value to be panned
   * place: position in the stereo field
-* Example: TODO
 
 #### short
 
@@ -868,21 +602,18 @@ trigger a jump to another soup
 * Arguments: bigg smal
   * bigg: coarser adjustment of value (msb)
   * smal: finer adjustment of value (lsb)
-* Example: TODO
 
 #### dirac
 
 * Description: default, execute using signed numbers, range from -128 to 127
 * Syntax: TODO
 * Arguments: liszt
-* Example: TODO
 
 #### arab
 
 * Description:  esoteric, execute using unsigned numbers, range from 0 to 255
 * Syntax: TODO
 * Arguments: liszt
-* Example: TODO
 
 #### lights
 
@@ -890,8 +621,3 @@ trigger a jump to another soup
 * Syntax: TODO
 * Arguments: inn
   * inn: determines which LEDs are on/off
-* Example:
-  ```
-  ; use LEDs to represent value of [corp a]
-  ([lights] ([corp a]))
-  ```
