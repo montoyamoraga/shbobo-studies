@@ -1,50 +1,17 @@
 ;shnth hello world
-;JUMP, along with BEND
-;is how to change SOUPs
-;or presets. JUMP only jumps once per cycle, so it is easier to control.
-;It does nothing on zero INN
+;JUMP to change SOUPs
 ;Nonzero INN makes it jump relative to the current preset.
-;Multiply the TRIG by 1 to make it jump exactly one.
-{
-  (lights (mount 31 17))
-  (right
-    (left 
-      (horn 64 64)) 
-      (jump (tar 1)
-    )
-  )
-  
-}
-{
-  (lights (mount 52 17))
-  (right
-    (left 
-    (smoke)) 
-    (jump (tar 1))
-  )
-}
-{
-  (lights (mount 2 19))
-  (right
-    (left 
-    (horn 24 64))
-    (jump (tar 1))
-  )
-}
-{
-  (lights (mount 2 19))
-  (right
-    (left 
-    (haze (dust (bar))
-    (jump (tar 1))
-  )
-}
-{
-  (lights (mount 41 23))
-  (right
-    (left 
-    (horn 67 64))
-    (jump (tar 1))
-  )
-}
+;Multiply the TRIG by 1 to make it jump exactly one
+{(lights (mount 31 17))
+  (right (left (horn (27 (corp)) (64 (corpb)) )))
+  (jump (tar 1))}
+{ (lights (mount 52 17))
+  (right (left (smoke)))
+  (jump (tar 1))}
+{(lights (mount 7 19))
+  (right (left (haze (dust (bar)) 12 64 (smoke 4 35) 64)))
+  (jump (tar 1))}
+{(lights (mount 41 23))
+  (right (left (saw 33 64)))
+  (jump (tar 1))}
 doubleclick
