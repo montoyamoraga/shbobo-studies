@@ -1,16 +1,11 @@
 ## Links
-* [https://shbobo.net/](https://shbobo.net/): main page of shbobo.
-* [https://shbobo.net/about.html](https://shbobo.net/about.html): about page of shbobo.
-* [http://shbobo.net/cgi-bin/fish.html](http://shbobo.net/cgi-bin/fish.html): TEXT FISH NEWS is a social patch sharing platform like MASS SHNTH BOG.
-* [https://soundcloud.com/shbobo](https://soundcloud.com/shbobo): shbobo on soundcloud.
-* [https://vimeo.com/user9723110](https://vimeo.com/user9723110): shbobo on vimeo, currently with six videos
-* [https://vimeo.com/86368403](https://vimeo.com/86368403): vimeo video, Mikey Walker (Preview)
+
+* [https://shbobo.net/](https://shbobo.net/): Shbobo webbsite.
+
+* [https://soundcloud.com/shbobo](https://soundcloud.com/shbobo): Shbobo Soundcloud.
+* [https://vimeo.com/user9723110](https://vimeo.com/user9723110): Shbobo Vimeo
 * [https://vimeo.com/34038275](https://vimeo.com/34038275): vimeo video, Justints.
-* [https://vimeo.com/63439451](https://vimeo.com/63439451): vimeo video, shnth-bending.
-* [https://vimeo.com/72120685](https://vimeo.com/72120685): vimeo video, Shbobo Fish - Tutorial 1.
-* [https://vimeo.com/72226053](https://vimeo.com/72226053): vimeo video, Shbobo Fish - Tutorial 2 (String).
-* [https://vimeo.com/74026354](https://vimeo.com/74026354): vimeo video, Shbobo Fish - Tutorial 3 (Fog, Haze and Swamp).
-* [https://llllllll.co/t/shbobo-shnth-patches-and-appreciation/7385](https://llllllll.co/t/shbobo-shnth-patches-and-appreciation/7385): shbobo shnth patches and appreciation, at the lines llllllll forum.
+* [https://llllllll.co/t/shbobo-shnth-patches-and-appreciation/7385](https://llllllll.co/t/shbobo-shnth-patches-and-appreciation/7385): Shbobo shnth patches and appreciation, at the lines llllllll forum.
 * [https://cdm.link/2013/08/wacky-wooden-shnth-makes-eerie-sounds-colors-outside-the-lines-documentary/](https://cdm.link/2013/08/wacky-wooden-shnth-makes-eerie-sounds-colors-outside-the-lines-documentary/): shnth description at the cdm forum, with great comments section.
 * [https://vimeo.com/71725569](https://vimeo.com/71725569): The Shnth Comes to England - with Peter Blasser, a video by Rodrigo Costanzo.
 * [https://www.youtube.com/watch?v=f9oZqTS0-HM](https://www.youtube.com/watch?v=f9oZqTS0-HM): youtube video, Gonzo Circuits: The Synths of Peter B / Ciat-Lonbarde.
