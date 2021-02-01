@@ -6,7 +6,14 @@
   (right (left (horn (27 (corp)) (64 (corpb)) )))
   (jump (tar 1))}
 { (lights (mount 52 17))
-  (right (left (smoke)))
+  (left (string (major) 3 64) 
+    (stringb (majorb) 7 64)
+    (stringc (majorc) 11 64)
+    (stringd (majord) 17 64))
+  (right (zither (dust (minor 64)) 34) 
+    (zitherb (dustb (minorb 64)) 20) 
+    (zitherc (dustc (minorc 64)) 71)
+    (zitherd (dustd (minord 64)) 111))
   (jump (tar 1))}
 {(lights (mount 7 19))
   (right (left (haze (dust (bar)) 12 64 (smoke 4 35) 64)))
