@@ -6,6 +6,8 @@ The shbobo-studies repository is a compilation of research notes, tutorials and 
 
 The shbobo-studies repository is a project by [Aarón Montoya-Moraga](https://montoyamoraga.io/), started in 2020.
 
+In late December 2020, Shbobo was published as open source at https://github.com/pblasser/shbobo.
+
 ## Structure of this repository
 
 * [notes/](notes/): notes taken about the Shbobo ecosystem, including:
