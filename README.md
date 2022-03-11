@@ -44,7 +44,7 @@ Shbobo instruments are powered off of the USB connection. You will need USB type
 
 ## Images
 
-![alt text](./kornBLASSER.jpg "kornBlasser.jpg")
+![kornBlasser.jpg](./kornBLASSER.jpg "kornBlasser.jpg")
 
 *Retrieved from the About section of the shbobo.net website, available at <https://shbobo.net/about.html>, accessed on Monday March 23 2020.* )
 
