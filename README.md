@@ -11,7 +11,7 @@ In late December 2020, Shbobo was published as open source at https://github.com
 ## Structure of this repository
 
 * [archive/](archive/): .zip files with old versions of the Shbobo software.
-* [fish/][fish/]: Fish is a graphical user interface for programming Shlisp.
+* [fish/](fish/): Fish is a graphical user interface for programming Shlisp.
 * [shlisp/](shlisp/): Shlisp is the name of the programming language used by Shbobo instruments.
 * [shnth/](shnth/): Shnth is the first instrument released by Shbobo. These notes include its history, design principles, and manual for use.
 * [shtar/](shtar/): Shtar is the second instrument released by Shbobo. These notes include its history, design principles, and manual for use.
