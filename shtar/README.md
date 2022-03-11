@@ -21,27 +21,27 @@ The neck is marked, with neutral intervals in brass and power chords in steel. 3
 * 1 USB jack
 * 1 audio stereo jack for output (TRS 1/8")
 
-![shtar-front-small.jpg](../images/shtar-front-small.jpg "shtar-front-small.jpg") ![shtar-front-notes.jpg](../images/shtar-front-notes.jpg "shtar-front-notes.jpg")
+![shtar-front-small.jpg](./images/shtar-front-small.jpg "shtar-front-small.jpg") ![shtar-front-notes.jpg](./images/shtar-front-notes.jpg "shtar-front-notes.jpg")
 
 ### Back
 
-![shtar-back-small.jpg](../images/shtar-back-small.jpg "shtar-back-small.jpg") ![shtar-back-notes.jpg](../images/shtar-back-notes.jpg "shtar-back-notes.jpg")
+![shtar-back-small.jpg](./images/shtar-back-small.jpg "shtar-back-small.jpg") ![shtar-back-notes.jpg](./images/shtar-back-notes.jpg "shtar-back-notes.jpg")
 
 ### Headstock
 
-![shtar-headstock-small.jpg](../images/shtar-headstock-small.jpg "shtar-headstock-small.jpg") ![shtar-headstock-notes.jpg](../images/shtar-headstock-notes.jpg "shtar-headstock-notes.jpg")
+![shtar-headstock-small.jpg](./images/shtar-headstock-small.jpg "shtar-headstock-small.jpg") ![shtar-headstock-notes.jpg](./images/shtar-headstock-notes.jpg "shtar-headstock-notes.jpg")
 
 ### Neck
 
-![shtar-neck-small.jpg](../images/shtar-neck-small.jpg "shtar-neck-small.jpg") ![shtar-neck-notes.jpg](../images/shtar-neck-notes.jpg "shtar-neck-notes.jpg")
+![shtar-neck-small.jpg](./images/shtar-neck-small.jpg "shtar-neck-small.jpg") ![shtar-neck-notes.jpg](./images/shtar-neck-notes.jpg "shtar-neck-notes.jpg")
 
 ### Lower Left
 
-![shtar-lower-left-small.jpg](../images/shtar-lower-left-small.jpg "shtar-lower-left-small.jpg") ![shtar-lower-left-notes.jpg](../images/shtar-lower-left-notes.jpg "shtar-lower-left-notes.jpg")
+![shtar-lower-left-small.jpg](./images/shtar-lower-left-small.jpg "shtar-lower-left-small.jpg") ![shtar-lower-left-notes.jpg](./images/shtar-lower-left-notes.jpg "shtar-lower-left-notes.jpg")
 
 ### Lower right
 
-![shtar-lower-right-small.jpg](../images/shtar-lower-right-small.jpg "shtar-lower-right-small.jpg") ![shtar-lower-right-notes.jpg](../images/shtar-lower-right-notes.jpg "shtar-lower-right-notes.jpg")
+![shtar-lower-right-small.jpg](./images/shtar-lower-right-small.jpg "shtar-lower-right-small.jpg") ![shtar-lower-right-notes.jpg](./images/shtar-lower-right-notes.jpg "shtar-lower-right-notes.jpg")
 
 ## Tuning
 

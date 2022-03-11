@@ -1,4 +1,4 @@
-# SHNTH
+# Shnth
 
 ## About
 
@@ -17,14 +17,14 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1 upper center circular red pushbutton 
 * 1 microphone (under the hood)
 
-![shnth-front-small.jpg](../images/shnth-front-small.jpg "shnth-front-small.jpg") ![shnth-front-notes.jpg](../images/shnth-front-notes.jpg "shnth-front-notes.jpg")
+![shnth-front-small.jpg](./images/shnth-front-small.jpg "shnth-front-small.jpg") ![shnth-front-notes.jpg](./images/shnth-front-notes.jpg "shnth-front-notes.jpg")
 
 ### Back
 
 * 1 left antenna, gray, for left hand
 * 1 right antenna, yellow and orange, for right hand
 
-![shnth-back-small.jpg](../images/shnth-back-small.jpg "shnth-back-small.jpg") ![shnth-back-notes.jpg](../images/shnth-back-notes.jpg "shnth-back-notes.jpg")
+![shnth-back-small.jpg](./images/shnth-back-small.jpg "shnth-back-small.jpg") ![shnth-back-notes.jpg](./images/shnth-back-notes.jpg "shnth-back-notes.jpg")
 
 ### Up
 
@@ -32,21 +32,21 @@ The Shnth is an attempt to do classic computer music in an embedded setting.  Gr
 * 1x USB B cable, for uploading scripts and charging internal batteries
 * 1x on/off switch, on is towards USB, off is towards edge of instrument
 
-![shnth-up-small.jpg](../images/shnth-up-small.jpg "shnth-up-small.jpg") ![shnth-up-notes.jpg](../images/shnth-up-notes.jpg "shnth-up-notes.jpg")
+![shnth-up-small.jpg](./images/shnth-up-small.jpg "shnth-up-small.jpg") ![shnth-up-notes.jpg](./images/shnth-up-notes.jpg "shnth-up-notes.jpg")
 
 ### Down
 
 * 1x 1/8" stereo(?) line input jack
 
-![shnth-down-small.jpg](../images/shnth-down-small.jpg "shnth-down-small.jpg") ![shnth-down-notes.jpg](../images/shnth-down-notes.jpg "shnth-down-notes.jpg")
+![shnth-down-small.jpg](./images/shnth-down-small.jpg "shnth-down-small.jpg") ![shnth-down-notes.jpg](./images/shnth-down-notes.jpg "shnth-down-notes.jpg")
 
 ### Left
 
-![shnth-left-small.jpg](../images/shnth-left-small.jpg "shnth-left-small.jpg") ![shnth-left-notes.jpg](../images/shnth-left-notes.jpg "shnth-left-notes.jpg")
+![shnth-left-small.jpg](./images/shnth-left-small.jpg "shnth-left-small.jpg") ![shnth-left-notes.jpg](./images/shnth-left-notes.jpg "shnth-left-notes.jpg")
 
 ### Right
 
-![shnth-right-small.jpg](../images/shnth-right-small.jpg "shnth-right-small.jpg") ![shnth-right-notes.jpg](../images/shnth-right-notes.jpg "shnth-right-notes.jpg")
+![shnth-right-small.jpg](./images/shnth-right-small.jpg "shnth-right-small.jpg") ![shnth-right-notes.jpg](./images/shnth-right-notes.jpg "shnth-right-notes.jpg")
 
 
 ## UNORGANIZED
